@@ -5499,10 +5499,10 @@
     /* ! gamesNewsContainer Area fin */
 
     .cultureMoreContainer > figure:first-of-type{
-        position: relative; padding-top: 57px; margin-bottom: 120px;
+        margin-bottom: 120px; background: url('../images/more/culture/mainBanner.gif') center / cover no-repeat; padding: 130px 0 50px 0;
     }
     .cultureMoreContainer > figure:first-of-type figcaption{
-        position: absolute; top: 45.5%; left: 36.5%; color: #eee; text-align: center; width: 25%;
+        color: #eee; text-align: center;
     }
     .cultureMoreContainer > figure:first-of-type figcaption dl dt{
         font-weight: 700; font-size: 25px; margin-bottom: 15px;
@@ -9142,10 +9142,10 @@
     /* ! gamesNewsContainer Area fin */
 
     .cultureMoreContainer > figure:first-of-type{
-        position: relative; padding-top: 103px; margin-bottom: 120px;
+        margin-bottom: 120px; background: url('../images/more/culture/mainBanner.gif') center / contain no-repeat; padding: 263px 0 118px 0;
     }
     .cultureMoreContainer > figure:first-of-type figcaption{
-        position: absolute; top: 45.5%; left: 40%; color: #eee; text-align: center;
+        color: #eee; text-align: center;
     }
     .cultureMoreContainer > figure:first-of-type figcaption dl dt{
         font-weight: 700; font-size: 50px; margin-bottom: 30px;
