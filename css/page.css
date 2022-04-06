@@ -6181,7 +6181,7 @@
     .cultureMoreContainer > section:nth-of-type(2),
     .cultureMoreContainer > section:nth-of-type(3),
     .cultureMoreContainer > section:nth-of-type(4),
-    .booksMoreContainer > section,
+    .booksMoreContainer > section:not(:first-of-type),
     [class$='RelateMov'] > section:nth-of-type(2),
     [class$='RelateMov'] > section:nth-of-type(3) figure,
     [class$='RelateMov'] > section:first-of-type,
@@ -9331,31 +9331,31 @@
     }
     /* ?mainBanner Area fin */
 
-    .booksMoreContainer > section{
+    .booksMoreContainer > section:not(:first-of-type){
         margin-bottom: 120px;
     }
-    .booksMoreContainer > section h2{
+    .booksMoreContainer > section:not(:first-of-type) h2{
         font-weight: 600; font-size: 35px; color: #000; margin-bottom: 30px;
     }
-    .booksMoreContainer > section ul > li{
+    .booksMoreContainer > section:not(:first-of-type) ul > li{
         list-style-type: none;
     }
-    .booksMoreContainer > section ul > li figure::after{
+    .booksMoreContainer > section:not(:first-of-type) ul > li figure::after{
         display: block; content: ''; clear: both;
     }
-    .booksMoreContainer > section ul > li figure img{
+    .booksMoreContainer > section:not(:first-of-type) ul > li figure img{
         float: left; margin-bottom: 30px;
     }
-    .booksMoreContainer > section ul > li figcaption{
+    .booksMoreContainer > section:not(:first-of-type) ul > li figcaption{
         display: inline-block; max-width: 590px; width: 38%; padding: 120px 5% 0; box-sizing: border-box;
     }
-    .booksMoreContainer > section ul > li figcaption dl{
+    .booksMoreContainer > section:not(:first-of-type) ul > li figcaption dl{
         display: flex; flex-flow: row wrap;
     }
-    .booksMoreContainer > section ul > li figcaption dl dt{
+    .booksMoreContainer > section:not(:first-of-type) ul > li figcaption dl dt{
         font-weight: 800; font-size: 30px; color: #000; line-height: 36px;
     }
-    .booksMoreContainer > section ul > li figcaption dl dd{
+    .booksMoreContainer > section:not(:first-of-type) ul > li figcaption dl dd{
        font-weight: 700; font-size: 23px; color: #333; margin-bottom: 30px; order: -1; 
     }
     /* ? readers Area fin */
