@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARVEL</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="loginPanel">
+        <h2>
+            <img src="images/logo.png" alt="marvel logo">
+            <button class="material-icons">close</button>
+        </h2>
+        <form>
+            <input type="email" title="please enter your email." placeholder="Email Address">
+            <input type="password" title="Please enter your PIN number." placeholder="Password">
+            <input type="button" value="login">
+        </form>
+        <a href="#">create an account</a>
+    </div>
+    <!--? loginPaner fin -->
+
+    <div id="joinPanel">
+        <h2>
+            <img src="images/logo.png" alt="marvel logo">
+            <button class="material-icons">close</button>>
+        </h2>
+        <input type="text" title="please enter your first name." placeholder="First Name">
+        <input type="text" title="please enter your last name." placeholder="Last Name">
+        <input type="email" title="please enter your email." placeholder="Email Address">
+        <input type="password" title="Please enter your PIN number." placeholder="Password">
+        <div>
+            <label for="selectMonth">Birth Date</label>
+            <span class="inputSelect">
+                <select class="month" id="selectMonth">
+                    <option selected>month</option>
+                    <option>jan</option>
+                    <option>feb</option>
+                    <option>mar</option>
+                    <option>apr</option>
+                    <option>may</option>
+                    <option>jul</option>
+                    <option>aug</option>
+                    <option>sep</option>
+                    <option>oct</option>
+                    <option>nov</option>
+                    <option>dec</option>
+                </select>
+            </span>
+            <span class="inputSelect">   
+                <select class="day">
+                    <option>day</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+            </span>
+            <span class="inputSelect"> 
+                <select class="year">
+                    <option>year</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                    <option>2002</option>
+                    <option>2001</option>
+                    <option>1999</option>
+                    <option>1998</option>
+                    <option>1997</option>
+                    <option>1996</option>
+                    <option>1995</option>
+                    <option>1994</option>
+                    <option>1993</option>
+                    <option>1992</option>
+                    <option>1991</option>
+                    <option>1990</option>
+                    <option>1989</option>
+                    <option>1988</option>
+                    <option>1987</option>
+                    <option>1986</option>
+                    <option>1985</option>
+                    <option>1984</option>
+                    <option>1983</option>
+                    <option>1982</option>
+                    <option>1981</option>
+                    <option>1980</option>
+                    <option>1979</option>
+                    <option>1978</option>
+                    <option>1977</option>
+                    <option>1976</option>
+                    <option>1975</option>
+                    <option>1974</option>
+                    <option>1973</option>
+                    <option>1972</option>
+                    <option>1971</option>
+                    <option>1970</option>
+                    <option>1969</option>
+                    <option>1968</option>
+                    <option>1967</option>
+                    <option>1966</option>
+                    <option>1965</option>
+                    <option>1964</option>
+                    <option>1963</option>
+                    <option>1962</option>
+                    <option>1961</option>
+                    <option>1960</option>
+                    <option>1959</option>
+                    <option>1958</option>
+                    <option>1957</option>
+                    <option>1956</option>
+                    <option>1955</option>
+                    <option>1954</option>
+                    <option>1953</option>
+                    <option>1952</option>
+                    <option>1951</option>
+                    <option>1950</option>
+                    <option>1949</option>
+                    <option>1948</option>
+                    <option>1947</option>
+                    <option>1946</option>
+                    <option>1945</option>
+                    <option>1944</option>
+                    <option>1943</option>
+                    <option>1942</option>
+                    <option>1941</option>
+                    <option>1940</option>
+                    <option>1939</option>
+                    <option>1938</option>
+                    <option>1937</option>
+                    <option>1936</option>
+                    <option>1935</option>
+                    <option>1934</option>
+                    <option>1933</option>
+                    <option>1932</option>
+                    <option>1931</option>
+                    <option>1930</option>
+                    <option>1929</option>
+                    <option>1928</option>
+                    <option>1927</option>
+                    <option>1926</option>
+                    <option>1925</option>
+                    <option>1924</option>
+                    <option>1923</option>
+                    <option>1922</option>
+                    <option>1921</option>
+                    <option>1920</option>
+                    <option>1919</option>
+                    <option>1918</option>
+                    <option>1917</option>
+                    <option>1916</option>
+                    <option>1915</option>
+                    <option>1914</option>
+                    <option>1913</option>
+                    <option>1912</option>
+                    <option>1911</option>
+                    <option>1910</option>
+                    <option>1909</option>
+                    <option>1908</option>
+                    <option>1907</option>
+                    <option>1906</option>
+                    <option>1905</option>
+                    <option>1904</option>
+                    <option>1903</option>
+                </select>
+            </span>
+        </div>
+        <ul>
+            <li>
+                <input type="checkbox" id="firstCheckbox">
+                <label for="firstCheckbox">
+                    Yes! I would like to receive
+                    updates, special offers, and
+                    other information from Marvel
+                    and The Walt Disney Family
+                    of Companies.
+                </label>
+            </li>
+            <li>
+                <input type="checkbox" id="secondCheckbox">
+                <label for="secondCheckbox">
+                    Yes, I would like to receive
+                    Marvel’s Need To Know new
+                    sletter for news, video/podcast
+                    updates, and more.
+                </label>
+            </li>
+            <li>
+                By creating an account, I agree to the Terms of Use and acknowledge
+                that I have read the Privacy Policy.
+            </li>
+            <li>
+                My home country/region: Korea,
+                Republic of. Change.
+            </li>
+        </ul>
+        <a href="#">create account</a>
+    </div>
+    <!--? joinPanel fin  -->
+    
+    <header class="nonBG">
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/LOGO.png" alt="marvel">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li class="characters">characters
+                        <h2>A recent characters</h2>
+                        <ul>
+                            <li><a href="hawkEyeCharacters.html"><img src="images/characters/hawkEye.png" alt="hawkEye"></a></li>
+                            <li><a href="eterNalsCharacters.html"><img src="images/characters/eternals.png" alt="eternals"></a></li>
+                            <li><a href="starFoxCharacters.html"><img src="images/characters/starFox.png" alt="starFox"></a></li>
+                            <li><a href="ironManCharacters.html"><img src="images/characters/ironMan.png" alt="ironMan"></a></li>
+                            <li><a href="spiderManCharacters.html"><img src="images/characters/spiderMan.png" alt="spiaderMan"></a></li>
+                        </ul>
+                    </li>
+                    <li class="comics">comics
+                        <h2>Popular comics</h2>
+                        <ul>
+                            <li><a href="eterNalsComics.html"><img src="images/comics/eternals.png" alt="eternals"></a></li>
+                            <li><a href="hulkComics.html"><img src="images/comics/hulk.png" alt="hulk"></a></li>
+                            <li><a href="spiderManComics.html"><img src="images/comics/spiderman.png" alt="spiderman"></a></li>
+                            <li><a href="thingComics.html"><img src="images/comics/thing.png" alt="thing"></a></li>
+                        </ul>
+                    </li>
+                    <li class="movies">movies
+                        <h2>movies</h2>
+                        <ul>
+                            <li><a href="avenersMovies.html"><img src="images/movies/avengers.png" alt="avengers"></a></li>
+                            <li><a href="blackWidowMovies.html"><img src="images/movies/blackWidow.png" alt="blackWidow"></a></li>
+                            <li><a href="eternalsMovies.html"><img src="images/movies/eternals.png" alt="eternals"></a></li>
+                            <li><a href="shanchiMovies.html"><img src="images/movies/shangchi.png" alt="shangchi"></a></li>
+                            <li><a href="spiderManMovies.html"><img src="images/movies/spiderMan.png" alt="spiderMan"></a></li>
+                        </ul>
+                    </li>
+                    <li class="news">news
+                        <h2>trending news</h2>
+                        <ul>
+                            <li>
+                                <a href="moviesNews.html">
+                                    <figure>
+                                        <img src="images/news/movies.png" alt="spiderManMoviesnews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>movies</dt>
+                                                <dd>‘Spider-Man: No Way Home’: Tom Holland and Zendaya on New and Returning Surprise Characters</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="comicsNews.html">
+                                    <figure>
+                                        <img src="images/news/comics.png" alt="hulkComicsNews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>COMICS</dt>
+                                                <dd>Hulk's Rage Meets Thor's Thunder in Epic New Crossover</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tvShowNews.html">
+                                    <figure>
+                                        <img src="images/news/tvShows.png" alt="hawkEyeTvShowsNews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>TV SHOWS</dt>
+                                                <dd>‘Hawkeye’: Laura Barton’s Reveal and Keeping Christmas Alive at the Farm House</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="gamesNews.html">
+                                    <figure>
+                                        <img src="images/news/games.png" alt="guardiansGamesNews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>GAMES</dt>
+                                                <dd>Latest Trailer from Marvel's Guardians of the Galaxy Reveals a Mysterious Past...and Future?</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="more">more
+                        <h2>more</h2>
+                        <ul>
+                            <li>
+                                <a href="cultureMore.html">
+                                    <figure>
+                                        <img src="images/more/culture.png" alt="culture">
+                                            <figcaption>
+                                                culture
+                                            </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="booksMore.html">
+                                    <figure>
+                                        <img src="images/more/books.png" alt="books">
+                                            <figcaption>
+                                                books
+                                            </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sideContainer">
+                <a class="material-icons">search</a>
+                <input type="button" value="login" data-callPopup="loginPanel">
+                <input type="button" value="join in" data-callPopup="joinPanel">
+            </div>
+        </div>
+    </header>
+    <!--? header fin -->
+
+    <div class="booksNewsList">
+        <h2>newws list</h2>
+        <article>
+            <div>
+                <strong>CULTURE</strong>
+                <mark>Published August 17, 2021</mark>
+            </div>
+            <h3>Announcing 'School of X,' the Latest 'Xavier's Institute' Prose Novel
+                <small>The anthology is on sale December 7, 2021!</small>
+            </h3>
+            <p>School's back in session.</p>
+            <p>The next prose novel in Marvel and Aconyte Books' XAVIER'S INSTITUTE line is School of X, an original X-Men fiction anthology.</p>
+            <p>In School of X, edited by Gwendolyn Nix, the next generation of the astonishing X-Men face their deadliest foes yet — alternate versions of themselves, in this wide-ranging Marvel anthology featuring seven new original stories. This novel will be available everywhere books are sold on December 7, 2021. Pre-order the title now!</p>
+            <figure>
+                <img src="images/detail/school.jpg" alt="marvelSchool">
+                <figcaption>
+                    <ul>
+                        <li>The New Charles Xavier Institute isn’t all it’s cracked up to be: the food is so-so, it’s cold eleven out of twelve months, not to mention the creepy bunker vibes with mysterious tech popping up all over the place. But for the next generation of X-Men, it’s home.</li>
+                        <li>Under the stewardship of Emma Frost, Cyclops, and Magneto, these new recruits learn to control their powers and defeat villainy. Yet, danger lurks within the academy and it isn’t just monsters or evil geniuses. Now, these fresh X-Men must understand what it means to fight not just yourself, but alternative shades of who they might have become in the past, present, and future.</li>
+                        <li>The anthology includes the following stories:</li>
+                        <li><strong>Your Fifteen Minutes by Jaleigh Johnson</strong>When a telepathic training exercise led by the Stepford Cuckoos goes awry, Fabio Medina “Goldballs” gets his wish to be an undisputed hero as his consciousness is swept up in a series of vivid hallucinations that transform him into a Bogart-like hero to a cool-as-John-Wick action star. But when these illusions threaten his life, Fabio and the Stepford Cuckoos have to band together to break free from the telepathic prison before someone dies a hero.</li>
+                        <li><strong>Call of the Dark by Robbie MacNiven</strong>After struggling to deal with high-intensity, darkness-focused training sessions, Graymalkin decides to acclimate himself at his own pace by secretly entering the dark caverns and abandoned rooms beneath the school’s depths. What waits for him is a doppelgänger with evil intent and a Weapons X device of a foul nature. Soon, Graymalkin realizes that there is a dark side to everything and everyone as he comes to terms with his own fears.</li>
+                        <li><strong>Uncatchable by Cath Lauria</strong>Hijack is looking for some R&R at a hundred miles an hour at a street race, but when Cipher ends up tagging along and uncovers the cartel gun-running operation, it looks like the Fast and the Furious dream just became way more real than expected. Being an X-Men is more than just fighting of Sentinels and world-enders, and now Hijack and Cipher must use their powers to help the cops…er, Mounties, keep the community safe.</li>
+                        <li><strong>Eye of the Storm by Amanda Bridgeman</strong>While saving a nearby town from flooding during a storm, Shark Girl, Dust, and Rockslide discover a secret tunnel with a diabolical foe bent on destroying organic life in favor of a mechanical cyborg-driven future</li>
+                        <li><strong>Of Dirt and Bones by Pat Shand</strong>A Pet Sematary situation is going on at New Charles Xavier School where animals are crawling from the forest, meaning Phoebe Cuckoo, Triage, and Morph must use their unique powers to investigate the cause of this macabre reanimation.</li>
+                        <li><strong>Kid Omega Faces the Music by Neil Kleid</strong>When Kid Omega and his BFF Glob skip a day of boring lessons to fangirl over Wonder Man, they are caught in a botched case of time-travel kidnapping, sending them shooting through some of the greatest moments in X-Men history. Will Quentin Quire embrace the heroics in chaos and learn the value of friendship? More importantly, will he score an excellent Simon Williams souvenir along the way? Cue guitar riff here!</li>
+                        <li><strong>Depowered by Carrie Harris</strong>When Dani Moonstar and Polaris seek out the New Charles Xavier School for Mutants to find a solution for losing their mutant powers after M-Day, they accidentally bring Sentinels down on the Institute. Now, Triage, Tempus, and the rest of the students must protect their school’s secret location and defeat Sentinels on their own. Good thing they’ve trained for this, but can Triage and Tempus put their experience to good use when it matters most?</li>
+                        <li>It isn’t easy being extraordinary. Superhuman powers can be both a gift and a curse in a world where those talents can be used for good or evil. School of X is the fourth installment in the XAVIER'S INSTITUTE line, following Liberty & Justice For All, First Team, and Triptych, which follows the young members of the New Charles Xavier School for Mutants, exploring their stories of adventure, defiance, and growth as these characters discover their abilities, a new "found family," and their place in the world. </li>
+                    </ul>
+                </figcaption>
+            </figure>
+        </article>
+    </div>
+    <!-- ? list fin -->
+
+    <footer>
+        <div>
+            <h2>
+                <img src="images/logo2.png" alt="footer_logo">
+            </h2>
+            <ul>
+                <li><a href="about.html">about marvel</a></li>
+                <li><a href="help.html">help</a></li>
+                <li><a href="advertising.html">advertising</a></li>
+                <li><a href="internships.html">internships</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://jobs.disneycareers.com/search-jobs/korea/391-28648/1?glat=37.566&glon=126.9784">careers</a></li>
+                <li><a href="https://www.disneyplus.com/brand/marvel?cid=DTCI-Synergy-Marvel-Site-Acquisition-Library-US-Marvel-NA-EN-NavFooter-Marvel_DisneyPlus_NavFooter_Evergreen-NA">disney+</a></li>
+                <li><a href="https://www.marvelhq.com/">marvelHQ.com</a></li>
+                <li><a href="login.html">redeem digital comics</a></li>
+            </ul>
+            <div>
+                <a href="insider.html">
+                    <!-- background -->
+                    <strong>MARVEL INSIDER</strong>
+                    Get Rewarded for Being a Marvel Fan
+                </a>
+                <a href="https://www.marvel.com/unlimited?cid=dcom_navigation_20210909_unlimited_footer">
+                    <!-- background -->
+                    <strong>MARVEL UNLIMITED</strong>
+                    Access Over 29,000+ Digital Comics
+                </a>
+            </div>
+            <div>
+                <h3>FOLLOW MARVEL</h3>
+                <ul>
+                    <!-- bg -->
+                    <li><a href="https://www.facebook.com/marvel">facebook</a></li>
+                    <li><a href="https://www.instagram.com/marvel/">instagram</a></li>
+                    <li><a href="https://www.youtube.com/marvel">youtube</a></li>
+                    <li><a href="https://twitter.com/marvel">twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul>
+            <li><a href="license.html">License Agreement</a></li>
+            <li><a href="insiderTerm.html">Marvel Insider Terms</a></li>
+            <li>ⓒ2021 MARVEL</li>
+        </ul>
+    </footer>
+    <!--? footerArea fin -->
+</body>
+</html>

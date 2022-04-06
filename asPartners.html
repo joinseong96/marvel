@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARVEL</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="loginPanel">
+        <h2>
+            <img src="images/logo.png" alt="marvel logo">
+            <button class="material-icons">close</button>
+        </h2>
+        <form>
+            <input type="email" title="please enter your email." placeholder="Email Address">
+            <input type="password" title="Please enter your PIN number." placeholder="Password">
+            <input type="button" value="login">
+        </form>
+        <a href="#">create an account</a>
+    </div>
+    <!--? loginPaner fin -->
+
+    <div id="joinPanel">
+        <h2>
+            <img src="images/logo.png" alt="marvel logo">
+            <button class="material-icons">close</button>>
+        </h2>
+        <input type="text" title="please enter your first name." placeholder="First Name">
+        <input type="text" title="please enter your last name." placeholder="Last Name">
+        <input type="email" title="please enter your email." placeholder="Email Address">
+        <input type="password" title="Please enter your PIN number." placeholder="Password">
+        <div>
+            <label for="selectMonth">Birth Date</label>
+            <span class="inputSelect">
+                <select class="month" id="selectMonth">
+                    <option selected>month</option>
+                    <option>jan</option>
+                    <option>feb</option>
+                    <option>mar</option>
+                    <option>apr</option>
+                    <option>may</option>
+                    <option>jul</option>
+                    <option>aug</option>
+                    <option>sep</option>
+                    <option>oct</option>
+                    <option>nov</option>
+                    <option>dec</option>
+                </select>
+            </span>
+            <span class="inputSelect">   
+                <select class="day">
+                    <option>day</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+            </span>
+            <span class="inputSelect"> 
+                <select class="year">
+                    <option>year</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                    <option>2002</option>
+                    <option>2001</option>
+                    <option>1999</option>
+                    <option>1998</option>
+                    <option>1997</option>
+                    <option>1996</option>
+                    <option>1995</option>
+                    <option>1994</option>
+                    <option>1993</option>
+                    <option>1992</option>
+                    <option>1991</option>
+                    <option>1990</option>
+                    <option>1989</option>
+                    <option>1988</option>
+                    <option>1987</option>
+                    <option>1986</option>
+                    <option>1985</option>
+                    <option>1984</option>
+                    <option>1983</option>
+                    <option>1982</option>
+                    <option>1981</option>
+                    <option>1980</option>
+                    <option>1979</option>
+                    <option>1978</option>
+                    <option>1977</option>
+                    <option>1976</option>
+                    <option>1975</option>
+                    <option>1974</option>
+                    <option>1973</option>
+                    <option>1972</option>
+                    <option>1971</option>
+                    <option>1970</option>
+                    <option>1969</option>
+                    <option>1968</option>
+                    <option>1967</option>
+                    <option>1966</option>
+                    <option>1965</option>
+                    <option>1964</option>
+                    <option>1963</option>
+                    <option>1962</option>
+                    <option>1961</option>
+                    <option>1960</option>
+                    <option>1959</option>
+                    <option>1958</option>
+                    <option>1957</option>
+                    <option>1956</option>
+                    <option>1955</option>
+                    <option>1954</option>
+                    <option>1953</option>
+                    <option>1952</option>
+                    <option>1951</option>
+                    <option>1950</option>
+                    <option>1949</option>
+                    <option>1948</option>
+                    <option>1947</option>
+                    <option>1946</option>
+                    <option>1945</option>
+                    <option>1944</option>
+                    <option>1943</option>
+                    <option>1942</option>
+                    <option>1941</option>
+                    <option>1940</option>
+                    <option>1939</option>
+                    <option>1938</option>
+                    <option>1937</option>
+                    <option>1936</option>
+                    <option>1935</option>
+                    <option>1934</option>
+                    <option>1933</option>
+                    <option>1932</option>
+                    <option>1931</option>
+                    <option>1930</option>
+                    <option>1929</option>
+                    <option>1928</option>
+                    <option>1927</option>
+                    <option>1926</option>
+                    <option>1925</option>
+                    <option>1924</option>
+                    <option>1923</option>
+                    <option>1922</option>
+                    <option>1921</option>
+                    <option>1920</option>
+                    <option>1919</option>
+                    <option>1918</option>
+                    <option>1917</option>
+                    <option>1916</option>
+                    <option>1915</option>
+                    <option>1914</option>
+                    <option>1913</option>
+                    <option>1912</option>
+                    <option>1911</option>
+                    <option>1910</option>
+                    <option>1909</option>
+                    <option>1908</option>
+                    <option>1907</option>
+                    <option>1906</option>
+                    <option>1905</option>
+                    <option>1904</option>
+                    <option>1903</option>
+                </select>
+            </span>
+        </div>
+        <ul>
+            <li>
+                <input type="checkbox" id="firstCheckbox">
+                <label for="firstCheckbox">
+                    Yes! I would like to receive
+                    updates, special offers, and
+                    other information from Marvel
+                    and The Walt Disney Family
+                    of Companies.
+                </label>
+            </li>
+            <li>
+                <input type="checkbox" id="secondCheckbox">
+                <label for="secondCheckbox">
+                    Yes, I would like to receive
+                    Marvel’s Need To Know new
+                    sletter for news, video/podcast
+                    updates, and more.
+                </label>
+            </li>
+            <li>
+                By creating an account, I agree to the Terms of Use and acknowledge
+                that I have read the Privacy Policy.
+            </li>
+            <li>
+                My home country/region: Korea,
+                Republic of. Change.
+            </li>
+        </ul>
+        <a href="#">create account</a>
+    </div>
+    <!--? joinPanel fin  -->
+    
+    <header class="nonBG">
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/LOGO.png" alt="marvel">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li class="characters">characters
+                        <h2>A recent characters</h2>
+                        <ul>
+                            <li><a href="hawkEyeCharacters.html"><img src="images/characters/hawkEye.png" alt="hawkEye"></a></li>
+                            <li><a href="eterNalsCharacters.html"><img src="images/characters/eternals.png" alt="eternals"></a></li>
+                            <li><a href="starFoxCharacters.html"><img src="images/characters/starFox.png" alt="starFox"></a></li>
+                            <li><a href="ironManCharacters.html"><img src="images/characters/ironMan.png" alt="ironMan"></a></li>
+                            <li><a href="spiderManCharacters.html"><img src="images/characters/spiderMan.png" alt="spiaderMan"></a></li>
+                        </ul>
+                    </li>
+                    <li class="comics">comics
+                        <h2>Popular comics</h2>
+                        <ul>
+                            <li><a href="eterNalsComics.html"><img src="images/comics/eternals.png" alt="eternals"></a></li>
+                            <li><a href="hulkComics.html"><img src="images/comics/hulk.png" alt="hulk"></a></li>
+                            <li><a href="spiderManComics.html"><img src="images/comics/spiderman.png" alt="spiderman"></a></li>
+                            <li><a href="thingComics.html"><img src="images/comics/thing.png" alt="thing"></a></li>
+                        </ul>
+                    </li>
+                    <li class="movies">movies
+                        <h2>movies</h2>
+                        <ul>
+                            <li><a href="avenersMovies.html"><img src="images/movies/avengers.png" alt="avengers"></a></li>
+                            <li><a href="blackWidowMovies.html"><img src="images/movies/blackWidow.png" alt="blackWidow"></a></li>
+                            <li><a href="eternalsMovies.html"><img src="images/movies/eternals.png" alt="eternals"></a></li>
+                            <li><a href="shanchiMovies.html"><img src="images/movies/shangchi.png" alt="shangchi"></a></li>
+                            <li><a href="spiderManMovies.html"><img src="images/movies/spiderMan.png" alt="spiderMan"></a></li>
+                        </ul>
+                    </li>
+                    <li class="news">news
+                        <h2>trending news</h2>
+                        <ul>
+                            <li>
+                                <a href="moviesNews.html">
+                                    <figure>
+                                        <img src="images/news/movies.png" alt="spiderManMoviesnews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>movies</dt>
+                                                <dd>‘Spider-Man: No Way Home’: Tom Holland and Zendaya on New and Returning Surprise Characters</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="comicsNews.html">
+                                    <figure>
+                                        <img src="images/news/comics.png" alt="hulkComicsNews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>COMICS</dt>
+                                                <dd>Hulk's Rage Meets Thor's Thunder in Epic New Crossover</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tvShowNews.html">
+                                    <figure>
+                                        <img src="images/news/tvShows.png" alt="hawkEyeTvShowsNews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>TV SHOWS</dt>
+                                                <dd>‘Hawkeye’: Laura Barton’s Reveal and Keeping Christmas Alive at the Farm House</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="gamesNews.html">
+                                    <figure>
+                                        <img src="images/news/games.png" alt="guardiansGamesNews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>GAMES</dt>
+                                                <dd>Latest Trailer from Marvel's Guardians of the Galaxy Reveals a Mysterious Past...and Future?</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="more">more
+                        <h2>more</h2>
+                        <ul>
+                            <li>
+                                <a href="cultureMore.html">
+                                    <figure>
+                                        <img src="images/more/culture.png" alt="culture">
+                                            <figcaption>
+                                                culture
+                                            </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="booksMore.html">
+                                    <figure>
+                                        <img src="images/more/books.png" alt="books">
+                                            <figcaption>
+                                                books
+                                            </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sideContainer">
+                <a class="material-icons">search</a>
+                <input type="button" value="login" data-callPopup="loginPanel">
+                <input type="button" value="join in" data-callPopup="joinPanel">
+            </div>
+        </div>
+    </header>
+    <!--? header fin -->
+
+    <div class="tvShowsNewsList">
+        <h2>newws list</h2>
+        <article>
+            <div>
+                <strong>TV SHOWS</strong>
+                <mark>Published December 22, 2021</mark>
+            </div>
+            <h3>‘Hawkeye’: Clint Barton and Kate Bishop’s Evolution as Partners
+                <small>“Clint learns from her and Kate learns from him. Sometimes it's so subtle that they don't realize it because they're bonding."</small>
+            </h3>
+            <figure>
+                <img src="images/detail/images/hawkeye_03.png" alt="Hawkeye as Partners">
+                <figcaption>
+                    <ul>
+                        <li>At the start of Marvel Studios’ Hawkeye, Clint Barton and Kate Bishop’s first meeting is less than ideal. She’s accidentally donned the Ronin suit and unknowingly unleashed ghosts from Clint’s past; he’s less than thrilled to find a young kid wearing the suit and stirring up this magnitude of trouble. While the two of them might have gotten off to a bumpy start, by the end of Episode 6, “So This Is Christmas?” it’s clear that these two are more than just friends, or even co-workers. They’re partners.</li>
+                        <li>Over the course of six episodes — though neither one of them necessarily realizes it’s slowly happening — Clint teaches Kate how to be the hero she’s always wanted to be, and with Kate’s help, Clint softens a little bit around the edges (and even gets a new marketable suit). He’s not making her his successor; rather, Clint’s making Kate his equal.</li>
+                        <li>“It's not like we go into each episode, ‘OK, [now it’s time for] lesson number three.’ It's just happening because that's their adventure together,” director Rhys Thomas explains to Marvel.com. “It’s a character-driven story. It’s been fun just to let the story expand from within these two characters and the things that happen to them. I don't think we were conscious [about them teaching one another] because there's something very natural about both characters [doing it].”</li>
+                        <li>“He doesn't even realize that he's doing it because, in the beginning, he finds her rather annoying,” executive producer Trinh Tran says with a laugh. “It was really important that it wasn't going to be one-sided in terms of the training and learning. That it wasn't just all Clint who is the wiser, more experienced hero teaching the young protégé, who is eager, excited, and enthusiastic to learn the ropes because she idolizes him.”</li>
+                        <li>As the season goes on, Tran notes, “Clint learns from her and Kate learns from him. Sometimes it's so subtle that they don't realize it because they're bonding. They're starting to work with each other.” A big turning point for the duo comes mid-season when they’ve both been captured by the Tracksuit Mafia and, “there is no choice, they have to work together in order to get out of the situation.”</li>
+                        <li>“By doing so, he really starts to realize, “Hey, this girl's got chops,’” Tran continues. “Kate is actually really good at what she says she can do. She said she was ‘the greatest archer ever’ in the first two episodes, and he thought she was just a little bit full of herself and a little overconfident. But along the way, he realizes that she has been working hard in order to get to where she is. That's the beauty about the bond that they form with each other which builds into a partnership at the end.”</li>
+                        <li>Directing duo Bert and Bertie, who helmed the major turning point of Episode 3, "Echoes," loved the opportunity to introduce a new, young female hero into the Marvel Cinematic Universe, and letting her grow over six episodes. “Clint’s sharing his knowledge, and Kate’s going to be her own character, her own persona, her own version of a hero,” Bertie adds. “Part of that dynamic is that he's a reticent mentor. He doesn't want to be considered a hero; he doesn't think of himself as a mentor. Kate brings that out of him; he's able to acknowledge her skill and set her on that course.”</li>
+                        <li>While this trainer/trainee aspect was certainly always part of the core of the script, it really comes to life on-screen thanks to Jeremy Renner and Hailee Steinfeld. Bertie echoes this statement, explaining “It really comes down to Hailee and Jeremy's dynamic. She is a force of nature. She plays this wide-eyed innocent character, but there's always this underlying overconfidence. Strength, determination and skill, to her, means that she's never going to just settle in a mentee position. She's a super-fan, but you see her challenging Clint, emotionally and physically along the way, and we love that. They've got it down so well.”</li>
+                        <li>Tran also acknowledges Renner and Steinfeld’s on-screen relationship, “One of the important aspects about crafting the story, which we spent so much time on, is making sure that Clint and Kate’s dynamic was going to really work. That's what’s gold for the series. If their chemistry and their partnership doesn't work, there really isn't anything that's going to be great to hold onto.”</li>
+                        <li>And while neither one of them has enhanced, cosmic, or even god-like powers, their ability to relate to each other might just be what saves the day in the end.</li>
+                        <li>“Their personalities are their super power at its core,” Thomas adds. “For both of them, it’s just who they are innately. You have these two strong characters that are going to find a way no matter what. Whether it's reluctantly on Clint's part, or with enthusiasm on Kate's part.”</li>
+                    </ul>
+                </figcaption>
+            </figure>
+        </article>
+    </div>
+    <!-- ? list fin -->
+
+    <footer>
+        <div>
+            <h2>
+                <img src="images/logo2.png" alt="footer_logo">
+            </h2>
+            <ul>
+                <li><a href="about.html">about marvel</a></li>
+                <li><a href="help.html">help</a></li>
+                <li><a href="advertising.html">advertising</a></li>
+                <li><a href="internships.html">internships</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://jobs.disneycareers.com/search-jobs/korea/391-28648/1?glat=37.566&glon=126.9784">careers</a></li>
+                <li><a href="https://www.disneyplus.com/brand/marvel?cid=DTCI-Synergy-Marvel-Site-Acquisition-Library-US-Marvel-NA-EN-NavFooter-Marvel_DisneyPlus_NavFooter_Evergreen-NA">disney+</a></li>
+                <li><a href="https://www.marvelhq.com/">marvelHQ.com</a></li>
+                <li><a href="login.html">redeem digital comics</a></li>
+            </ul>
+            <div>
+                <a href="insider.html">
+                    <!-- background -->
+                    <strong>MARVEL INSIDER</strong>
+                    Get Rewarded for Being a Marvel Fan
+                </a>
+                <a href="https://www.marvel.com/unlimited?cid=dcom_navigation_20210909_unlimited_footer">
+                    <!-- background -->
+                    <strong>MARVEL UNLIMITED</strong>
+                    Access Over 29,000+ Digital Comics
+                </a>
+            </div>
+            <div>
+                <h3>FOLLOW MARVEL</h3>
+                <ul>
+                    <!-- bg -->
+                    <li><a href="https://www.facebook.com/marvel">facebook</a></li>
+                    <li><a href="https://www.instagram.com/marvel/">instagram</a></li>
+                    <li><a href="https://www.youtube.com/marvel">youtube</a></li>
+                    <li><a href="https://twitter.com/marvel">twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul>
+            <li><a href="license.html">License Agreement</a></li>
+            <li><a href="insiderTerm.html">Marvel Insider Terms</a></li>
+            <li>ⓒ2021 MARVEL</li>
+        </ul>
+    </footer>
+    <!--? footerArea fin -->
+</body>
+</html>

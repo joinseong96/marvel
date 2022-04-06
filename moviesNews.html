@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARVEL</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="loginPanel">
+        <h2>
+            <img src="images/logo.png" alt="marvel logo">
+            <button class="material-icons">close</button>
+        </h2>
+        <form>
+            <input type="email" title="please enter your email." placeholder="Email Address">
+            <input type="password" title="Please enter your PIN number." placeholder="Password">
+            <input type="button" value="login">
+        </form>
+        <a href="#">create an account</a>
+    </div>
+    <!--? loginPaner fin -->
+
+    <div id="joinPanel">
+        <h2>
+            <img src="images/logo.png" alt="marvel logo">
+            <button class="material-icons">close</button>>
+        </h2>
+        <input type="text" title="please enter your first name." placeholder="First Name">
+        <input type="text" title="please enter your last name." placeholder="Last Name">
+        <input type="email" title="please enter your email." placeholder="Email Address">
+        <input type="password" title="Please enter your PIN number." placeholder="Password">
+        <div>
+            <label for="selectMonth">Birth Date</label>
+            <span class="inputSelect">
+                <select class="month" id="selectMonth">
+                    <option selected>month</option>
+                    <option>jan</option>
+                    <option>feb</option>
+                    <option>mar</option>
+                    <option>apr</option>
+                    <option>may</option>
+                    <option>jul</option>
+                    <option>aug</option>
+                    <option>sep</option>
+                    <option>oct</option>
+                    <option>nov</option>
+                    <option>dec</option>
+                </select>
+            </span>
+            <span class="inputSelect">   
+                <select class="day">
+                    <option>day</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+            </span>
+            <span class="inputSelect"> 
+                <select class="year">
+                    <option>year</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                    <option>2002</option>
+                    <option>2001</option>
+                    <option>1999</option>
+                    <option>1998</option>
+                    <option>1997</option>
+                    <option>1996</option>
+                    <option>1995</option>
+                    <option>1994</option>
+                    <option>1993</option>
+                    <option>1992</option>
+                    <option>1991</option>
+                    <option>1990</option>
+                    <option>1989</option>
+                    <option>1988</option>
+                    <option>1987</option>
+                    <option>1986</option>
+                    <option>1985</option>
+                    <option>1984</option>
+                    <option>1983</option>
+                    <option>1982</option>
+                    <option>1981</option>
+                    <option>1980</option>
+                    <option>1979</option>
+                    <option>1978</option>
+                    <option>1977</option>
+                    <option>1976</option>
+                    <option>1975</option>
+                    <option>1974</option>
+                    <option>1973</option>
+                    <option>1972</option>
+                    <option>1971</option>
+                    <option>1970</option>
+                    <option>1969</option>
+                    <option>1968</option>
+                    <option>1967</option>
+                    <option>1966</option>
+                    <option>1965</option>
+                    <option>1964</option>
+                    <option>1963</option>
+                    <option>1962</option>
+                    <option>1961</option>
+                    <option>1960</option>
+                    <option>1959</option>
+                    <option>1958</option>
+                    <option>1957</option>
+                    <option>1956</option>
+                    <option>1955</option>
+                    <option>1954</option>
+                    <option>1953</option>
+                    <option>1952</option>
+                    <option>1951</option>
+                    <option>1950</option>
+                    <option>1949</option>
+                    <option>1948</option>
+                    <option>1947</option>
+                    <option>1946</option>
+                    <option>1945</option>
+                    <option>1944</option>
+                    <option>1943</option>
+                    <option>1942</option>
+                    <option>1941</option>
+                    <option>1940</option>
+                    <option>1939</option>
+                    <option>1938</option>
+                    <option>1937</option>
+                    <option>1936</option>
+                    <option>1935</option>
+                    <option>1934</option>
+                    <option>1933</option>
+                    <option>1932</option>
+                    <option>1931</option>
+                    <option>1930</option>
+                    <option>1929</option>
+                    <option>1928</option>
+                    <option>1927</option>
+                    <option>1926</option>
+                    <option>1925</option>
+                    <option>1924</option>
+                    <option>1923</option>
+                    <option>1922</option>
+                    <option>1921</option>
+                    <option>1920</option>
+                    <option>1919</option>
+                    <option>1918</option>
+                    <option>1917</option>
+                    <option>1916</option>
+                    <option>1915</option>
+                    <option>1914</option>
+                    <option>1913</option>
+                    <option>1912</option>
+                    <option>1911</option>
+                    <option>1910</option>
+                    <option>1909</option>
+                    <option>1908</option>
+                    <option>1907</option>
+                    <option>1906</option>
+                    <option>1905</option>
+                    <option>1904</option>
+                    <option>1903</option>
+                </select>
+            </span>
+        </div>
+        <ul>
+            <li>
+                <input type="checkbox" id="firstCheckbox">
+                <label for="firstCheckbox">
+                    Yes! I would like to receive
+                    updates, special offers, and
+                    other information from Marvel
+                    and The Walt Disney Family
+                    of Companies.
+                </label>
+            </li>
+            <li>
+                <input type="checkbox" id="secondCheckbox">
+                <label for="secondCheckbox">
+                    Yes, I would like to receive
+                    Marvel’s Need To Know new
+                    sletter for news, video/podcast
+                    updates, and more.
+                </label>
+            </li>
+            <li>
+                By creating an account, I agree to the Terms of Use and acknowledge
+                that I have read the Privacy Policy.
+            </li>
+            <li>
+                My home country/region: Korea,
+                Republic of. Change.
+            </li>
+        </ul>
+        <a href="#">create account</a>
+    </div>
+    <!--? joinPanel fin  -->
+    
+    <header class="nonBG">
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/LOGO.png" alt="marvel">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li class="characters">characters
+                        <h2>A recent characters</h2>
+                        <ul>
+                            <li><a href="hawkEyeCharacters.html"><img src="images/characters/hawkEye.png" alt="hawkEye"></a></li>
+                            <li><a href="eterNalsCharacters.html"><img src="images/characters/eternals.png" alt="eternals"></a></li>
+                            <li><a href="starFoxCharacters.html"><img src="images/characters/starFox.png" alt="starFox"></a></li>
+                            <li><a href="ironManCharacters.html"><img src="images/characters/ironMan.png" alt="ironMan"></a></li>
+                            <li><a href="spiderManCharacters.html"><img src="images/characters/spiderMan.png" alt="spiaderMan"></a></li>
+                        </ul>
+                    </li>
+                    <li class="comics">comics
+                        <h2>Popular comics</h2>
+                        <ul>
+                            <li><a href="eterNalsComics.html"><img src="images/comics/eternals.png" alt="eternals"></a></li>
+                            <li><a href="hulkComics.html"><img src="images/comics/hulk.png" alt="hulk"></a></li>
+                            <li><a href="spiderManComics.html"><img src="images/comics/spiderman.png" alt="spiderman"></a></li>
+                            <li><a href="thingComics.html"><img src="images/comics/thing.png" alt="thing"></a></li>
+                        </ul>
+                    </li>
+                    <li class="movies">movies
+                        <h2>movies</h2>
+                        <ul>
+                            <li><a href="avenersMovies.html"><img src="images/movies/avengers.png" alt="avengers"></a></li>
+                            <li><a href="blackWidowMovies.html"><img src="images/movies/blackWidow.png" alt="blackWidow"></a></li>
+                            <li><a href="eternalsMovies.html"><img src="images/movies/eternals.png" alt="eternals"></a></li>
+                            <li><a href="shanchiMovies.html"><img src="images/movies/shangchi.png" alt="shangchi"></a></li>
+                            <li><a href="spiderManMovies.html"><img src="images/movies/spiderMan.png" alt="spiderMan"></a></li>
+                        </ul>
+                    </li>
+                    <li class="news">news
+                        <h2>trending news</h2>
+                        <ul>
+                            <li>
+                                <a href="moviesNewsNews.html">
+                                    <figure>
+                                        <img src="images/news/movies.png" alt="spiderManMoviesnews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>movies</dt>
+                                                <dd>‘Spider-Man: No Way Home’: Tom Holland and Zendaya on New and Returning Surprise Characters</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="comicsNewsNews.html">
+                                    <figure>
+                                        <img src="images/news/comics.png" alt="hulkComicsNews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>COMICS</dt>
+                                                <dd>Hulk's Rage Meets Thor's Thunder in Epic New Crossover</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tvShowNewsNews.html">
+                                    <figure>
+                                        <img src="images/news/tvShows.png" alt="hawkEyeTvShowsNews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>TV SHOWS</dt>
+                                                <dd>‘Hawkeye’: Laura Barton’s Reveal and Keeping Christmas Alive at the Farm House</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="gamesNewsNews.html">
+                                    <figure>
+                                        <img src="images/news/games.png" alt="guardiansGamesNews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>GAMES</dt>
+                                                <dd>Latest Trailer from Marvel's Guardians of the Galaxy Reveals a Mysterious Past...and Future?</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="more">more
+                        <h2>more</h2>
+                        <ul>
+                            <li>
+                                <a href="cultureMore.html">
+                                    <figure>
+                                        <img src="images/more/culture.png" alt="culture">
+                                            <figcaption>
+                                                culture
+                                            </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="booksMore.html">
+                                    <figure>
+                                        <img src="images/more/books.png" alt="books">
+                                            <figcaption>
+                                                books
+                                            </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sideContainer">
+                <a class="material-icons">search</a>
+                <input type="button" value="login" data-callPopup="loginPanel">
+                <input type="button" value="join in" data-callPopup="joinPanel">
+            </div>
+        </div>
+    </header>
+    <!--? header fin -->
+
+    <div class="moviesNewsContainer">
+        <h2>
+            marvel news
+        </h2>
+        <!--! background: images/news/movies/mainBanner.png.+ -->
+        <!--? mainbanner Area fin -->
+
+        <article>
+            <div>
+                <strong>MOVIES</strong>
+                <mark>PUBLISHED DECEMBER 22, 2021</mark>
+            </div>
+            <h3>
+                ‘Spider-Man: No Way Home’: Tom Holland and Zendaya on New and Returning Surprise Characters
+                <small>Experience the movie in theaters now!</small>
+            </h3>
+            <figure>
+                <img src="images/news/movies/subBanner.png" alt="spiderManNoWayHome">
+                <figcaption>
+                    <p>Who’s in Spider-Man: No Way Home? Honestly, who isn’t in Spider-Man: No Way Home? The third film in the trilogy for the Marvel Cinematic Universe unites three different generations of Spideys together on the big screen, and then some.</p>
+                    <p>There are returning heroes, returning villains, familiar faces, and so much more packed into the latest movie. Viewers might not even believe their eyes seeing so many web-slingers fighting foes last seen a decade ago.</p>
+                    <span>Ahead of the movie’s release, Marvel.</span>
+                    <p>com talked to Peter Parker and MJ themselves, Tom Holland and Zendaya, to get the full rapid-fire scoop on everyone new, reappearing, and unexpected, including the ones that will make viewers THWIP with excitement.</p>
+                </figcaption>
+            </figure>
+            <ul>
+                <li>
+                    <strong>BENEDICT CUMBERBATCH</strong>
+                    <p>Doctor Strange returns for No Way Home, stepping in to help Peter cast a dangerous spell. After Peter interrupts the spell, one too many times, things go haywire, and Strange puts it in Peter’s hands to make things right.</p>
+                    <ol>
+                        <li>
+                            <mark>TOM HOLLAND:</mark>
+                            I love Benedict. It's always a pleasure to share the screen with him, so it's a lot of fun to do it again.
+                        </li>
+                        <li>
+                            <mark>ZENDAYA:</mark>
+                            He's very sweet. Just a nice guy to be around. And also, was really cool. I actually have a picture of him skateboarding around the set. I just love seeing Doctor Strange skateboarding.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>jon favreau</strong>
+                    <p>Though Happy Hogan and May were romantically linked during Spider-Man: Far From Home, the opening minutes of No Way Home spell trouble for the couple as they’re in the process of breaking up. But, that doesn’t stop Happy from lending May and Peter his condo when they need a safe place to stay.</p>
+                    <ol>
+                        <li>
+                            <mark>TOM HOLLAND:</mark>
+                            Love Jon Favreau. He is the coolest guy.
+                        </li>
+                        <li>
+                            <mark>ZENDAYA:</mark>
+                            The coolest. And so funny. Such great comedic timing.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>CHARLIE COX</strong>
+                    <p>Does that suit, cane, and glasses combination look familiar? Yes, Charlie Cox is once again playing Matt Murdock, making a surprise appearance to offer Peter, May Parker, and Happy legal advice. And he’s a very good lawyer.</p>
+                    <ol>
+                        <li>
+                            <mark>TOM HOLLAND:</mark>
+                            We had so much fun working with Charlie. It's really interesting doing a scene between two Super Heroes that has no real Super Hero stuff in it. Apart from the bit when he catches the brick. It was awesome.
+                        </li>
+                        <li>
+                            <mark>ZENDAYA:</mark>
+                            I didn't get to be there.
+                        </li>                        
+                        <li>
+                            <mark>TOM HOLLAND:</mark>
+                            You weren't there for that? Oh, you were there for that—
+                        </li>                        
+                        <li>
+                            <mark>ZENDAYA:</mark>
+                            I was there for the behind-the-scenes watching you guys. But I didn't get to be in it.
+                        </li>                        
+                        <li>
+                            <mark>TOM HOLLAND:</mark>
+                            But it was great. I loved working with Charlie.
+                        </li>                            
+                    </ol>
+                </li>
+                <li>
+                    <strong>ALFRED MOLINA</strong>
+                    <p>Last time we saw Doctor Otto Octavius, he was floating in the Hudson River. Well, not anymore. He’s back, and he quickly realizes that this is not the Peter Parker he last remembers fighting.</p>
+                    <ol>
+                        <li>
+                            <mark>ZENDAYA:</mark>
+                            The coolest.
+                        </li>
+                        <li>
+                            <mark>TOM HOLLAND:</mark>
+                            One of the funniest people I've ever met. Like he really makes—
+                        </li>
+                        <li>
+                            <mark>ZENDAYA:</mark>
+                            You love, love Alfred.
+                        </li>
+                        <li>
+                            <mark>TOM HOLLAND:</mark>
+                            Yeah, I had a really good time with Alfred.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>WILLEM DAFOE</strong>
+                    <p>If that cackle sends a chill down your spine, you’re not alone. Returning as Norman Osborn/Green Goblin, Dafoe is downright terrifying — though Peter does think he kinda looks like a green elf at first.</p>
+                    <ol>
+                        <li>
+                            <mark>TOM HOLLAND:</mark>
+                            I've never worked with an actor who was able to give a director so many options. He has this one speech in the film where he's talking about Peter's kind of existential crisis. And he—
+                        </li>
+                        <li>
+                            <mark>ZENDAYA:</mark>
+                            Scared the hell out of everyone, to be honest.
+                        </li>
+                        <li>
+                            <mark>TOM HOLLAND:</mark>
+                            He must have done the scene 30 times and they were all different.
+                        </li>
+                        <li>
+                            <mark>ZENDAYA:</mark>
+                            The coolest thing is that everyone's so lovely, and then they just play these very evil characters. He's so good at just like, just being lovely— you know, ‘Hey how are you?’ And then, [mimics  Green Goblin voice,] like whoa.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>TOBEY MAGUIRE</strong>
+                    <p>Last seen on-screen as Spider-Man in 2007, Maguire’s version of the character enters this Multiverse to help out Holland’s Peter. Now older and wiser, he serves as a Spidey mentor-of-sorts to the young hero.</p>
+                    <ol>
+                        <li>
+                            <mark>TOM HOLLAND:</mark>
+                            Tobey was so funny.
+                        </li>
+                        <li>
+                            <mark>ZENDAYA:</mark>
+                            So cool.
+                        </li>
+                        <li>
+                            <mark>TOM HOLLAND:</mark>
+                            We have so many little in-jokes that came up from working with Tobey. ‘Definitely not your dad.’
+                        </li>
+                        <li>
+                            <mark>ZENDAYA:</mark>
+                            T-McG!
+                        </li>
+                        <li>
+                            <mark>TOM HOLLAND:</mark>
+                            T-McG. Man, he was so funny. He was really excited to be back. You could tell it really meant a lot to him. Him putting the suit on again. Us getting back together. It was awesome.
+                        </li>
+                        <li>
+                            <mark>ZENDAYA:</mark>
+                            That first day, I was nervous for you.
+                        </li>
+                        <li>
+                            <mark>TOM HOLLAND:</mark>
+                            Yeah, I was stressed.
+                        </li>
+                        <li>
+                            <mark>ZENDAYA:</mark>
+                            We had to do a rehearsal, and me and Jacob [Batalon] felt like your parents.
+                        </li>
+                        <li>
+                            <mark>TOM HOLLAND:</mark>
+                            Dropping me off at school?
+                        </li>
+                        <li>
+                            <mark>ZENDAYA:</mark>
+                            Like dropping you off at kindergarten for the first day. Like, ‘I hope the other kids like him.’ And like, ‘I hope he doesn't come back crying.’ And so we were just there, and I was taking pictures of you guys so that you could have it. It was so cute.
+                        </li>
+                        <li>
+                            <mark>TOM HOLLAND:</mark>
+                            You have some amazing pictures of us.
+                        </li>
+                        <li>
+                            <mark>ZENDAYA:</mark>
+                            I do, I do.  But yeah, he was so lovely and hilarious. Unintentionally, sometimes.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>ANDREW GARFIELD</strong>
+                    <p>Last seen on-screen as Spider-Man in 2014, Garfield returns to the character to once again crawl up the walls. Alongside Maguire’s version of the character, Garfield works to help Holland’s Peter with the challenges he’s currently facing.</p>
+                    <ol>
+                        <li>
+                            <mark>TOM HOLLAND:</mark>
+                            Andrew Garfield, the legend himself.  He's such a lovely guy. I think this film was his way of making peace with Spider-Man It was such a privilege to work with him. I know that it meant a lot to him.
+                        </li>
+                        <li>
+                            <mark>ZENDAYA:</mark>
+                            It was so beautiful. [Tobey, Andrew, and Tom] care so deeply about the characters, and what their characters— what their journey had been as Spider-Man. It was so beautiful to see all of you guys connect on that and be able to talk to each other about such a special experience that very few people have been able to don the suit. It was great to see how much you guys all really cared and had each other's back. It was really sweet.
+                        </li>
+                        <li>
+                            <mark>TOM HOLLAND:</mark>
+                            It's like a brotherhood.
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </article>
+        <!--? article section fin -->
+
+        <section>
+            <h2>more news</h2>
+            <ul>
+                <li>
+                    <a href="january5.html">
+                        <figure>
+                            <img src="images/news/movies/news01.png" alt="January 5's New Marvel Comics">
+                            <figcaption>
+                                <dl>
+                                    <dt>January 5's New Marvel Comics: The Full List</dt>
+                                    <dd>COMICS</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="annualPlus.html">
+                        <figure>
+                            <img src="images/news/movies/news02.png" alt="Unlimited Annual Plus">
+                            <figcaption>
+                                <dl>
+                                    <dt>New Year’s Savings on Marvel Unlimited Annual Plus</dt>
+                                    <dd>COMICS</dd>
+                                    <dd>1 DAY AGO</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="bitterSweetEnding.html">
+                        <figure>
+                            <img src="images/news/movies/news03.png" alt="‘Bittersweet' Ending">
+                            <figcaption>
+                                <dl>
+                                    <dt>‘Spider-Man: No Way Home’: Tom Holland and Zendaya on the ‘Bittersweet' Ending</dt>
+                                    <dd>MOVIES</dd>
+                                    <dd>1 DAY AGO</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="for55.html">
+                        <figure>
+                            <img src="images/news/movies/news04.png" alt="Gain a Spider-Verse">
+                            <figcaption>
+                                <dl>
+                                    <dt>Gain a Spider-Verse of Stories for $55</dt>
+                                    <dd>COMICS</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!--? more news Area fin -->
+
+        <figure>
+            <img src="images/footer_banner.png" alt="insider">
+            <figcaption>
+                <dl>
+                    <dt>Marvel Insider</dt>
+                    <dd>Watch, Earn, Redeem!​</dd>
+                    <dd>Get rewarded for doing what you already do as a fan.​</dd>
+                </dl>
+                <a href="insider.html">join now</a>
+                <p>Terms and Conditions Apply.</p>
+            </figcaption>
+        </figure>
+        <!--? insiderArea fin -->
+    </div>
+    <!--? container Area fin -->
+
+    <footer>
+        <div>
+            <h2>
+                <img src="images/logo2.png" alt="footer_logo">
+            </h2>
+            <ul>
+                <li><a href="about.html">about marvel</a></li>
+                <li><a href="help.html">help</a></li>
+                <li><a href="advertising.html">advertising</a></li>
+                <li><a href="internships.html">internships</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://jobs.disneycareers.com/search-jobs/korea/391-28648/1?glat=37.566&glon=126.9784">careers</a></li>
+                <li><a href="https://www.disneyplus.com/brand/marvel?cid=DTCI-Synergy-Marvel-Site-Acquisition-Library-US-Marvel-NA-EN-NavFooter-Marvel_DisneyPlus_NavFooter_Evergreen-NA">disney+</a></li>
+                <li><a href="https://www.marvelhq.com/">marvelHQ.com</a></li>
+                <li><a href="login.html">redeem digital comics</a></li>
+            </ul>
+            <div>
+                <a href="insider.html">
+                    <!-- background -->
+                    <strong>MARVEL INSIDER</strong>
+                    Get Rewarded for Being a Marvel Fan
+                </a>
+                <a href="https://www.marvel.com/unlimited?cid=dcom_navigation_20210909_unlimited_footer">
+                    <!-- background -->
+                    <strong>MARVEL UNLIMITED</strong>
+                    Access Over 29,000+ Digital Comics
+                </a>
+            </div>
+            <div>
+                <h3>FOLLOW MARVEL</h3>
+                <ul>
+                    <!-- bg -->
+                    <li><a href="https://www.facebook.com/marvel">facebook</a></li>
+                    <li><a href="https://www.instagram.com/marvel/">instagram</a></li>
+                    <li><a href="https://www.youtube.com/marvel">youtube</a></li>
+                    <li><a href="https://twitter.com/marvel">twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul>
+            <li><a href="license.html">License Agreement</a></li>
+            <li><a href="insiderTerm.html">Marvel Insider Terms</a></li>
+            <li>ⓒ2021 MARVEL</li>
+        </ul>
+    </footer>
+    <!--? footerArea fin -->
+</body>
+</html>

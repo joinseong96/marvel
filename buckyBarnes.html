@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARVEL</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="loginPanel">
+        <h2>
+            <img src="images/logo.png" alt="marvel logo">
+            <button class="material-icons">close</button>
+        </h2>
+        <form>
+            <input type="email" title="please enter your email." placeholder="Email Address">
+            <input type="password" title="Please enter your PIN number." placeholder="Password">
+            <input type="button" value="login">
+        </form>
+        <a href="#">create an account</a>
+    </div>
+    <!--? loginPaner fin -->
+
+    <div id="joinPanel">
+        <h2>
+            <img src="images/logo.png" alt="marvel logo">
+            <button class="material-icons">close</button>>
+        </h2>
+        <input type="text" title="please enter your first name." placeholder="First Name">
+        <input type="text" title="please enter your last name." placeholder="Last Name">
+        <input type="email" title="please enter your email." placeholder="Email Address">
+        <input type="password" title="Please enter your PIN number." placeholder="Password">
+        <div>
+            <label for="selectMonth">Birth Date</label>
+            <span class="inputSelect">
+                <select class="month" id="selectMonth">
+                    <option selected>month</option>
+                    <option>jan</option>
+                    <option>feb</option>
+                    <option>mar</option>
+                    <option>apr</option>
+                    <option>may</option>
+                    <option>jul</option>
+                    <option>aug</option>
+                    <option>sep</option>
+                    <option>oct</option>
+                    <option>nov</option>
+                    <option>dec</option>
+                </select>
+            </span>
+            <span class="inputSelect">   
+                <select class="day">
+                    <option>day</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+            </span>
+            <span class="inputSelect"> 
+                <select class="year">
+                    <option>year</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                    <option>2002</option>
+                    <option>2001</option>
+                    <option>1999</option>
+                    <option>1998</option>
+                    <option>1997</option>
+                    <option>1996</option>
+                    <option>1995</option>
+                    <option>1994</option>
+                    <option>1993</option>
+                    <option>1992</option>
+                    <option>1991</option>
+                    <option>1990</option>
+                    <option>1989</option>
+                    <option>1988</option>
+                    <option>1987</option>
+                    <option>1986</option>
+                    <option>1985</option>
+                    <option>1984</option>
+                    <option>1983</option>
+                    <option>1982</option>
+                    <option>1981</option>
+                    <option>1980</option>
+                    <option>1979</option>
+                    <option>1978</option>
+                    <option>1977</option>
+                    <option>1976</option>
+                    <option>1975</option>
+                    <option>1974</option>
+                    <option>1973</option>
+                    <option>1972</option>
+                    <option>1971</option>
+                    <option>1970</option>
+                    <option>1969</option>
+                    <option>1968</option>
+                    <option>1967</option>
+                    <option>1966</option>
+                    <option>1965</option>
+                    <option>1964</option>
+                    <option>1963</option>
+                    <option>1962</option>
+                    <option>1961</option>
+                    <option>1960</option>
+                    <option>1959</option>
+                    <option>1958</option>
+                    <option>1957</option>
+                    <option>1956</option>
+                    <option>1955</option>
+                    <option>1954</option>
+                    <option>1953</option>
+                    <option>1952</option>
+                    <option>1951</option>
+                    <option>1950</option>
+                    <option>1949</option>
+                    <option>1948</option>
+                    <option>1947</option>
+                    <option>1946</option>
+                    <option>1945</option>
+                    <option>1944</option>
+                    <option>1943</option>
+                    <option>1942</option>
+                    <option>1941</option>
+                    <option>1940</option>
+                    <option>1939</option>
+                    <option>1938</option>
+                    <option>1937</option>
+                    <option>1936</option>
+                    <option>1935</option>
+                    <option>1934</option>
+                    <option>1933</option>
+                    <option>1932</option>
+                    <option>1931</option>
+                    <option>1930</option>
+                    <option>1929</option>
+                    <option>1928</option>
+                    <option>1927</option>
+                    <option>1926</option>
+                    <option>1925</option>
+                    <option>1924</option>
+                    <option>1923</option>
+                    <option>1922</option>
+                    <option>1921</option>
+                    <option>1920</option>
+                    <option>1919</option>
+                    <option>1918</option>
+                    <option>1917</option>
+                    <option>1916</option>
+                    <option>1915</option>
+                    <option>1914</option>
+                    <option>1913</option>
+                    <option>1912</option>
+                    <option>1911</option>
+                    <option>1910</option>
+                    <option>1909</option>
+                    <option>1908</option>
+                    <option>1907</option>
+                    <option>1906</option>
+                    <option>1905</option>
+                    <option>1904</option>
+                    <option>1903</option>
+                </select>
+            </span>
+        </div>
+        <ul>
+            <li>
+                <input type="checkbox" id="firstCheckbox">
+                <label for="firstCheckbox">
+                    Yes! I would like to receive
+                    updates, special offers, and
+                    other information from Marvel
+                    and The Walt Disney Family
+                    of Companies.
+                </label>
+            </li>
+            <li>
+                <input type="checkbox" id="secondCheckbox">
+                <label for="secondCheckbox">
+                    Yes, I would like to receive
+                    Marvel’s Need To Know new
+                    sletter for news, video/podcast
+                    updates, and more.
+                </label>
+            </li>
+            <li>
+                By creating an account, I agree to the Terms of Use and acknowledge
+                that I have read the Privacy Policy.
+            </li>
+            <li>
+                My home country/region: Korea,
+                Republic of. Change.
+            </li>
+        </ul>
+        <a href="#">create account</a>
+    </div>
+    <!--? joinPanel fin  -->
+    
+    <header class="nonBG">
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/LOGO.png" alt="marvel">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li class="characters">characters
+                        <h2>A recent characters</h2>
+                        <ul>
+                            <li><a href="hawkEyeCharacters.html"><img src="images/characters/hawkEye.png" alt="hawkEye"></a></li>
+                            <li><a href="eterNalsCharacters.html"><img src="images/characters/eternals.png" alt="eternals"></a></li>
+                            <li><a href="starFoxCharacters.html"><img src="images/characters/starFox.png" alt="starFox"></a></li>
+                            <li><a href="ironManCharacters.html"><img src="images/characters/ironMan.png" alt="ironMan"></a></li>
+                            <li><a href="spiderManCharacters.html"><img src="images/characters/spiderMan.png" alt="spiaderMan"></a></li>
+                        </ul>
+                    </li>
+                    <li class="comics">comics
+                        <h2>Popular comics</h2>
+                        <ul>
+                            <li><a href="eterNalsComics.html"><img src="images/comics/eternals.png" alt="eternals"></a></li>
+                            <li><a href="hulkComics.html"><img src="images/comics/hulk.png" alt="hulk"></a></li>
+                            <li><a href="spiderManComics.html"><img src="images/comics/spiderman.png" alt="spiderman"></a></li>
+                            <li><a href="thingComics.html"><img src="images/comics/thing.png" alt="thing"></a></li>
+                        </ul>
+                    </li>
+                    <li class="movies">movies
+                        <h2>movies</h2>
+                        <ul>
+                            <li><a href="avenersMovies.html"><img src="images/movies/avengers.png" alt="avengers"></a></li>
+                            <li><a href="blackWidowMovies.html"><img src="images/movies/blackWidow.png" alt="blackWidow"></a></li>
+                            <li><a href="eternalsMovies.html"><img src="images/movies/eternals.png" alt="eternals"></a></li>
+                            <li><a href="shanchiMovies.html"><img src="images/movies/shangchi.png" alt="shangchi"></a></li>
+                            <li><a href="spiderManMovies.html"><img src="images/movies/spiderMan.png" alt="spiderMan"></a></li>
+                        </ul>
+                    </li>
+                    <li class="news">news
+                        <h2>trending news</h2>
+                        <ul>
+                            <li>
+                                <a href="moviesNews.html">
+                                    <figure>
+                                        <img src="images/news/movies.png" alt="spiderManMoviesnews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>movies</dt>
+                                                <dd>‘Spider-Man: No Way Home’: Tom Holland and Zendaya on New and Returning Surprise Characters</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="comicsNews.html">
+                                    <figure>
+                                        <img src="images/news/comics.png" alt="hulkComicsNews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>COMICS</dt>
+                                                <dd>Hulk's Rage Meets Thor's Thunder in Epic New Crossover</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tvShowNews.html">
+                                    <figure>
+                                        <img src="images/news/tvShows.png" alt="hawkEyeTvShowsNews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>TV SHOWS</dt>
+                                                <dd>‘Hawkeye’: Laura Barton’s Reveal and Keeping Christmas Alive at the Farm House</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="gamesNews.html">
+                                    <figure>
+                                        <img src="images/news/games.png" alt="guardiansGamesNews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>GAMES</dt>
+                                                <dd>Latest Trailer from Marvel's Guardians of the Galaxy Reveals a Mysterious Past...and Future?</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="more">more
+                        <h2>more</h2>
+                        <ul>
+                            <li>
+                                <a href="cultureMore.html">
+                                    <figure>
+                                        <img src="images/more/culture.png" alt="culture">
+                                            <figcaption>
+                                                culture
+                                            </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="booksMore.html">
+                                    <figure>
+                                        <img src="images/more/books.png" alt="books">
+                                            <figcaption>
+                                                books
+                                            </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sideContainer">
+                <a class="material-icons">search</a>
+                <input type="button" value="login" data-callPopup="loginPanel">
+                <input type="button" value="join in" data-callPopup="joinPanel">
+            </div>
+        </div>
+    </header>
+    <!--? header fin -->
+
+    <div class="avengersNewsList">
+        <h2>newws list</h2>
+        <article>
+            <div>
+                <strong>TV SHOWS</strong>
+                <mark>Published March 12, 2021</mark>
+            </div>
+            <h3>‘The Falcon and The Winter Soldier’ Primer: Where We Last Left Off with Bucky Barnes
+                <small>Let’s catch up with the Avenger before the March 19 premiere on Disney+!</small>
+            </h3>
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/detail/firstNews01.jpg" alt="winterSoldier">
+                        <figcaption>
+                            <p>Before he teams up with his “frenemy” Sam Wilson (Falcon), Bucky Barnes (Winter Soldier) had one of the most tumultuous pasts of any hero in the Marvel Cinematic Universe. Let’s take a look at what led to the Winter Soldier becoming a hero in a world without Captain America.</p>
+                            <p>James “Bucky” Buchanan Barnes made his debut when he saved his best friend, a pre-Super Soldier Steve Rogers from a bully’s attack. Later, as Bucky was about to ship out to Europe to fight for the U.S. in World War II, he had one last night out with his pal at the New York World’s Fair. As Bucky said his goodbyes, he didn’t realize Steve was mere moments away from changing both their lives. </p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/detail/firstNews02.jpg" alt="winterSoldier">
+                        <figcaption>
+                            <p>When the Soldier seemed to have Cap defeated, Steve tried to get through to his former friend, hoping to jog his memory of their shared past together. Cap uttered, “I’m with you to the end of the line,” a phrase Bucky said to Steve decades ago after Steve’s mother passed away.</p>
+                            <p>The phrase helped trigger something in Bucky, and he began to remember bits of who he was. These flashes of memories prompted him to save Steve from drowning after they fell into the Potomac from the now destroyed Helicarrier. Still trying to understand what had happened to him, Bucky left Steve Rogers onshore and disappeared, last seen looking at his own image, of his former life, in a museum exhibit.</p>
+                            <p>Bucky hid in Bucharest, but his sabbatical was short-lived after Zemo framed him for the bombing during the Sokovia Accords signing in Vienna — but Cap, Falcon, and the government were able to track him down. He was eventually captured thanks to the interference of T’Challa, the Black Panther, whose father, King T’Chaka, perished in the blast.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/detail/firstNews03.jpg" alt="winterSoldier">
+                        <figcaption>
+                            <p>Thanks to the sacrifice of Sam Wilson (Falcon), Wanda Maximoff, Scott Lang (Ant-Man), and Clint Barton (Hawkeye), Bucky and Steve were able to get to the Quinjet and head to Siberia, where they met up with Tony Stark, who called for a truce. It is here that Zemo revealed his actual plan—to fracture and dismantle the Avengers. He played the three heroes a tape showing the murder of Howard and Maria Stark, Tony’s parents, by a brainwashed Winter Soldier. It was too much for Tony, and he attacked both Bucky and Steve in a passioned rage. The fight ended with Iron Man’s armor destroyed, Cap’s shield abandoned, and Bucky’s arm destroyed. Finding asylum in Wakanda, T’Challa and Steve placed Bucky back in stasis until they can find a cure for the Winter Soldier programming. </p>
+                            <p>Luckily for Bucky, Wakanda had arguably the smartest person in the world as part of the Royal Family, as Shuri freed him of his programming and helped him find a semblance of peace.</p>
+                            <p>This peace would be short-lived as Bucky, with a new Vibranium arm from T’Challa, joined Cap’s Avengers as they defended Wakanda from Thanos’ forces. It was all for naught, as the Avengers failed to prevent Thanos from gathering all the Infinity Stones. The ensuing “Snap” caused Bucky, along with multiple other heroes, and half of the universe to disappear from existence.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/detail/firstNews04.jpg" alt="winterSoldier">
+                        <figcaption>
+                            <p>Even though it took five years, the Avengers didn’t give up and reversed the events of the Blip, resulting in the return of half of the universe, including Bucky Barnes.</p>
+                            <p>After defeating Thanos, Cap returned the time-displaced Infinity Stones to their rightful places. Before he headed to the Quantum Realm, Steve had a heartfelt goodbye with his best friend, because Bucky knew what was about to happen. </p>
+                            <p>When Cap didn’t return to their scheduled spot, Bucky points to the nearby lake where an older gentleman sat quietly. He urged Sam to approach the man, a much older Cap who decided to get that life “Tony always talked about having.” Giving his blessing, Bucky watched as Steve presented Sam with his Captain America shield.</p>
+                            <p>To see where Bucky and Sam's stories go from here, watch Marvel Studios’ The Falcon and The Winter Soldier, premiering March 19 on Disney+!</p>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </article>
+    </div>
+    <!-- ? list fin -->
+
+    <footer>
+        <div>
+            <h2>
+                <img src="images/logo2.png" alt="footer_logo">
+            </h2>
+            <ul>
+                <li><a href="about.html">about marvel</a></li>
+                <li><a href="help.html">help</a></li>
+                <li><a href="advertising.html">advertising</a></li>
+                <li><a href="internships.html">internships</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://jobs.disneycareers.com/search-jobs/korea/391-28648/1?glat=37.566&glon=126.9784">careers</a></li>
+                <li><a href="https://www.disneyplus.com/brand/marvel?cid=DTCI-Synergy-Marvel-Site-Acquisition-Library-US-Marvel-NA-EN-NavFooter-Marvel_DisneyPlus_NavFooter_Evergreen-NA">disney+</a></li>
+                <li><a href="https://www.marvelhq.com/">marvelHQ.com</a></li>
+                <li><a href="login.html">redeem digital comics</a></li>
+            </ul>
+            <div>
+                <a href="insider.html">
+                    <!-- background -->
+                    <strong>MARVEL INSIDER</strong>
+                    Get Rewarded for Being a Marvel Fan
+                </a>
+                <a href="https://www.marvel.com/unlimited?cid=dcom_navigation_20210909_unlimited_footer">
+                    <!-- background -->
+                    <strong>MARVEL UNLIMITED</strong>
+                    Access Over 29,000+ Digital Comics
+                </a>
+            </div>
+            <div>
+                <h3>FOLLOW MARVEL</h3>
+                <ul>
+                    <!-- bg -->
+                    <li><a href="https://www.facebook.com/marvel">facebook</a></li>
+                    <li><a href="https://www.instagram.com/marvel/">instagram</a></li>
+                    <li><a href="https://www.youtube.com/marvel">youtube</a></li>
+                    <li><a href="https://twitter.com/marvel">twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul>
+            <li><a href="license.html">License Agreement</a></li>
+            <li><a href="insiderTerm.html">Marvel Insider Terms</a></li>
+            <li>ⓒ2021 MARVEL</li>
+        </ul>
+    </footer>
+    <!--? footerArea fin -->
+</body>
+</html>

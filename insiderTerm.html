@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARVEL</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="loginPanel">
+        <h2>
+            <img src="images/logo.png" alt="marvel logo">
+            <button class="material-icons">close</button>
+        </h2>
+        <form>
+            <input type="email" title="please enter your email." placeholder="Email Address">
+            <input type="password" title="Please enter your PIN number." placeholder="Password">
+            <input type="button" value="login">
+        </form>
+        <a href="#">create an account</a>
+    </div>
+    <!--? loginPaner fin -->
+
+    <div id="joinPanel">
+        <h2>
+            <img src="images/logo.png" alt="marvel logo">
+            <button class="material-icons">close</button>>
+        </h2>
+        <input type="text" title="please enter your first name." placeholder="First Name">
+        <input type="text" title="please enter your last name." placeholder="Last Name">
+        <input type="email" title="please enter your email." placeholder="Email Address">
+        <input type="password" title="Please enter your PIN number." placeholder="Password">
+        <div>
+            <label for="selectMonth">Birth Date</label>
+            <span class="inputSelect">
+                <select class="month" id="selectMonth">
+                    <option selected>month</option>
+                    <option>jan</option>
+                    <option>feb</option>
+                    <option>mar</option>
+                    <option>apr</option>
+                    <option>may</option>
+                    <option>jul</option>
+                    <option>aug</option>
+                    <option>sep</option>
+                    <option>oct</option>
+                    <option>nov</option>
+                    <option>dec</option>
+                </select>
+            </span>
+            <span class="inputSelect">   
+                <select class="day">
+                    <option>day</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+            </span>
+            <span class="inputSelect"> 
+                <select class="year">
+                    <option>year</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                    <option>2002</option>
+                    <option>2001</option>
+                    <option>1999</option>
+                    <option>1998</option>
+                    <option>1997</option>
+                    <option>1996</option>
+                    <option>1995</option>
+                    <option>1994</option>
+                    <option>1993</option>
+                    <option>1992</option>
+                    <option>1991</option>
+                    <option>1990</option>
+                    <option>1989</option>
+                    <option>1988</option>
+                    <option>1987</option>
+                    <option>1986</option>
+                    <option>1985</option>
+                    <option>1984</option>
+                    <option>1983</option>
+                    <option>1982</option>
+                    <option>1981</option>
+                    <option>1980</option>
+                    <option>1979</option>
+                    <option>1978</option>
+                    <option>1977</option>
+                    <option>1976</option>
+                    <option>1975</option>
+                    <option>1974</option>
+                    <option>1973</option>
+                    <option>1972</option>
+                    <option>1971</option>
+                    <option>1970</option>
+                    <option>1969</option>
+                    <option>1968</option>
+                    <option>1967</option>
+                    <option>1966</option>
+                    <option>1965</option>
+                    <option>1964</option>
+                    <option>1963</option>
+                    <option>1962</option>
+                    <option>1961</option>
+                    <option>1960</option>
+                    <option>1959</option>
+                    <option>1958</option>
+                    <option>1957</option>
+                    <option>1956</option>
+                    <option>1955</option>
+                    <option>1954</option>
+                    <option>1953</option>
+                    <option>1952</option>
+                    <option>1951</option>
+                    <option>1950</option>
+                    <option>1949</option>
+                    <option>1948</option>
+                    <option>1947</option>
+                    <option>1946</option>
+                    <option>1945</option>
+                    <option>1944</option>
+                    <option>1943</option>
+                    <option>1942</option>
+                    <option>1941</option>
+                    <option>1940</option>
+                    <option>1939</option>
+                    <option>1938</option>
+                    <option>1937</option>
+                    <option>1936</option>
+                    <option>1935</option>
+                    <option>1934</option>
+                    <option>1933</option>
+                    <option>1932</option>
+                    <option>1931</option>
+                    <option>1930</option>
+                    <option>1929</option>
+                    <option>1928</option>
+                    <option>1927</option>
+                    <option>1926</option>
+                    <option>1925</option>
+                    <option>1924</option>
+                    <option>1923</option>
+                    <option>1922</option>
+                    <option>1921</option>
+                    <option>1920</option>
+                    <option>1919</option>
+                    <option>1918</option>
+                    <option>1917</option>
+                    <option>1916</option>
+                    <option>1915</option>
+                    <option>1914</option>
+                    <option>1913</option>
+                    <option>1912</option>
+                    <option>1911</option>
+                    <option>1910</option>
+                    <option>1909</option>
+                    <option>1908</option>
+                    <option>1907</option>
+                    <option>1906</option>
+                    <option>1905</option>
+                    <option>1904</option>
+                    <option>1903</option>
+                </select>
+            </span>
+        </div>
+        <ul>
+            <li>
+                <input type="checkbox" id="firstCheckbox">
+                <label for="firstCheckbox">
+                    Yes! I would like to receive
+                    updates, special offers, and
+                    other information from Marvel
+                    and The Walt Disney Family
+                    of Companies.
+                </label>
+            </li>
+            <li>
+                <input type="checkbox" id="secondCheckbox">
+                <label for="secondCheckbox">
+                    Yes, I would like to receive
+                    Marvel’s Need To Know new
+                    sletter for news, video/podcast
+                    updates, and more.
+                </label>
+            </li>
+            <li>
+                By creating an account, I agree to the Terms of Use and acknowledge
+                that I have read the Privacy Policy.
+            </li>
+            <li>
+                My home country/region: Korea,
+                Republic of. Change.
+            </li>
+        </ul>
+        <a href="#">create account</a>
+    </div>
+    <!--? joinPanel fin  -->
+    
+    <header class="nonBG">
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/LOGO.png" alt="marvel">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li class="characters">characters
+                        <h2>A recent characters</h2>
+                        <ul>
+                            <li><a href="hawkEyeCharacters.html"><img src="images/characters/hawkEye.png" alt="hawkEye"></a></li>
+                            <li><a href="eterNalsCharacters.html"><img src="images/characters/eternals.png" alt="eternals"></a></li>
+                            <li><a href="starFoxCharacters.html"><img src="images/characters/starFox.png" alt="starFox"></a></li>
+                            <li><a href="ironManCharacters.html"><img src="images/characters/ironMan.png" alt="ironMan"></a></li>
+                            <li><a href="spiderManCharacters.html"><img src="images/characters/spiderMan.png" alt="spiaderMan"></a></li>
+                        </ul>
+                    </li>
+                    <li class="comics">comics
+                        <h2>Popular comics</h2>
+                        <ul>
+                            <li><a href="eterNalsComics.html"><img src="images/comics/eternals.png" alt="eternals"></a></li>
+                            <li><a href="hulkComics.html"><img src="images/comics/hulk.png" alt="hulk"></a></li>
+                            <li><a href="spiderManComics.html"><img src="images/comics/spiderman.png" alt="spiderman"></a></li>
+                            <li><a href="thingComics.html"><img src="images/comics/thing.png" alt="thing"></a></li>
+                        </ul>
+                    </li>
+                    <li class="movies">movies
+                        <h2>movies</h2>
+                        <ul>
+                            <li><a href="avenersMovies.html"><img src="images/movies/avengers.png" alt="avengers"></a></li>
+                            <li><a href="blackWidowMovies.html"><img src="images/movies/blackWidow.png" alt="blackWidow"></a></li>
+                            <li><a href="eternalsMovies.html"><img src="images/movies/eternals.png" alt="eternals"></a></li>
+                            <li><a href="shanchiMovies.html"><img src="images/movies/shangchi.png" alt="shangchi"></a></li>
+                            <li><a href="spiderManMovies.html"><img src="images/movies/spiderMan.png" alt="spiderMan"></a></li>
+                        </ul>
+                    </li>
+                    <li class="news">news
+                        <h2>trending news</h2>
+                        <ul>
+                            <li>
+                                <a href="moviesNews.html">
+                                    <figure>
+                                        <img src="images/news/movies.png" alt="spiderManMoviesnews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>movies</dt>
+                                                <dd>‘Spider-Man: No Way Home’: Tom Holland and Zendaya on New and Returning Surprise Characters</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="comicsNews.html">
+                                    <figure>
+                                        <img src="images/news/comics.png" alt="hulkComicsNews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>COMICS</dt>
+                                                <dd>Hulk's Rage Meets Thor's Thunder in Epic New Crossover</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tvShowsNews.html">
+                                    <figure>
+                                        <img src="images/news/tvShows.png" alt="hawkEyeTvShowsNews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>TV SHOWS</dt>
+                                                <dd>‘Hawkeye’: Laura Barton’s Reveal and Keeping Christmas Alive at the Farm House</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="gamesNews.html">
+                                    <figure>
+                                        <img src="images/news/games.png" alt="guardiansGamesNews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>GAMES</dt>
+                                                <dd>Latest Trailer from Marvel's Guardians of the Galaxy Reveals a Mysterious Past...and Future?</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="more">more
+                        <h2>more</h2>
+                        <ul>
+                            <li>
+                                <a href="cultureMore.html">
+                                    <figure>
+                                        <img src="images/more/culture.png" alt="culture">
+                                            <figcaption>
+                                                culture
+                                            </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="booksMore.html">
+                                    <figure>
+                                        <img src="images/more/books.png" alt="books">
+                                            <figcaption>
+                                                books
+                                            </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sideContainer">
+                <a class="material-icons">search</a>
+                <input type="button" value="login" data-callPopup="loginPanel">
+                <input type="button" value="join in" data-callPopup="joinPanel">
+            </div>
+        </div>
+    </header>
+    <!--? header fin -->
+
+    <div class="aboutFotContainer">
+        <h2>MARVEL CORPORATE INFORMATION</h2>
+            <!--! <img src="images/footer/ABOUTMAIN.png" alt="marvel studios"> -->
+        <!--? mainBanner Area fin -->
+
+        <section>
+            <h3>MARVEL INSIDER LOYALTY REWARDS PROGRAM TERMS OF USE</h3>
+            <ul>
+                <li><strong>ACCEPTANCE OF MARVEL INSIDER LOYALTY REWARDS PROGRAM TERMS</strong>IF YOU DO NOT AGREE TO ALL OF THESE MARVEL INSIDER LOYALTY REWARDS PROGRAM TERMS, OR IF YOU ARE NOT ELIGIBLE OR AUTHORIZED TO ENTER INTO THIS AGREEMENT, THEN DO NOT ACCESS, USE OR PARTICIPATE IN THE PROGRAM. COMPLETING THE REGISTRATION PROCESS OR OTHERWISE ACCESSING OR USING ALL OR ANY PART OF THE MARVEL INSIDER LOYALTY REWARDS PROGRAM WILL CONSTITUTE ACCEPTANCE AND CREATE A LEGALLY ENFORCEABLE CONTRACT UNDER WHICH YOU AGREE TO BE BOUND BY ALL OF THE TERMS OF SERVICE, WITHOUT MODIFICATION.
+                    These Marvel Insider Loyalty Rewards Program Terms ("Insider Rewards Terms") were last updated on March 21, 2019 and govern your use of the Marvel Insider Loyalty Rewards Program, including those certain websites and applications that implement the Program  as well as those of our websites, applications, emails and other communications that link to or reference these Insider Rewards Terms (collectively, the “Program”). When we say “you” or “your”, “Marvel Insider”, or “User”, we mean you.  When we say "our", "us", "we" or "Marvel" in these Insider Rewards Terms, we mean Marvel Worldwide, Inc. and its affiliates and subsidiaries. These Insider Rewards Terms are subject to, and shall also include, the Marvel.com Terms of Use, which are incorporated by reference and to which you agree to be bound (click here to read in full).  If any term in the Marvel.com Terms of Use conflicts with or contradicts the Insider Rewards Terms then these Insider Rewards Terms govern with respect to the Program and elements thereof only.  PLEASE READ THESE REWARDS TERMS CAREFULLY BEFORE PARTICIPATING IN THE PROGRAM. 
+                    NOTICE OF ARBITRATION PROVISIONS: Any dispute between you and us must be resolved by individual binding arbitration as set forth in the Marvel.com Terms of Use.  Please read the arbitration provision carefully as it affects your rights. Do not use or participate in the Program if you are unwilling to arbitrate any disputes you may have with us as provided below.
+                    NOTHING IN THESE TERMS IS INTENDED TO AFFECT YOUR RIGHTS UNDER THE LAW IN YOUR USUAL PLACE OF RESIDENCE. IF THERE IS A CONFLICT BETWEEN THOSE RIGHTS AND THESE TERMS, YOUR RIGHTS UNDER APPLICABLE LOCAL LAW WILL PREVAIL.</li>
+                <li><strong>CHANGES TO INSIDER REWARDS TERMS</strong>We reserve the right, at our sole discretion, to modify, add to, or replace the Insider Rewards Terms, in whole or in part, at any time. We will use reasonable efforts to notify you of any material change by posting them to this page and may also notify you by email to the address then associated with your Program account. The updated Insider Rewards Terms will be effective as of the time of posting, or upon such later date or by such other method as specified by Marvel. It is your responsibility to check this page regularly for any changes to the Insider Rewards Terms. If you object to the Insider Rewards Terms or any changes hereto or at any time become dissatisfied with the Program, your sole recourse shall be to cease using the Program. Your continuing use of the Program after notification of any change(s) (including notification by posting) constitutes conclusive evidence of your acknowledgement of the modifications and your agreement to be bound by such change(s).
+                    If any term or change to the Insider Rewards Terms is found invalid, void, or for any reason unenforceable, that term or change is severable and does not affect the validity and enforceability of any remaining terms, changes or conditions, all of which shall remain in full force and effect. Marvel shall not be liable to you in any way for any value or benefits you may lose as a result of any changes made to the Program, including, without limitation, any Rewards Points (defined below) or Rewards (defined below).</li>
+                <li><strong>OVERVIEW</strong>As set forth below, the Program is a US-only customer-rewards program open to all eligible Marvel.com Account (defined below) holders aged 18 years and older. Users who choose to participate in the Program via one of the registration mechanisms described below shall be referred to herein as “Marvel Insiders". Marvel Insiders will be able to earn Rewards Points (defined below) with each Qualifying Activity (defined below) set forth in the Program. Marvel Insiders may then convert their Redeemable Rewards Points (defined below) into Rewards (defined below).</li>
+                <li><strong>GENERAL PROGRAM PARTICIPATION</strong>Eligibility; Restrictions.Membership in, and use of, the Program is limited to persons who are legal residents of all fifty (50) United States, and the District of Columbia (collectively, the “Territory”), who are at least eighteen (18) years of age and who have a valid email address on file. Employees, officers, directors, agents and representatives of Marvel, The Walt Disney Company, and their affiliates are not eligible to participate in the Program. If it is determined at any time, at Marvel’s sole and absolute discretion, that you do not meet the eligibility criteria, your Program account will immediately terminated and all Rewards Points and/or Rewards will be forfeited. The Program is solely for each Marvel Insider's personal, non-commercial use. Corporations, groups, and associations are not eligible. You must have a valid Marvel Insider account on Marvel.com (“Marvel.com Account”) in order to participate in the Program. To sign up for a Marvel.com Account, register. You must maintain a valid email address and promptly update your Marvel.com Account with any changes to your email address or other contact information. The Program is void where prohibited by law. Do not participate in the Program if it is not legal to do so in your jurisdiction. Marvel may limit the number of Program participants and may temporarily or permanently discontinue registering new participants at any time and for any reason without notice to you.
+                    Registration. To become a Marvel Insider, you must complete the registration process by providing Marvel with current, complete and accurate information, as more specifically required by the then-current registration procedures on Marvel.com. By way of illustration and not limitation, prospective Marvel Insiders may be required to provide their name, username, password, legitimate electronic mail address and certain additional information as Marvel determines. Users may apply for registration at the Marvel Insider Homepage. Marvel may refuse to accept any application to register as a Marvel Insider, in its sole discretion. Members shall maintain and update their registration data from time to time, to ensure that it is always current, complete and accurate.
+                    Your Information.  Any information you provide in connection with the Program shall be used in accordance with Marvel’s Privacy Policy. In order to complete certain Qualifying Activities (defined below), Marvel Insiders may also elect or be required to provide additional information (for example, access information related to their accounts at social networking sites, such as, for example, Twitter, Facebook, FourSquare and Instagram).
+                    Marketing Messages Marvel may, in its sole discretion, sort Marvel Insiders into different marketing-message groups such that not all Marvel Insiders receive the same marketing messages. You may opt-out of receiving marketing messages from Marvel at any time by reaching out to Marvel Customer Support at help.marvel.com or going to Email Preferences and doing so will not affect your ability to participate in the Program.
+                    Transferability. Membership in the Program, any Rewards Points earned, any Rewards and any other related membership benefits are not transferable and may not be combined or merged with any other Marvel Insider's account or with any other Marvel or Marvel affiliate loyalty program.
+                    Unauthorized Activity and Access. You are solely responsible for keeping your login credentials, email address and password confidential and for all activities that occur on your Marvel.com Account and Program account, including all unauthorized activities. Marvel is entitled to act on instructions it receives if correct login credentials are provided, and in such case Marvel will not be liable for: (i) any Rewards Points, credits, debits, or Rewards redemptions made in connection with your Program account, or (ii) any loss or damage arising from your failure to adequately safeguard your login credentials. You agree to immediately notify Marvel of any unauthorized use of your login credentials or Program account or any other breach of security related to the Program.</li>
+                <li><strong>EARNING REWARDS POINTS THROUGH QUALIFYING ACTIVITIES; CONVERSION OF REDEEMABLE REWARDS POINTS INTO REWARDS</strong>The Program includes two elements: Rewards Points and Rewards. “Rewards Points” are defined, collectively, as the following three categories of points:
+                    <ul>
+                        <li>“Redeemable Rewards Points”: points accumulated through the completion of various Qualifying Activities (defined below) that are then redeemable for digital and/or physical rewards that are offered by Marvel to Marvel Insiders from time to time as part of the Program ("Rewards"). The number of Redeemable Rewards Points decreases with each reward you redeem. Redeemable Rewards Points balance carries over from year to year.</li>
+                        <li>“Lifetime Rewards Points”: the total number of Redeemable Rewards Points accumulated by a Marvel Insider during the lifetime of the Marvel Insider’s participation in the Program (whether or not such Redeemable Rewards Points have been redeemed for Rewards).</li>
+                        <li>“Fan Level Points”: points accumulated through the completion of various Qualifying Activities that are then used to calculate the applicable Membership Level (defined below)</li>
+                    </ul>Earning Rewards Points. "Rewards Points" will be earned for performing the qualifying activities designated by Marvel as part of the Program (such as, for example: by registering for the Program; by engaging in certain specified activities such as visiting or watching videos; by engaging in certain specified activities related to social networks; by checking in at a movie theater et al.) (each a "Qualifying Activity").  Rewards Points will appear in your Program following (usually within forty-eight (48) hours) completion of a Qualifying Activity. The conduct that constitutes a Qualifying Activity and/or the number of Rewards Points earned for such Qualifying Activity may be changed by Marvel from time to time, in its sole discretion. Also, Marvel may offer Rewards Points for engaging in a Qualifying Activity under one set of rules for one promotion, and may opt not to offer Rewards Points for engaging in that same activity under a subsequent or previous promotion. The current schedule of Qualifying Activities and the number of Rewards Points that may be earned for performing each is available HERE.You acknowledge and agree that: (i) Marvel's ability to accurately credit Rewards Points to your account based on your activities at third party sites, apps, locations, et al. (e.g., social networking sites) may be restricted by such third party’s terms, conditions or functions; (ii) Rewards Points are not valid unless earned in strict compliance with the requirements set forth by Marvel, and you shall not attempt to earn Points by any means (including without limitation, by using any script, bot or other automated means) that only simulates compliance with the applicable requirements; and (iii) Marvel's good faith determination of the amount of Rewards Points available to any Marvel Insider hereunder shall be final and binding.Any Rewards Points you earn are considered a limited, non-exclusive, revocable, non-assignable, personal, and non-transferable right solely for: (i) use towards the earning of Rewards and/or (ii) attaining a Membership Level (defined below), in accordance with these Insider Rewards Terms. Accordingly, you have no property, proprietary, intellectual property, ownership, or monetary interest in your Rewards Points, which remain Marvel property at all times. Rewards Points do not have any monetary or cash value and they may not be redeemed with us or any third party for cash or any cash equivalent except under the Program. Rewards Points are not transferable and cannot be combined with other offers or with another Marvel Insider's Rewards Points or Rewards. Rewards Points are not your personal property, and are not descendible, may not be inherited, bartered, purchased or sold to any third party. Any attempt to combine or transfer Rewards Points will result in disqualification from the Program and forfeiture of all Rewards Points in the Marvel Insider's Program account.Expiration of Redeemable Rewards Points. Unless otherwise specified, all Redeemable Rewards Points will expire twelve (12) months following the later of: (i) the date on which you were last logged into marvel.com and (ii) the date on which you redeem your Redeemable Rewards Points. Lifetime Rewards Points do not expire.Expiration of Fan Level Points. Fan Level Points will expire on December 31st of each calendar year.Promotional Redeemable Rewards Points. Marvel may from time to time conduct special promotions that include one or more offers for individual or specific Marvel Insiders to earn Redeemable Rewards Points through the completion of certain activities, or may offer all Marvel Insiders a one-time opportunity to earn special promotional Redeemable Rewards Points ("Promotional Redeemable Rewards Points"). The details of any such promotion, including a description of the conduct required, the number of Promotional Redeemable Rewards Points available and the expiration date of the corresponding Promotional Redeemable Rewards Points, will be communicated via the terms and conditions communicated to the eligible Marvel Insider(s) by email or in another communication from Marvel. If no special expiration date is provided in the description or terms and conditions of the offer for Promotional Redeemable Rewards Points, Promotional Redeemable Rewards Points shall expire as set forth in the "Expiration of Redeemable Rewards Points" Section above as if they were not Promotional Redeemable Rewards Points.</li>
+                <li><strong>REDEEMING REDEEMABLE REWARDS POINTS</strong>Redeemable Rewards Points are redeemable only on Marvel.com and other (including third party) websites, apps or platforms designated by Marvel (collectively, the “Redemption Sites”). Redeemable Rewards Points will not be automatically applied to applicable transactions; you must affirmatively apply Redeemable Rewards Points as set forth on the Rewards page. Redeemable Rewards Points or offers to redeem Rewards may be subject to additional terms and conditions (including expiration) as well as the terms, conditions, and other policies of the Redemption Sites. You are solely responsible for all federal, state and local taxes and any other costs or expenses of accepting and using Rewards. Expired Rewards cannot be reinstated.Rewards are subject to change, availability, and other terms and conditions as may be communicated from time to time on the Rewards page, prior to and/or upon redemption.Other exclusions and restrictions may apply in connection with specific Qualifying Activities and/or Rewards and will be communicated with any Reward-specific offer.</li>
+                <li><strong>FAN LEVEL POINTS AND MEMBERSHIP LEVELS</strong>The number of Fan Level Points accrued per calendar year (January 1 - December 31) is used to determine your level of membership in the Program (“Membership Level”). There are four Membership Levels:</li>
+                <li>
+                    <strong>REWARDS POINTS DEDUCTIONS</strong>The following actions will decrease your Fan Level Points, Redeemable Rewards Points, and Lifetime Rewards Points balances:
+                    <ul>
+                        <li>Disconnecting your your social media account (e.g., Facebook, Twitter, Instagram and/or Foursquare account) from your Member Profile  page</li>
+                        <li>If you have not logged into Marvel Insider in a 365 day period.</li>
+                        <li>If it is concluded that you have gained points by violating the terms and conditions of the Marvel Insider program, those points will be removed from your account (and your account is subject to termination as set forth below).</li>
+                    </ul>
+                    Please note that if the number of Redeemable Rewards Points that is deducted from your account exceeds your then-current Redeemable Rewards Points balance, your Redeemable Rewards Points balance may fall into a negative state.In the event that, within a calendar year, you lose Fan Level Points after reaching a Membership Level, you will remain at that Membership Level until you earn the requisite points to reach the next Membership Level, including earning back any points lost.</li>
+                <li><strong>THIRD PARTY PROMOTIONS</strong>Any dealings, promotions, transactions, et al. by and between Marvel Insiders, third party advertisers and other third party vendors (collectively, “Program Affiliates”) via the Program, or participation in promotions, including the delivery of and the payment for goods and services, and any other terms, conditions, warranties, or representations associated with such dealings, are solely between the Marvel Insider and Program Affiliate or other third party. Marvel is not responsible or liable for any part of any such dealings or promotions.</li>
+                <li><strong>THIRD PARTY SITES</strong>The Program may link to other websites, services and/or applications on the Internet. These other services are not under Marvel's control, and you acknowledge and agree that we are not responsible for the accuracy, legality, appropriateness or any other aspect of the content or function of such services. The inclusion of any such link does not imply endorsement of the website by Marvel or any association with its operators. Additional or different terms and conditions and privacy/data use policies/statements may apply when you access and use such other websites.</li>
+                <li>
+                    <strong>INSIDER RULES AND CONDUCT</strong>As a condition of use, you hereby promise that you will not use the Program for any purpose that is unlawful, commercial in nature (such as, for example, raising money for anyone, advertising or promoting any product, service, pyramid scheme or other venture) or prohibited by these Insider Rewards Terms or any other agreement, or any other purpose not reasonably intended by Marvel. You agree to abide by all applicable local, state, national and international laws, regulations and rules. Without limiting the foregoing, you shall not use the Program for the purpose of money laundering, bid rigging, price fixing or other unlawful collusion, price signaling or exchange of competitively sensitive data or information.
+                    By way of example, and not limitation, you agree not to (a) take any action or (b) upload, post, submit or otherwise distribute or facilitate distribution of any content (including text, communications, software, photographs, videos, sound recordings, data or other information) using any communications service, discussion forum, directory, survey, feedback or other service available on or through the Program, in any manner, that:
+                    <ul>
+                        <li>is unlawful, deceptive, misleading, fraudulent, threatening, abusive, harassing, libelous, invasive of another's privacy, tortious, obscene, profane or which otherwise violates the Insider Rewards Terms, Marvel.com Terms of Use or any other agreement;</li>
+                        <li>infringes any patent, trademark, trade secret, copyright, right of publicity, privacy right or other right of any party;</li>
+                        <li>reveals any personal information about another individual, including another person's name, address, phone number, electronic mail address, credit card information or any other information that could be used to track, contact or impersonate that person;</li>
+                        <li>constitutes unauthorized or unsolicited advertising, junk or bulk e-mail ("spamming"), chain letters or any form of lottery or gambling;</li>
+                        <li>imposes an unreasonable or disproportionately large load on Marvel's computing, storage or communications infrastructure, or attempts to gain unauthorized access to the Program, other accounts, computer systems or networks connected to the Program, through password mining or otherwise;</li>
+                        <li>contains software viruses or any other computer codes, files, or programs that are designed or intended to disrupt, damage, limit or interfere with the proper function of any software, hardware or network system or to damage or obtain unauthorized access to any system, data or other information of Marvel or any third party;</li>
+                        <li>creates Marvel Insider accounts by any automated means or under false or misleading pretenses;</li>
+                        <li>harvests, scrapes or collects any information from the Program;</li>
+                        <li>disguises the source of content posted; or</li>
+                        <li>impersonates any person or entity, including any employee or representative of Marvel or any Program Affiliate.</li>
+                    </ul>
+                </li>
+                <li><strong>LOSS OF REWARDS POINTS AND REWARDS; TERMINATION OF YOUR PARTICIPATION IN THE PROGRAM</strong>You are responsible for regularly checking your Program account and ensuring the accuracy of your Rewards Points totals and must notify Marvel via help.marvel.com of your good faith belief of any omission, incorrect entry or other discrepancy within thirty (30) days of its occurrence. Redeemable Rewards Points subsequently determined, in the sole discretion of Marvel, to be invalid, will be removed from a Marvel Insider's Rewards Point accumulation total.
+                    Marvel may revoke your ability to participate in the Program due to: (i) your abuse of the Program, including, without limitation, your use of any  automated means to participate in the Program or to earn Redeemable Rewards Points; (ii) your failure to follow the Insider Rewards Terms, the Marvel.com Terms of Use, the Marvel Digital Comics License Agreement, the Marvel Unlimited Subscriber Agreement, and any other terms and conditions applicable to the Program; (iii) the attempted or actual sale of any of your Redeemable Rewards Points, Rewards, or your Program account; (iv) any misrepresentation by you; (v) suspension or termination of your Program account; (vi) any suspected illegal or fraudulent activity; (vii) any violation of the Marvel Insider Conduct and Rules set forth above or (viii) any other conduct deemed by Marvel, in its sole discretion, to be an abuse of the Program, to be detrimental to the interests of Marvel, its parents, subsidiaries, affiliates, licensees, suppliers, or its customers, or to be otherwise improper. If your ability to participate in the Program is revoked, any unused Redeemable Rewards Points or Rewards will automatically expire and be forfeited and your future participation in the Program shall be prohibited, to the extent permitted by law. In addition, Marvel will have the right to take administrative or legal action as it deems appropriate.
+                    Marvel is not responsible for Redeemable Rewards Points or Rewards that expire or are lost or redeemed due to illegal, fraudulent or unauthorized activity.
+                    You agree to abide by the final and binding decisions of Marvel regarding the Program and your participation in it. Marvel is the sole arbiter of all issues relating to the Program, including a decision to remove Rewards Points or Rewards or to deny Rewards Points, and all of Marvel's decisions relating to the Program are final.
+                    Terminating Your Program Participation.  If at any time you no longer wish to participate in the Program, you may terminate your Program account by reaching out to Marvel Customer Support at help.marvel.com. Note that terminating your Program account will not affect your Marvel.com Account or access to any entitlements (e.g., digital comics, Marvel Unlimited) that may be associated with that account.
+                    Further, since having a Marvel.com Account is a requirement in order to participate in the Program, termination of your Marvel.com Account (either by you or by Marvel) will result in the automatic termination of your participation in the Program. Termination of your Marvel.com Account (either by you or by Marvel) will result in the forfeiture of any Redeemable Rewards Points and Rewards then associated with your Program account. If you later elect to reenroll in Marvel Insider, you will have access to the Redeemable Rewards Points and/or Rewards previously associated with your Program account provided that you:  (1) reenroll using the same email address previously associated with your Program account; and (2) in the case of Redeemable Rewards Points, reenroll before your Redeemable Rewards Points expire (as set forth in Expiration of Redeemable Rewards Points).  If you do not reenroll in accordance with the foregoing (i) and (ii), your beginning balance of Redeemable Rewards Points will be zero and you may not have access to certain Rewards previously associated with your Program account.</li>
+                <li><strong>MODIFICATION, SUSPENSION OR TERMINATION OF PROGRAM</strong>We reserve the right, in our sole discretion and at any time, without prior notice, to modify, suspend or terminate any or all aspects of the Program, including, without limitation: (i) the ability to earn and redeem Redeemable Rewards Points and the number of Redeemable Rewards Points earned through Qualifying Activities or promotions, (ii) offer additional or new Qualifying Activities for a limited time or permanently, (iii) limit the number of times or frequency a Marvel Insider may earn Redeemable Rewards Points for engaging in a Qualifying Activity or engaging in the activity during a specific time period, (iv) offer Redeemable Rewards Points earning opportunities to select groups of Marvel Insiders, (v) redemption and conversion requirements, (vi) Reward values and amounts, (vii) for the available Rewards, (viii) the mechanism for redeeming Rewards, and (ix) the Insider Rewards Terms.
+                    Any Redeemable Rewards Points remaining in your Program account thirty (30) days after the Program stops operating will be forfeited without compensation. Marvel makes no guarantee or representation as to the length of time during which the Program will be offered, and the Program could end at any time. Marvel Insiders will have thirty (30) days after the Program end date (or the specific number of days noted in the Program ending announcement) during which to redeem any remaining Redeemable Rewards Points in your Program account. After such thirty (30) day period, all Redeemable Rewards Points will expire and the Program will no longer be available, and no further liability will be owed by us to any Marvel Insider.</li>
+                <li><strong>DISPUTES</strong>All questions or disputes regarding eligibility for the Program, collecting or redemption of Redeemable Rewards Points or Rewards, or your compliance with the Insider Rewards Terms will be resolved by Marvel, in its sole and absolute discretion. All Rewards Points and Rewards redemptions are final. Redeemable Rewards Points will not be refunded or placed back in a Marvel Insider's quantity of Redeemable Rewards Points for any reason after redemption has been made, including, if you return the item purchased using your Reward.</li>
+                <li><strong>PROGRAM ACCOUNT ACTIVITY; CONTACT US</strong>Information about your Program account activity can be accessed online here when logged in with your login credentials. Information includes, but is not limited to, your Rewards Points, Rewards and expiration dates. For information about your Program membership, reach out to Marvel Customer Support at help.marvel.com.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <div>
+            <h2>
+                <img src="images/logo2.png" alt="footer_logo">
+            </h2>
+            <ul>
+                <li><a href="about.html">about marvel</a></li>
+                <li><a href="help.html">help</a></li>
+                <li><a href="advertising.html">advertising</a></li>
+                <li><a href="internships.html">internships</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://jobs.disneycareers.com/search-jobs/korea/391-28648/1?glat=37.566&glon=126.9784">careers</a></li>
+                <li><a href="https://www.disneyplus.com/brand/marvel?cid=DTCI-Synergy-Marvel-Site-Acquisition-Library-US-Marvel-NA-EN-NavFooter-Marvel_DisneyPlus_NavFooter_Evergreen-NA">disney+</a></li>
+                <li><a href="https://www.marvelhq.com/">marvelHQ.com</a></li>
+                <li><a href="login.html">redeem digital comics</a></li>
+            </ul>
+            <div>
+                <a href="insider.html">
+                    <!-- background -->
+                    <strong>MARVEL INSIDER</strong>
+                    Get Rewarded for Being a Marvel Fan
+                </a>
+                <a href="https://www.marvel.com/unlimited?cid=dcom_navigation_20210909_unlimited_footer">
+                    <!-- background -->
+                    <strong>MARVEL UNLIMITED</strong>
+                    Access Over 29,000+ Digital Comics
+                </a>
+            </div>
+            <div>
+                <h3>FOLLOW MARVEL</h3>
+                <ul>
+                    <!-- bg -->
+                    <li><a href="https://www.facebook.com/marvel">facebook</a></li>
+                    <li><a href="https://www.instagram.com/marvel/">instagram</a></li>
+                    <li><a href="https://www.youtube.com/marvel">youtube</a></li>
+                    <li><a href="https://twitter.com/marvel">twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul>
+            <li><a href="license.html">License Agreement</a></li>
+            <li><a href="insiderTerm.html">Marvel Insider Terms</a></li>
+            <li>ⓒ2021 MARVEL</li>
+        </ul>
+    </footer>
+    <!--? footerArea fin -->
+</body>
+</html>

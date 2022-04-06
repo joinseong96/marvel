@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARVEL</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="loginPanel">
+        <h2>
+            <img src="images/logo.png" alt="marvel logo">
+            <button class="material-icons">close</button>
+        </h2>
+        <form>
+            <input type="email" title="please enter your email." placeholder="Email Address">
+            <input type="password" title="Please enter your PIN number." placeholder="Password">
+            <input type="button" value="login">
+        </form>
+        <a href="#">create an account</a>
+    </div>
+    <!--? loginPaner fin -->
+
+    <div id="joinPanel">
+        <h2>
+            <img src="images/logo.png" alt="marvel logo">
+            <button class="material-icons">close</button>>
+        </h2>
+        <input type="text" title="please enter your first name." placeholder="First Name">
+        <input type="text" title="please enter your last name." placeholder="Last Name">
+        <input type="email" title="please enter your email." placeholder="Email Address">
+        <input type="password" title="Please enter your PIN number." placeholder="Password">
+        <div>
+            <label for="selectMonth">Birth Date</label>
+            <span class="inputSelect">
+                <select class="month" id="selectMonth">
+                    <option selected>month</option>
+                    <option>jan</option>
+                    <option>feb</option>
+                    <option>mar</option>
+                    <option>apr</option>
+                    <option>may</option>
+                    <option>jul</option>
+                    <option>aug</option>
+                    <option>sep</option>
+                    <option>oct</option>
+                    <option>nov</option>
+                    <option>dec</option>
+                </select>
+            </span>
+            <span class="inputSelect">   
+                <select class="day">
+                    <option>day</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+            </span>
+            <span class="inputSelect"> 
+                <select class="year">
+                    <option>year</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                    <option>2002</option>
+                    <option>2001</option>
+                    <option>1999</option>
+                    <option>1998</option>
+                    <option>1997</option>
+                    <option>1996</option>
+                    <option>1995</option>
+                    <option>1994</option>
+                    <option>1993</option>
+                    <option>1992</option>
+                    <option>1991</option>
+                    <option>1990</option>
+                    <option>1989</option>
+                    <option>1988</option>
+                    <option>1987</option>
+                    <option>1986</option>
+                    <option>1985</option>
+                    <option>1984</option>
+                    <option>1983</option>
+                    <option>1982</option>
+                    <option>1981</option>
+                    <option>1980</option>
+                    <option>1979</option>
+                    <option>1978</option>
+                    <option>1977</option>
+                    <option>1976</option>
+                    <option>1975</option>
+                    <option>1974</option>
+                    <option>1973</option>
+                    <option>1972</option>
+                    <option>1971</option>
+                    <option>1970</option>
+                    <option>1969</option>
+                    <option>1968</option>
+                    <option>1967</option>
+                    <option>1966</option>
+                    <option>1965</option>
+                    <option>1964</option>
+                    <option>1963</option>
+                    <option>1962</option>
+                    <option>1961</option>
+                    <option>1960</option>
+                    <option>1959</option>
+                    <option>1958</option>
+                    <option>1957</option>
+                    <option>1956</option>
+                    <option>1955</option>
+                    <option>1954</option>
+                    <option>1953</option>
+                    <option>1952</option>
+                    <option>1951</option>
+                    <option>1950</option>
+                    <option>1949</option>
+                    <option>1948</option>
+                    <option>1947</option>
+                    <option>1946</option>
+                    <option>1945</option>
+                    <option>1944</option>
+                    <option>1943</option>
+                    <option>1942</option>
+                    <option>1941</option>
+                    <option>1940</option>
+                    <option>1939</option>
+                    <option>1938</option>
+                    <option>1937</option>
+                    <option>1936</option>
+                    <option>1935</option>
+                    <option>1934</option>
+                    <option>1933</option>
+                    <option>1932</option>
+                    <option>1931</option>
+                    <option>1930</option>
+                    <option>1929</option>
+                    <option>1928</option>
+                    <option>1927</option>
+                    <option>1926</option>
+                    <option>1925</option>
+                    <option>1924</option>
+                    <option>1923</option>
+                    <option>1922</option>
+                    <option>1921</option>
+                    <option>1920</option>
+                    <option>1919</option>
+                    <option>1918</option>
+                    <option>1917</option>
+                    <option>1916</option>
+                    <option>1915</option>
+                    <option>1914</option>
+                    <option>1913</option>
+                    <option>1912</option>
+                    <option>1911</option>
+                    <option>1910</option>
+                    <option>1909</option>
+                    <option>1908</option>
+                    <option>1907</option>
+                    <option>1906</option>
+                    <option>1905</option>
+                    <option>1904</option>
+                    <option>1903</option>
+                </select>
+            </span>
+        </div>
+        <ul>
+            <li>
+                <input type="checkbox" id="firstCheckbox">
+                <label for="firstCheckbox">
+                    Yes! I would like to receive
+                    updates, special offers, and
+                    other information from Marvel
+                    and The Walt Disney Family
+                    of Companies.
+                </label>
+            </li>
+            <li>
+                <input type="checkbox" id="secondCheckbox">
+                <label for="secondCheckbox">
+                    Yes, I would like to receive
+                    Marvel’s Need To Know new
+                    sletter for news, video/podcast
+                    updates, and more.
+                </label>
+            </li>
+            <li>
+                By creating an account, I agree to the Terms of Use and acknowledge
+                that I have read the Privacy Policy.
+            </li>
+            <li>
+                My home country/region: Korea,
+                Republic of. Change.
+            </li>
+        </ul>
+        <a href="#">create account</a>
+    </div>
+    <!--? joinPanel fin  -->
+    
+    <header class="nonBG">
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/LOGO.png" alt="marvel">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li class="characters">characters
+                        <h2>A recent characters</h2>
+                        <ul>
+                            <li><a href="hawkEyeCharacters.html"><img src="images/characters/hawkEye.png" alt="hawkEye"></a></li>
+                            <li><a href="eterNalsCharacters.html"><img src="images/characters/eternals.png" alt="eternals"></a></li>
+                            <li><a href="starFoxCharacters.html"><img src="images/characters/starFox.png" alt="starFox"></a></li>
+                            <li><a href="ironManCharacters.html"><img src="images/characters/ironMan.png" alt="ironMan"></a></li>
+                            <li><a href="spiderManCharacters.html"><img src="images/characters/spiderMan.png" alt="spiaderMan"></a></li>
+                        </ul>
+                    </li>
+                    <li class="comics">comics
+                        <h2>Popular comics</h2>
+                        <ul>
+                            <li><a href="eterNalsComics.html"><img src="images/comics/eternals.png" alt="eternals"></a></li>
+                            <li><a href="hulkComics.html"><img src="images/comics/hulk.png" alt="hulk"></a></li>
+                            <li><a href="spiderManComics.html"><img src="images/comics/spiderman.png" alt="spiderman"></a></li>
+                            <li><a href="thingComics.html"><img src="images/comics/thing.png" alt="thing"></a></li>
+                        </ul>
+                    </li>
+                    <li class="movies">movies
+                        <h2>movies</h2>
+                        <ul>
+                            <li><a href="avengersMovies.html"><img src="images/movies/avengers.png" alt="avengers"></a></li>
+                            <li><a href="blackWidowMovies.html"><img src="images/movies/blackWidow.png" alt="blackWidow"></a></li>
+                            <li><a href="eterNalsMovies.html"><img src="images/movies/eternals.png" alt="eternals"></a></li>
+                            <li><a href="shanchiMovies.html"><img src="images/movies/shangchi.png" alt="shangchi"></a></li>
+                            <li><a href="spiderManMovies.html"><img src="images/movies/spiderMan.png" alt="spiderMan"></a></li>
+                        </ul>
+                    </li>
+                    <li class="news">news
+                        <h2>trending news</h2>
+                        <ul>
+                            <li>
+                                <a href="moviesNews.html">
+                                    <figure>
+                                        <img src="images/news/movies.png" alt="spiderManMoviesnews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>movies</dt>
+                                                <dd>‘Spider-Man: No Way Home’: Tom Holland and Zendaya on New and Returning Surprise Characters</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="comicsNews.html">
+                                    <figure>
+                                        <img src="images/news/comics.png" alt="hulkComicsNews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>COMICS</dt>
+                                                <dd>Hulk's Rage Meets Thor's Thunder in Epic New Crossover</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tvShowNews.html">
+                                    <figure>
+                                        <img src="images/news/tvShows.png" alt="hawkEyeTvShowsNews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>TV SHOWS</dt>
+                                                <dd>‘Hawkeye’: Laura Barton’s Reveal and Keeping Christmas Alive at the Farm House</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="gamesNews.html">
+                                    <figure>
+                                        <img src="images/news/games.png" alt="guardiansGamesNews">
+                                        <figcaption>
+                                            <dl>
+                                                <dt>GAMES</dt>
+                                                <dd>Latest Trailer from Marvel's Guardians of the Galaxy Reveals a Mysterious Past...and Future?</dd>
+                                            </dl>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="more">more
+                        <h2>more</h2>
+                        <ul>
+                            <li>
+                                <a href="cultureMore.html">
+                                    <figure>
+                                        <img src="images/more/culture.png" alt="culture">
+                                            <figcaption>
+                                                culture
+                                            </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="booksMore.html">
+                                    <figure>
+                                        <img src="images/more/books.png" alt="books">
+                                            <figcaption>
+                                                books
+                                            </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sideContainer">
+                <a class="material-icons">search</a>
+                <input type="button" value="login" data-callPopup="loginPanel">
+                <input type="button" value="join in" data-callPopup="joinPanel">
+            </div>
+        </div>
+    </header>
+    <!--? header fin -->
+
+    <div class="starFoxChaContainer">
+        <figure>
+            <img src="images/characters/starfox/starFoxMainBanner.png" alt="starfoxMainBanner">
+            <figcaption>
+                <dl>
+                    <dt>STARFOX</dt>
+                    <dd>EROS</dd>
+                    <dd>Eros grew up on Titan alongside his brother Thanos, embracing all the pleasures that life has to offer. He laters becomes Starfox and an official member of the Avengers.</dd>
+                </dl>
+            </figcaption>
+        </figure>
+        <!--? mainbanner fin -->
+
+        <section>
+            <h2>latest news</h2>
+            <ul>
+                <li>
+                    <a href="intoEternals.html">
+                        <figure>
+                            <img src="images/characters/starfox/starFoxNews01.png" alt="eternalsNow">
+                            <figcaption>
+                                <dl>
+                                    <dt>Everything You Need to Know Going Into ‘Eternals’</dt>
+                                    <dd>MOVIES</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="futureRevolution.html">
+                        <figure>
+                            <img src="images/characters/starfox/starFoxnews02.png" alt="MARVEL Future Revolution">
+                            <figcaption>
+                                <dl>
+                                    <dt>Fight Side-by-Side with the Eternals as Companions in the Latest Update for 'MARVEL Future Revolution'</dt>
+                                    <dd>GAMES</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="withSprite.html">
+                        <figure>
+                            <img src="images/characters/starfox/starFoxnews03.png" alt="Who Is Dane Whitman?">
+                            <figcaption>
+                                <dl>
+                                    <dt>Experience the World of Eternals by Stepping Inside the Film with Sprite</dt>
+                                    <dd>MOVIES</dd>
+                                    <dd>1 DAY AGO</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="studiosEternals.html">
+                        <figure>
+                            <img src="images/characters/starfox/starFoxnews04.png" alt="Kirby Eternals">
+                            <figcaption>
+                                <dl>
+                                    <dt>Get to Know the Eternals | Marvel Studios' Eternals’</dt>
+                                    <dd>TRAILERS</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!--? latest_news fin -->
+
+        <figure>
+            <img src="images/characters/starfox/starFoxBanner.png" alt="starFoxBanner">
+            <figcaption>
+                <dl>
+                    <dt>STARFOX</dt>
+                    <dd>ESSENTIAL READING</dd>
+                    <dd>Starfox, AKA Eros, grew up on Titan alongside his brother Thanos, embracing all the pleasures that life has to offer. He later became Starfox and an official member of the Avengers. He is an adventurer and a cosmically-enhanced super-being.</dd>
+                </dl>
+                <a href="starFoxComics.html">learn more</a>
+            </figcaption>
+        </figure>
+        <!--? starFoxBanner Area fin -->
+
+        <article>
+            <h2>biography</h2>
+            <p>Born on Titan, moon of Saturn, Eros is an Eternal who loves life, adventure, and romance, earning the nickname Knave of Hearts. He joins Earth’s Avengers as Starfox.</p>
+            <ul>
+                <li>
+                    <strong>Eros of Titan</strong>
+                    <p>750,000 years ago, A’Lars, AKA Mentor, of the Eternals, a cosmic-powered sub-species of humanity, chose to depart Earth after his brother Zuras becomes the Eternals’ leader. A’Lars journeys to Saturn’s moon, Titan, where a band of exiled Eternals had slaughtered each other. Marrying the only survivor, Sui-San, A’Lars and his new wife transform Titan into a paradise that they populate with their children and others genetically-engineered. As Titan’s ruler, A’Lars creates ISAAC, a computer which services all of Titan’s technological needs.</p>
+                    <p>Mentor and Sui-San’s youngest son Eros is born with the ability to stimulate pleasure in others. This power has no effect on his mutant older brother, Thanos, who was bornwith Deviant Syndrome, physically repulsive to his fellows. Thanos grows up to worship the cosmic embodiment of Death, and conducts morbid experiments on several Titans. Vivisecting Sui-San and slaying several other Eternals, Thanos flees Titan upon discovery. Unlike his brother, Eros loves life, often visiting other systems for adventure and romance, including Earth, where he is remembered in legend.</p>
+                </li>
+                <li>
+                    <strong>Eternally Cosmic</strong>
+                    <p>As an Eternal, Eros can harness cosmic energy for various purposes; although, he has not developed his full potential. For instance, he seems to have little or no proficiency in molecular restructuring; though, he once helped reverse one of Sersi’s transmutations. He has superhuman strength (Class 25), durability, metabolism, and regenerative powers. Immune to terrestrial disease, he is practically immortal, and also ages far more slowly than most humanoids; he is over 1000 years old.</p>>
+                    <p>Eros can surround himself with a personal force field, allowing for underwater and space travel, can both fly at up to 800 mph, and perform telekinetic stunts using his ability to harness gravitons. Eros can speak 500 extraterrestrial languages.</p> 
+                    <p>Eros possesses the ability to stimulate the pleasure centers in other people’s brains, often emitted unconsciously, causing a euphoric effect. With concentration, he can amplify the effect to cause euphoria, arousal, pacification, and/or sedation. Beings without pleasure centers, including Thanos, are immune to this effect.</p>
+                </li>
+                <li>
+                    <strong>Power-Hungry Enemies</strong>
+                    <p>Eros has a complicated relationship with his brother, Thanos, who often tries to destroy the universe. Though they are brothers, and Eros does side with him on occasion, he spends most of his time working against the Mad Titan and joins forces with the Avengers, the Guardians of the Galaxy, and the Dark Guardians, just to have the strength of force to go up against him.</p>
+                </li>
+                <li>
+                    <strong>Avenger Allies</strong>
+                    <p>Eros is known for having many lovers across the galaxy; his only steady relationship being with Heater Delight. As for team-ups, Eros joins forces with the Kree Mar-Vell, AKA Captain Marvel, who was bonded to human Rick Jones against Thanos. The two become close friends.</p>
+                    <p>As one of the Eternals of Titan, Eros spends time living there on and off, but eventually ventures to Earth where he joins the Avengers.</p>
+                </li>
+                <li>
+                    <strong>romancing the stars</strong>
+                    <p>Over a century after his departure, Thanos returned to Titan with an army and conquered the planet, leaving Mentor and Eros as the only remaining resistance. Seeking the reality-reshaping Cosmic Cube, Thanos brought Rick Jones to Titan to learn its location. Aided by the Kree Mar-Vell, AKA Captain Marvel, who was then bonded to Rick, Mentor and Eros drove off Thanos’ lieutenant, Kl’rt, AKA Super-Skrull, while Mar-Vell himself bested Thanos by seemingly destroying the Cosmic Cube. Helping to rebuild Titan following the battle, Eros formed a close friendship with Mar-Vell. After the pimp Pro-Boscis the Procurer enslaved Heater Delight, Heater kept Eros from rescuing her to avoid damaging his face, instead manipulating Prince Pip Gofern, AKA Pip the Troll, into saving her. Due to programming previously installed by Thanos, ISAAC created agents for itself and took the Titans captive, but Mar-Vell returned to Titan and defeated them, after which he fell in love with one of the lieutenants, Elysius. Soon after, Mar-Vell succumbed to cancer, spending his final days on Titan with Elysius. Devastated by the loss, Eros became close to Elysius, who eventually had ISAAC create her a son using Mar-Vell’s DNA, whom she named Genis, AKA Photon. Genis was raised to believe that Eros was his father, and Eros maintained this facade until Genis’ accelerated coming of age.</p>
+                    <p>Seeking new adventure, Eros returned to Earth and helped the Avengers defeat Samuel Smithers, AKA Plantman. Applying to join the Avengers, he was soon accepted as an Avenger-in-training; however, the Avengers were reluctant to present a man named “Eros” to the public, so Janet Van Dyne, AKA the Wasp, rechristened him “Starfox.” Eros was distressed to meet his fellow trainee Monica Rambeau, AKA Captain Marvel (later Spectrum), feeling the rookie adventurer was unworthy to claim Mar-Vell’s name. As an Avenger, Starfox learned teamwork and responsibility. Although he still found time to pursue romantic liaisons, including a one-night stand with teammate Jennifer Walters, AKA She-Hulk. The group also valued Starfox’s scientific knowledge as he was serving on a roster devoid of the Avengers’ usual scientific geniuses. After many Avengers were taken to Battleworld to serve in the Beyonder’s “Secret Wars,” Victor Shade, AKA the Vision, promoted Starfox to full membership to fill out the roster, and Eros retained his standing upon their return. Shortly thereafter, Starfox aided the Avengers against a faction of the subversive group Hydra, using his pleasure powers on Hydra agent Elliot Kohl to gain the deactivation code for Hydra’s Atomi-Geddon device.</p>
+                    <p>While still with the Avengers, Starfox invited the Wasp to a party held by the Eternal Sersi at the Eternal City of Olympia.  While there, Starfox fascinated his Earth-based friends with the story of A’Lars’ founding of Titan and participated in the Eternals’ Ritual of the Uni-Mind, merging with them into a single psionic entity. When the Deviant-Inhuman hybrid Maelstrom tried to siphon the Uni-Mind’s power for himself, the Vision and Wanda Maximoff, AKA Scarlet Witch, freed the Eternals from their merging, and Starfox incapacitated Maelstrom using his pleasure powers. The Avengers subsequently thwarted Maelstrom’s next plot to halt the Earth’s rotation; upon seeing Captain Marvel’s courage in that battle, Starfox accepted her use of his friend’s name and apologized for his earlier treatment of her.</p>
+                    <p>The Avengers became embroiled in one of the Skrulls civil wars during which the pirate Nebula seized Thanos’ starship and used it to command a Skrullian fleet to destroy the planet Xandar. Upon confronting Nebula, Starfox was shocked at her claims that Thanos was her grandfather. However, before he could learn more, Nebula was teleported away by the Beyonder, who had misunderstood the Xandarian Pyreus Kril, AKA Firelord’s wish that Nebula be cast from the galaxy. Determined to learn more about Nebula’s claims, Starfox quit the Avengers to hunt Nebula alongside Firelord. Shortly after beginning his hunt, Starfox was badly injured by Garthan Saal, AKA Super-Nova (later Nova Omega), another Xandarian survivor who incorrectly believed Nebula to be an Avenger. Quickly recovering, Starfox liberated Heater from another master, Axel the Rescorlan, then eventually caught up to Nebula, helping the Avengers thwart her attempt to harness the Infinity Union, a device belonging to the cosmic Stranger that could grant her vast power.</p>
+                    <p>Soon afterwards, Thanos obtained the Infinity Gauntlet (which housed the six Infinity Gems) and used it to offer the universe to Death, taking Starfox hostage in the process, and erasing Eros’ mouth to force his brother to bear silent witness. Thanos eventually lost the Infinity Gauntlet, and Eros was restored to his previous state.</p>
+                    <p>Continuing to aid the Avengers occasionally, Starfox participated in their mission to the Shi’ar Empire during the Kree-Shi’ar war and also joined them against sorceress Morgan le Fay when she mastered the power of the Asgardian Twilight Sword and altered Earth into the medieval-like Reality-398. Starfox served in her Queen’s Vengeance army as the Knave of Hearts before reality was restored. In that battle’s aftermath, Starfox befriended fellow Avenger Greer Nelson, AKA Tigra, who joined him on a trip to Deneb-7. Soon becoming bored, the duo found new excitement when the universe was threatened by the Infinites, cosmic extra-dimensional beings. The two teamed with Jack Hart, AKA Jack of Hearts, Wendell Vaughn, AKA Quasar, Thor Odinson, AKA Thor, Monica Rambeau (then calling herself Photon) and Heather Douglas, AKA Moondragon, to face the Infinites. Starfox helped appeal to the Infinites through the cosmic entity Eternity, and one of the Infinites ultimately chose to sacrifice itself to repair some of the damage they had caused. Later, Starfox led a small army of Eternals in opposing an apparent “Thanosi” doppelgänger of Thanos during the Thanosi’s quest for the Celestial Messiah, but Starfox and the Eternals were beaten and cast into space.</p>
+                    <p>Starfox later confronted the time-traveler Thanatos, Rick Jones’ powerful Earth-9309 counterpart, who was intent on gathering items of power. He struck Starfox with the Spear of Destiny, causing a wound that could not be healed, and threatened to kill Eros unless he brought Rick Jones-616 (now bonded to Genis) to him. Starfox was forced to comply, but Rick and Genis defeated Thanatos and reversed his actions. When Genis’ cosmic awareness drove him insane, Starfox aided Elysius, Mentor and other Titans in opposing him and ultimately helped Genis regain his sanity.</p>
+                    <p>Shortly after aiding the Avengers against an insane Scarlet Witch, Starfox was captured by Thanos and implanted with false memories. Unaware anything had transpired, Starfox continued to adventure, visiting Earth and sharing a romantic fling with a married mother of three, Christina Garvey. One week later, Garvey took Starfox to court, claiming Eros had used his powers to take advantage of her. While being defended by She-Hulk, Starfox secretly used his powers on her after seeing her argue with her boyfriend, John Jameson, AKA Man-Wolf, causing her to fall in love with Jameson. She-Hulk’s power-mimicking co-worker Awesome Andy unwittingly copied Starfox’s abilities, keeping She-Hulk’s love in effect. After Elliot Kohl testified and feigned obsession with Starfox, Eros was placed in a holding cell under guard until he escaped, using his pleasure powers to get past Matt Hawk, AKA Two-Gun Kid, and the Guardsmen. She-Hulk attacked him, convinced that he had used his powers on her during their past one-night stand. Seeing Eros’ shabby treatment on Earth, Mentor and ISAAC teleported Eros back to Titan to undergo a Titanian mind-trial with the help of the telepathic Moondragon. Cosmic judges the Magistrati appointed their Earth agent, She-Hulk, to preside over the trial.</p>
+                    <p>When She-Hulk called herself as a witness, Starfox confessed to using his powers in an effort to help her fix her relationship with Jameson (whom the lovestruck She-Hulk had since married). A Thanos-clone soon arrived and testified, thinking himself the true Thanos, unaware he was executing the real Thanos’ plan, leading ISAAC to find Starfox guilty. Sensing trickery, She-Hulk had Moondragon place her mind within the Thanos clone’s mental plane, where she battled the clone until Starfox projected his own mind to her aid. The clone eventually left the battle to focus on the physical plane, where Stargod (the Godstone-empowered John Jameson) had attacked him. With the clone gone from the mental plane, Starfox revealed that he had not taken advantage of She-Hulk during their one-night stand together. The two heroes soon discovered how the true Thanos had manipulated Eros’ memories and returned to the physical plane, exposing and defeating the Thanos duplicate.</p>
+                    <p>In light of the new evidence, Moondragon deduced that Thanos’ mind-wiping device had given Starfox brain damage, reducing his control over his pleasure power and causing his recent abuses of it. She then offered to permanently remove this power, an offer Eros gladly accepted given all the trouble his ability had caused of late. ISAAC then decreed that Starfox would restore his reputation by traveling to neighboring systems seeking forgiveness from the past victims of his uncontrolled powers. Before She-Hulk and Stargod returned to Earth, Starfox revealed that he had only used his powers on She-Hulk, proving that Jameson’s love of her was genuine.</p>
+                    <p>While living on Titan again with his powers restored, Ultron attacked. Using a robotic virus assimilated the moon’s population, it became Planet Ultron. Starfox escaped and recruited the Avengers on Earth to help liberate Titan from Ultron. Once faced with Ultron, Starfox used his powers of persuasion on the organic parts of Ultron, which caused him to suffer an emotional breakdown, leading to victory for the people of Titan.</p>
+                    <p>When Thanos faced a terminal illness, Starfox allied with Thanos’ son Thane, Nebula, Tryco Slatterus, AKA Fallen One, and Lady Death to slay him once and for all, in his weakened state. To do it, they obtained a secret weapon, one that they stole from Tyros, AKA Terrax—a Phoenix Egg. But Thane betrayed them all and harnessed the power of the Phoenix Force to exact revenge against his father. He succeeded; Thane unleased his power on Thanos turning him into a powerless mortal. But Thane’s former allies had another problem—Thane had plans to destroy the universe. Starfox and his cohort asked Thanos for his help to defeat Thane. They searched for something that could combat the Phoenix Force and went to the God Quarry, a legendary burial grounds for gods. Once there, they met the Coven, three witches who fed on those gods who fell into the Quarry. They explained that Thanos would have to face a trial within the Quarry to claim its power. Thanos proved himself worthy and obtained the power to contend with Thane. When Thanos emerged, Eros was there offering him a helping hand, but Thanos used his powers against him knocking him out for going against him in the first place. After Thanos battled Thane and the Coven stripped him of the Phoenix Force, Thanos tossed him into the Quarry. Nebula and Slatterus helped Eros up as Thanos denied Lady Death’s love and the Coven seemingly slayed her, but in fact just delayed her. Thanos left Eros, Nebula and Slatterus behind to fend for themselves.</p>
+                    <p>After Thanos’ adoptive daughter Gamora killed him, Eros searched for his brother’s body and discovered his will. He shared the will aboard Thanos’ ship, the Sanctuary, and in it, Thanos revealed that he would be resurrected in the body of an unknown person. Thanos’ devout Black Order crashed the reading, stole their leader’s body and then caused a rip in space that took all of the attendees into it. Though Eros escaped, he did not do so without a scarred face. He formed the Dark Guardians with Kallark, AKA Gladiator, Zak-Del, AKA Wraith, Frank Castle from Earth-TRN666, AKA the Rider, and Nebula to stop Thanos’ resurrection.</p>
+                    <p>They incorrectly assumed that Gamora would be Thanos’ host, as proven by Hela, the Goddess of Death, who revealed that his host would be Eros. Shortly afterward, Thanos took over Eros’ mind and body. He traveled with the Black Order and Hela to Knowhere to reunite with his body. Gamora with the Guardians of the Galaxy and the Dark Guardians stormed Knowhere thanks to the Inhuman Lockjaw who teleported them all there, and Gamora plunged a sword through Eros’ body. She apologized to him for doing so and he spoke to her briefly as he perished. Thanos was still resurrected but his mind was broken. Hela then produced a black hole which sucked her, and Knowhere to an unknown location, as the Guardians and Dark Guardians escaped thanks again to Lockjaw.</p>
+                </li>
+            </ul>
+        </article>
+        <!--? article Area fin -->
+
+        <section>
+            <h2>latest news</h2>
+            <ul>
+                <li>
+                    <a href="titanEros.html">
+                        <figure>
+                            <img src="images/characters/starfox/starFoxnews05.png" alt="Royal Prince of Titan">
+                            <figcaption>
+                                <dl>
+                                    <dt>‘Eternals’: Meet the Royal Prince of Titan, Eros</dt>
+                                    <dd>MOVIES</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="theTroll.html">
+                        <figure>
+                            <img src="images/characters/starfox/starFoxnews06.png" alt="MARVEL Future Revolution">
+                            <figcaption>
+                                <dl>
+                                    <dt>Who Is Pip the Troll?</dt>
+                                    <dd>COMICS</dd>
+                                    <dd>1 DAY AGO</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="isStarfox.html">
+                        <figure>
+                            <img src="images/characters/starfox/starFoxnews07.png" alt="Who Is Starfox?">
+                            <figcaption>
+                                <dl>
+                                    <dt>Who Is Starfox?</dt>
+                                    <dd>COMICS</dd>
+                                    <dd>1 DAY AGO</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="madTitan.html">
+                        <figure>
+                            <img src="images/characters/starfox/starFoxnews08.png" alt="Mad Titan">
+                            <figcaption>
+                                <dl>
+                                    <dt>The Cosmic Family Tree of Thanos the Mad Titan</dt>
+                                    <dd>COMICS</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!--? latest_news fin -->
+
+        <figure>
+            <img src="images/footer_banner.png" alt="insider">
+            <figcaption>
+                <dl>
+                    <dt>Marvel Insider</dt>
+                    <dd>Watch, Earn, Redeem!​</dd>
+                    <dd>Get rewarded for doing what you already do as a fan.​</dd>
+                </dl>
+                <a href="insider.html">join now</a>
+                <p>Terms and Conditions Apply.</p>
+            </figcaption>
+        </figure>
+        <!--? insiderArea fin -->
+    </div>
+    <!--? container Area fin -->
+
+    <footer>
+        <div>
+            <h2>
+                <img src="images/logo2.png" alt="footer_logo">
+            </h2>
+            <ul>
+                <li><a href="about.html">about marvel</a></li>
+                <li><a href="help.html">help</a></li>
+                <li><a href="advertising.html">advertising</a></li>
+                <li><a href="internships.html">internships</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://jobs.disneycareers.com/search-jobs/korea/391-28648/1?glat=37.566&glon=126.9784">careers</a></li>
+                <li><a href="https://www.disneyplus.com/brand/marvel?cid=DTCI-Synergy-Marvel-Site-Acquisition-Library-US-Marvel-NA-EN-NavFooter-Marvel_DisneyPlus_NavFooter_Evergreen-NA">disney+</a></li>
+                <li><a href="https://www.marvelhq.com/">marvelHQ.com</a></li>
+                <li><a href="login.html">redeem digital comics</a></li>
+            </ul>
+            <div>
+                <a href="insider.html">
+                    <!-- background -->
+                    <strong>MARVEL INSIDER</strong>
+                    Get Rewarded for Being a Marvel Fan
+                </a>
+                <a href="https://www.marvel.com/unlimited?cid=dcom_navigation_20210909_unlimited_footer">
+                    <!-- background -->
+                    <strong>MARVEL UNLIMITED</strong>
+                    Access Over 29,000+ Digital Comics
+                </a>
+            </div>
+            <div>
+                <h3>FOLLOW MARVEL</h3>
+                <ul>
+                    <!-- bg -->
+                    <li><a href="https://www.facebook.com/marvel">facebook</a></li>
+                    <li><a href="https://www.instagram.com/marvel/">instagram</a></li>
+                    <li><a href="https://www.youtube.com/marvel">youtube</a></li>
+                    <li><a href="https://twitter.com/marvel">twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul>
+            <li><a href="license.html">License Agreement</a></li>
+            <li><a href="insiderTerm.html">Marvel Insider Terms</a></li>
+            <li>ⓒ2021 MARVEL</li>
+        </ul>
+    </footer>
+    <!--? footerArea fin -->
+</body>
+</html>
