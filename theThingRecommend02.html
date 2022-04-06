@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MARVEL</title>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
     <script src="js/core.js"></script>
     <link rel="stylesheet" href="css/import.css">
 </head>
@@ -13,11 +15,11 @@
     <div id="loginPanel">
         <h2>
             <img src="images/logo.png" alt="marvel logo">
-            <button class="material-icons">close</button>
+            <button class="material-icons btn_close">close</button>
         </h2>
         <form>
             <input type="email" title="please enter your email." placeholder="Email Address">
-            <input type="password" title="Please enter your PIN number." placeholder="Password">
+            <input type="password" title="Please enter your PIN number." placeholder="PassWord">
             <input type="button" value="login">
         </form>
         <a href="#">create an account</a>
@@ -27,17 +29,19 @@
     <div id="joinPanel">
         <h2>
             <img src="images/logo.png" alt="marvel logo">
-            <button class="material-icons">close</button>>
+            <button class="material-icons btn_close">close</button>
         </h2>
-        <input type="text" title="please enter your first name." placeholder="First Name">
-        <input type="text" title="please enter your last name." placeholder="Last Name">
-        <input type="email" title="please enter your email." placeholder="Email Address">
-        <input type="password" title="Please enter your PIN number." placeholder="Password">
+        <form>
+            <input type="text" title="please enter your first name." placeholder="First Name">
+            <input type="text" title="please enter your last name." placeholder="Last Name">
+            <input type="email" title="please enter your email." placeholder="Email Address">
+            <input type="password" title="Please enter your PIN number." placeholder="Password">
+        </form>
         <div>
             <label for="selectMonth">Birth Date</label>
             <span class="inputSelect">
                 <select class="month" id="selectMonth">
-                    <option selected>month</option>
+                    <option selected>Month</option>
                     <option>jan</option>
                     <option>feb</option>
                     <option>mar</option>
@@ -244,134 +248,155 @@
         <a href="#">create account</a>
     </div>
     <!--? joinPanel fin  -->
-    
-    <header class="nonBG">
+
+    <header>
         <div>
             <h1>
                 <a href="index.html">
                     <img src="images/LOGO.png" alt="marvel">
                 </a>
             </h1>
+            <div class="sideContainer">
+                <button class="material-icons mui">menu</button>
+                <a href="search.html" class="material-icons btn_search">search</a>
+                <input type="button" class="btn_popUp" value="login" data-callPopup="loginPanel">
+                <input type="button" class="btn_popUp" value="joinin" data-callPopup="joinPanel">
+            </div>
             <nav>
                 <ul>
-                    <li class="characters">characters
-                        <h2>A recent characters</h2>
-                        <ul>
-                            <li><a href="hawkEyeCharacters.html"><img src="images/characters/hawkEye.png" alt="hawkEye"></a></li>
-                            <li><a href="eterNalsCharacters.html"><img src="images/characters/eternals.png" alt="eternals"></a></li>
-                            <li><a href="starFoxCharacters.html"><img src="images/characters/starFox.png" alt="starFox"></a></li>
-                            <li><a href="ironManCharacters.html"><img src="images/characters/ironMan.png" alt="ironMan"></a></li>
-                            <li><a href="spiderManCharacters.html"><img src="images/characters/spiderMan.png" alt="spiaderMan"></a></li>
-                        </ul>
+                    <li class="characters">
+                        <span data-GNBName="characters">characters</span>
+                        <div id="characters">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>A recent characters</h2>
+                            <ul>
+                                <li><a href="hawkEyeCharacters.html"><img src="images/characters/hawkEye.png" alt="hawkEye"><span>hawkEye</span></a></li>
+                                <li><a href="eterNalsCharacters.html"><img src="images/characters/eternals.png" alt="eternals"><span>eterNals</span></a></li>
+                                <li><a href="starFoxCharacters.html"><img src="images/characters/starFox.png" alt="starFox"><span>starFox</span></a></li>
+                                <li><a href="ironManCharacters.html"><img src="images/characters/ironMan.png" alt="ironMan"><span>ironMan</span></a></li>
+                                <li><a href="spiderManCharacters.html"><img src="images/characters/spiderMan.png" alt="spiaderMan"><span>spiderMan</span></a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="comics">comics
-                        <h2>Popular comics</h2>
-                        <ul>
-                            <li><a href="eterNalsComics.html"><img src="images/comics/eternals.png" alt="eternals"></a></li>
-                            <li><a href="hulkComics.html"><img src="images/comics/hulk.png" alt="hulk"></a></li>
-                            <li><a href="spiderManComics.html"><img src="images/comics/spiderman.png" alt="spiderman"></a></li>
-                            <li><a href="thingComics.html"><img src="images/comics/thing.png" alt="thing"></a></li>
-                        </ul>
+                    <li class="comics">
+                        <span data-GNBName="comics">comics</span>
+                        <div id="comics">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>Popular comics</h2>
+                            <ul>
+                                <li><a href="eterNalsComics.html"><img src="images/comics/eternals.png" alt="eternals"><span>eternals</span></a></li>
+                                <li><a href="hulkComics.html"><img src="images/comics/hulk.png" alt="hulk"><span>hulk</span></a></li>
+                                <li><a href="spiderManComics.html"><img src="images/comics/spiderman.png" alt="spiderman"><span>spiderman</span></a></li>
+                                <li><a href="thingComics.html"><img src="images/comics/thing.png" alt="thing"><span>thing</span></a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="movies">movies
-                        <h2>movies</h2>
-                        <ul>
-                            <li><a href="avengersMovies.html"><img src="images/movies/avengers.png" alt="avengers"></a></li>
-                            <li><a href="blackWidowMovies.html"><img src="images/movies/blackWidow.png" alt="blackWidow"></a></li>
-                            <li><a href="eterNalsMovies.html"><img src="images/movies/eternals.png" alt="eternals"></a></li>
-                            <li><a href="shanchiMovies.html"><img src="images/movies/shangchi.png" alt="shangchi"></a></li>
-                            <li><a href="spiderManMovies.html"><img src="images/movies/spiderMan.png" alt="spiderMan"></a></li>
-                        </ul>
+                    <li class="movies">
+                        <span data-GNBName="movies">movies</span>
+                        <div id="movies">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>movies</h2>
+                            <ul>
+                                <li><a href="avengersMovies.html"><img src="images/movies/avengers.png" alt="avengers"><span>avengers</span></a></li>
+                                <li><a href="blackWidowMovies.html"><img src="images/movies/blackWidow.png" alt="blackWidow"><span>blackWidow</span></a></li>
+                                <li><a href="eterNalsMovies.html"><img src="images/movies/eternals.png" alt="eternals"><span>eternals</span></a></li>
+                                <li><a href="shangChiMovies.html"><img src="images/movies/shangchi.png" alt="shangchi"><span>shangchi</span></a></li>
+                                <li><a href="spiderManMovies.html"><img src="images/movies/spiderMan.png" alt="spiderMan"><span>spiderman</span></a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="news">news
-                        <h2>trending news</h2>
-                        <ul>
-                            <li>
-                                <a href="moviesNews.html">
-                                    <figure>
-                                        <img src="images/news/movies.png" alt="spiderManMoviesnews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>movies</dt>
-                                                <dd>‘Spider-Man: No Way Home’: Tom Holland and Zendaya on New and Returning Surprise Characters</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="comicsNews.html">
-                                    <figure>
-                                        <img src="images/news/comics.png" alt="hulkComicsNews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>COMICS</dt>
-                                                <dd>Hulk's Rage Meets Thor's Thunder in Epic New Crossover</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tvShowsNews.html">
-                                    <figure>
-                                        <img src="images/news/tvShows.png" alt="hawkEyeTvShowsNews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>TV SHOWS</dt>
-                                                <dd>‘Hawkeye’: Laura Barton’s Reveal and Keeping Christmas Alive at the Farm House</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="gamesNews.html">
-                                    <figure>
-                                        <img src="images/news/games.png" alt="guardiansGamesNews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>GAMES</dt>
-                                                <dd>Latest Trailer from Marvel's Guardians of the Galaxy Reveals a Mysterious Past...and Future?</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="more">more
-                        <h2>more</h2>
-                        <ul>
-                            <li>
-                                <a href="cultureMore.html">
-                                    <figure>
-                                        <img src="images/more/culture.png" alt="culture">
+                    <li class="news">
+                        <span data-GNBName="news">news</span>
+                        <div id="news">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>trending news</h2>
+                            <ul>
+                                <li>
+                                    <a href="moviesNews.html">
+                                        <figure>
+                                            <img src="images/news/movies.png" alt="spiderManMoviesnews">
                                             <figcaption>
-                                                culture
+                                                <dl>
+                                                    <dt>MOVIES</dt>
+                                                    <dd>‘Spider-Man: No Way Home’: Tom Holland and Zendaya on New and Returning Surprise Characters</dd>
+                                                </dl>
                                             </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="booksMore.html">
-                                    <figure>
-                                        <img src="images/more/books.png" alt="books">
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="comicsNews.html">
+                                        <figure>
+                                            <img src="images/news/comics.png" alt="hulkComicsNews">
                                             <figcaption>
-                                                books
+                                                <dl>
+                                                    <dt>COMICS</dt>
+                                                    <dd>Hulk's Rage Meets Thor's Thunder in Epic New Crossover</dd>
+                                                </dl>
                                             </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                        </ul>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tvShowsNews.html">
+                                        <figure>
+                                            <img src="images/news/tvShows.png" alt="hawkEyeTvShowsNews">
+                                            <figcaption>
+                                                <dl>
+                                                    <dt>TV SHOWS</dt>
+                                                    <dd>‘Hawkeye’: Laura Barton’s Reveal and Keeping Christmas Alive at the Farm House</dd>
+                                                </dl>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="gamesNews.html">
+                                        <figure>
+                                            <img src="images/news/games.png" alt="guardiansGamesNews">
+                                            <figcaption>
+                                                <dl>
+                                                    <dt>GAMES</dt>
+                                                    <dd>Latest Trailer from Marvel's Guardians of the Galaxy Reveals a Mysterious Past...and Future?</dd>
+                                                </dl>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more">
+                        <span data-GNBName="more">more</span>
+                        <div id="more">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>more</h2>
+                            <ul>
+                                <li>
+                                    <a href="cultureMore.html">
+                                        <figure>
+                                            <img src="images/more/culture.png" alt="culture">
+                                                <figcaption>
+                                                    culture
+                                                </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="booksMore.html">
+                                        <figure>
+                                            <img src="images/more/books.png" alt="books">
+                                                <figcaption>
+                                                    books
+                                                </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </nav>
-            <div class="sideContainer">
-                <a class="material-icons">search</a>
-                <input type="button" value="login" data-callPopup="loginPanel">
-                <input type="button" value="join in" data-callPopup="joinPanel">
-            </div>
         </div>
     </header>
     <!--? header fin -->
@@ -389,7 +414,7 @@
             </figure>
             <div>
                 <strong>$3.99</strong>
-                <a href="login.html">buy now</a>
+                <a href="https://www.comicshoplocator.com/">buy now</a>
             </div>
         </section>
         <!--? poster Area fin -->
@@ -575,12 +600,12 @@
                     <li><a href="https://twitter.com/marvel">twitter</a></li>
                 </ul>
             </div>
+            <ul>
+                <li><a href="license.html">License Agreement</a></li>
+                <li><a href="insiderTerm.html">Marvel Insider Terms</a></li>
+                <li>ⓒ2021 MARVEL</li>
+            </ul>
         </div>
-        <ul>
-            <li><a href="license.html">License Agreement</a></li>
-            <li><a href="insiderTerm.html">Marvel Insider Terms</a></li>
-            <li>ⓒ2021 MARVEL</li>
-        </ul>
     </footer>
     <!--? footerArea fin -->
 </body>

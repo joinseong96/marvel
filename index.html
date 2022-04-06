@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MARVEL</title>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
     <script src="js/core.js"></script>
     <link rel="stylesheet" href="css/import.css">
 </head>
@@ -13,31 +15,33 @@
     <div id="loginPanel">
         <h2>
             <img src="images/logo.png" alt="marvel logo">
-            <button class="material-icons">close</button>
+            <button class="material-icons btn_close">close</button>
         </h2>
         <form>
             <input type="email" title="please enter your email." placeholder="Email Address">
             <input type="password" title="Please enter your PIN number." placeholder="PassWord">
             <input type="button" value="login">
         </form>
-        <a href="#">create an account</a>
+        <a href="#joinPanel">create an account</a>
     </div>
     <!--? loginPaner fin -->
 
     <div id="joinPanel">
         <h2>
             <img src="images/logo.png" alt="marvel logo">
-            <button class="material-icons">close</button>>
+            <button class="material-icons btn_close">close</button>
         </h2>
-        <input type="text" title="please enter your first name." placeholder="First Name">
-        <input type="text" title="please enter your last name." placeholder="Last Name">
-        <input type="email" title="please enter your email." placeholder="Email Address">
-        <input type="password" title="Please enter your PIN number." placeholder="Password">
+        <form>
+            <input type="text" title="please enter your first name." placeholder="First Name">
+            <input type="text" title="please enter your last name." placeholder="Last Name">
+            <input type="email" title="please enter your email." placeholder="Email Address">
+            <input type="password" title="Please enter your PIN number." placeholder="Password">
+        </form>
         <div>
             <label for="selectMonth">Birth Date</label>
             <span class="inputSelect">
                 <select class="month" id="selectMonth">
-                    <option selected>month</option>
+                    <option selected>Month</option>
                     <option>jan</option>
                     <option>feb</option>
                     <option>mar</option>
@@ -244,223 +248,223 @@
         <a href="#">create account</a>
     </div>
     <!--? joinPanel fin  -->
-
-    <header class="nonBG">
+    
+    <header>
         <div>
             <h1>
                 <a href="index.html">
                     <img src="images/LOGO.png" alt="marvel">
                 </a>
             </h1>
+            <div class="sideContainer">
+                <button class="material-icons mui">menu</button>
+                <a href="search.html" class="material-icons btn_search">search</a>
+                <input type="button" class="btn_popUp" value="login" data-callPopup="loginPanel">
+                <input type="button" class="btn_popUp" value="joinin" data-callPopup="joinPanel">
+            </div>
             <nav>
                 <ul>
-                    <li class="characters">characters 
-                        <h2>A recent characters</h2>
-                        <ul>
-                            <li><a href="hawkEyeCharacters.html"><img src="images/characters/hawkEye.png" alt="hawkEye"></a></li>
-                            <li><a href="eterNalsCharacters.html"><img src="images/characters/eternals.png" alt="eternals"></a></li>
-                            <li><a href="starFoxCharacters.html"><img src="images/characters/starFox.png" alt="starFox"></a></li>
-                            <li><a href="ironManCharacters.html"><img src="images/characters/ironMan.png" alt="ironMan"></a></li>
-                            <li><a href="spiderManCharacters.html"><img src="images/characters/spiderMan.png" alt="spiaderMan"></a></li>
-                        </ul>
+                    <li class="characters">
+                        <span data-GNBName="characters">characters</span>
+                        <div id="characters">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>A recent characters</h2>
+                            <ul>
+                                <li><a href="hawkEyeCharacters.html"><img src="images/characters/hawkEye.png" alt="hawkEye"><span>hawkEye</span></a></li>
+                                <li><a href="eterNalsCharacters.html"><img src="images/characters/eternals.png" alt="eternals"><span>eterNals</span></a></li>
+                                <li><a href="starFoxCharacters.html"><img src="images/characters/starFox.png" alt="starFox"><span>starFox</span></a></li>
+                                <li><a href="ironManCharacters.html"><img src="images/characters/ironMan.png" alt="ironMan"><span>ironMan</span></a></li>
+                                <li><a href="spiderManCharacters.html"><img src="images/characters/spiderMan.png" alt="spiaderMan"><span>spiderMan</span></a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="comics">comics
-                        <h2>Popular comics</h2>
-                        <ul>
-                            <li><a href="eterNalsComics.html"><img src="images/comics/eternals.png" alt="eternals"></a></li>
-                            <li><a href="hulkComics.html"><img src="images/comics/hulk.png" alt="hulk"></a></li>
-                            <li><a href="spiderManComics.html"><img src="images/comics/spiderman.png" alt="spiderman"></a></li>
-                            <li><a href="thingComics.html"><img src="images/comics/thing.png" alt="thing"></a></li>
-                        </ul>
+                    <li class="comics">
+                        <span data-GNBName="comics">comics</span>
+                        <div id="comics">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>Popular comics</h2>
+                            <ul>
+                                <li><a href="eterNalsComics.html"><img src="images/comics/eternals.png" alt="eternals"><span>eternals</span></a></li>
+                                <li><a href="hulkComics.html"><img src="images/comics/hulk.png" alt="hulk"><span>hulk</span></a></li>
+                                <li><a href="spiderManComics.html"><img src="images/comics/spiderman.png" alt="spiderman"><span>spiderman</span></a></li>
+                                <li><a href="thingComics.html"><img src="images/comics/thing.png" alt="thing"><span>thing</span></a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="movies">movies
-                        <h2>movies</h2>
-                        <ul>
-                            <li><a href="avengersMovies.html"><img src="images/movies/avengers.png" alt="avengers"></a></li>
-                            <li><a href="blackWidowMovies.html"><img src="images/movies/blackWidow.png" alt="blackWidow"></a></li>
-                            <li><a href="eterNalsMovies.html"><img src="images/movies/eternals.png" alt="eternals"></a></li>
-                            <li><a href="shangChiMovies.html"><img src="images/movies/shangchi.png" alt="shangchi"></a></li>
-                            <li><a href="spiderManMovies.html"><img src="images/movies/spiderMan.png" alt="spiderMan"></a></li>
-                        </ul>
+                    <li class="movies">
+                        <span data-GNBName="movies">movies</span>
+                        <div id="movies">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>movies</h2>
+                            <ul>
+                                <li><a href="avengersMovies.html"><img src="images/movies/avengers.png" alt="avengers"><span>avengers</span></a></li>
+                                <li><a href="blackWidowMovies.html"><img src="images/movies/blackWidow.png" alt="blackWidow"><span>blackWidow</span></a></li>
+                                <li><a href="eterNalsMovies.html"><img src="images/movies/eternals.png" alt="eternals"><span>eternals</span></a></li>
+                                <li><a href="shangChiMovies.html"><img src="images/movies/shangchi.png" alt="shangchi"><span>shangchi</span></a></li>
+                                <li><a href="spiderManMovies.html"><img src="images/movies/spiderMan.png" alt="spiderMan"><span>spiderman</span></a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="news">news
-                        <h2>trending news</h2>
-                        <ul>
-                            <li>
-                                <a href="moviesNews.html">
-                                    <figure>
-                                        <img src="images/news/movies.png" alt="spiderManMoviesnews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>movies</dt>
-                                                <dd>‘Spider-Man: No Way Home’: Tom Holland and Zendaya on New and Returning Surprise Characters</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="comicsNews.html">
-                                    <figure>
-                                        <img src="images/news/comics.png" alt="hulkComicsNews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>COMICS</dt>
-                                                <dd>Hulk's Rage Meets Thor's Thunder in Epic New Crossover</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tvShowsNews.html">
-                                    <figure>
-                                        <img src="images/news/tvShows.png" alt="hawkEyeTvShowsNews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>TV SHOWS</dt>
-                                                <dd>‘Hawkeye’: Laura Barton’s Reveal and Keeping Christmas Alive at the Farm House</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="gamesNews.html">
-                                    <figure>
-                                        <img src="images/news/games.png" alt="guardiansGamesNews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>GAMES</dt>
-                                                <dd>Latest Trailer from Marvel's Guardians of the Galaxy Reveals a Mysterious Past...and Future?</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="more">more
-                        <h2>more</h2>
-                        <ul>
-                            <li>
-                                <a href="cultureMore.html">
-                                    <figure>
-                                        <img src="images/more/culture.png" alt="culture">
+                    <li class="news">
+                        <span data-GNBName="news">news</span>
+                        <div id="news">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>trending news</h2>
+                            <ul>
+                                <li>
+                                    <a href="moviesNews.html">
+                                        <figure>
+                                            <img src="images/news/movies.png" alt="spiderManMoviesnews">
                                             <figcaption>
-                                                culture
+                                                <dl>
+                                                    <dt>MOVIES</dt>
+                                                    <dd>‘Spider-Man: No Way Home’: Tom Holland and Zendaya on New and Returning Surprise Characters</dd>
+                                                </dl>
                                             </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="booksMore.html">
-                                    <figure>
-                                        <img src="images/more/books.png" alt="books">
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="comicsNews.html">
+                                        <figure>
+                                            <img src="images/news/comics.png" alt="hulkComicsNews">
                                             <figcaption>
-                                                books
+                                                <dl>
+                                                    <dt>COMICS</dt>
+                                                    <dd>Hulk's Rage Meets Thor's Thunder in Epic New Crossover</dd>
+                                                </dl>
                                             </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                        </ul>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tvShowsNews.html">
+                                        <figure>
+                                            <img src="images/news/tvShows.png" alt="hawkEyeTvShowsNews">
+                                            <figcaption>
+                                                <dl>
+                                                    <dt>TV SHOWS</dt>
+                                                    <dd>‘Hawkeye’: Laura Barton’s Reveal and Keeping Christmas Alive at the Farm House</dd>
+                                                </dl>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="gamesNews.html">
+                                        <figure>
+                                            <img src="images/news/games.png" alt="guardiansGamesNews">
+                                            <figcaption>
+                                                <dl>
+                                                    <dt>GAMES</dt>
+                                                    <dd>Latest Trailer from Marvel's Guardians of the Galaxy Reveals a Mysterious Past...and Future?</dd>
+                                                </dl>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more">
+                        <span data-GNBName="more">more</span>
+                        <div id="more">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>more</h2>
+                            <ul>
+                                <li>
+                                    <a href="cultureMore.html">
+                                        <figure>
+                                            <img src="images/more/culture.png" alt="culture">
+                                                <figcaption>
+                                                    culture
+                                                </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="booksMore.html">
+                                        <figure>
+                                            <img src="images/more/books.png" alt="books">
+                                                <figcaption>
+                                                    books
+                                                </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </nav>
-            <div class="sideContainer">
-                <a class="material-icons">search</a>
-                <input type="button" value="login" data-callPopup="loginPanel">
-                <input type="button" value="join in" data-callPopup="joinPanel">
-            </div>
         </div>
     </header>
     <!--? header fin -->
 
-    <div class="mainContainer">
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/eFiBEcXaaws" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <!-- 
-                *.mainVideo : relative;
-                ? 1. bottomArrow > .mainVideo:after - > content: url(arrowImgURL); position: absolute; bottom:; left:;
-            -->
-        </div>  
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/eFiBEcXaaws?autoplay=1&vq=hd2160&mute=1&start=3&end=32&loop=1&playlist=eFiBEcXaaws" title="YouTube video player" allow="loop; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" autoplay allowfullscreen></iframe>
         <!--? videoArea fin -->
+    </div>
 
+    <div class="mainContainer">
         <section>
-            <ul>
-                <li>
-                    <figure>
-                        <img src="images/SLIDE01.png" alt="spiderMan">
-                        <figcaption>
-                            <dl>
-                                <dt><img src="images/slide01_title.png" alt="spiderManNoWayHome"></dt>
-                                <dd>Red Carpet Premiere</dd>
-                                <dd>We're webbing up all the excitement from the Spider-Man: No Way Home red carpet premiere! Watch all the exclusive cast interviews and more!  
-                                    Catch all the highlights from the red carpet world premiere of Spider-Man: No Way Home and see it in theaters December 17, 2021!</dd>
-                            </dl>
-                            <a href="spiderManMovies.html">watch now</a>
-                        </figcaption>
-                    </figure>
+            <ul class="latestSlider">
+                <li class="slide1">
+                    <dl>
+                        <dt><img src="images/slide01_title.png" alt="spiderManNoWayHome"></dt>
+                        <dd>Red Carpet Premiere</dd>
+                        <dd>We're webbing up all the excitement from the Spider-Man: No Way Home red carpet premiere! Watch all the exclusive cast interviews and more!  
+                            Catch all the highlights from the red carpet world premiere of Spider-Man: No Way Home and see it in theaters December 17, 2021!</dd>
+                    </dl>
+                    <a href="spiderManMovies.html">watch now</a>
                 </li>
-                <li>
-                    <figure>
-                        <img src="images/slide02.png" alt="moonKnight">
-                        <figcaption>
-                            <dl>
-                                <dt><img src="images/slide02_text.png" alt="moonKnight"></dt>
-                                <dd>Watch The Trailer</dd>
-                                <dd>We're webbing up all the excitement from the Spider-Man: No Way Home red carpet premiere! Watch all the exclusive cast interviews and more!  
-                                    Catch all the highlights from the red carpet world premiere of Spider-Man: No Way Home and see it in theaters December 17, 2021!</dd>
-                            </dl>
-                            <a href="moonKnightMovies.html">watch now</a>
-                        </figcaption>
-                    </figure>
+                <li class="slide2">
+                    <dl>
+                        <dt><img src="images/slide02_text.png" alt="moonKnight"></dt>
+                        <dd>Watch The Trailer</dd>
+                        <dd>Embrace the madness. Watch the first trailer for the Marvel Studios' Moon Knight—streaming exclusively on Disney+ on March 30th.</dd>
+                    </dl>
+                    <a href="moonKnightMovies.html">watch now</a>
                 </li>
-                <li>
-                    <figure>
-                        <img src="images/slide03.png" alt="eterNals">
-                        <figcaption>
-                            <dl>
-                                <dt><img src="images/slide03_text.png" alt="eternals"></dt>
-                                <dd>Now Streaming on Disney+</dd>
-                                <dd>We're webbing up all the excitement from the Spider-Man: No Way Home red carpet premiere! Watch all the exclusive cast interviews and more!  
-                                    Catch all the highlights from the red carpet world premiere of Spider-Man: No Way Home and see it in theaters December 17, 2021!</dd>
-                            </dl>
-                            <a href="eternalsMovies.html">watch now</a>
-                        </figcaption>
-                    </figure>
+                <li class="slide3">
+                    <dl>
+                        <dt><img src="images/slide03_text.png" alt="eternals"></dt>
+                        <dd>Now Streaming on Disney+</dd>
+                        <dd>"When you love something, you protect it." Marvel Studios' Eternals is now streaming on Disney+.</dd>
+                    </dl>
+                    <a href="eternalsMovies.html">watch now</a>
                 </li>
-                <li>
-                    <figure>
-                        <img src="images/slide04.png" alt="x-man">
-                        <figcaption>
-                            <dl>
-                                <dt>The History of Wolverine</dt>
-                                <dd>Read the first issue of ‘X Lives of Wolverine’ on Marvel Unlimited, before starting his chronological origin in Infinity Comics series ‘Life of Wolverine.</dd>
-                            </dl>
-                            <input type="button" value="watch now">
-                        </figcaption>
-                    </figure>
+                <li class="slide4">
+                    <dl>
+                        <dt>The History of Wolverine</dt>
+                        <dd>Read the first issue of ‘X Lives of Wolverine’ on Marvel Unlimited, before starting his chronological origin in Infinity Comics series ‘Life of Wolverine.</dd>
+                    </dl>
+                    <a href="wolverineMug.html">watch now</a>
                 </li>
+            </ul>
+            <ul class="customPager">
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
             </ul>
         </section>
         <!--? slideArea fin -->
 
         <figure>
-            <img src="images/banner.png" alt="hawkeye">
             <figcaption>
                 <dl>
                     <dt><img src="images/hawkeye_title.png" alt="MARVEL STUDIOS hawkeye"></dt>
                     <dd>The best gifts come with a bow. Marvel Studios' Hawkeye, now streaming on Disney+.</dd>
                 </dl>
-                <a href="hawkEyeMovies.html">
+                <a href="hawkEyeCharacters.html">
                     learn more
                 </a>    
             </figcaption>
         </figure>
         <!--? banner fin  -->
 
-        <section>
+        <section class="latestNews">
             <h2>latest news</h2>
             <ul>
                 <li>
@@ -532,13 +536,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="uglySweaters.html">
+                    <a href="anniversaryShow.html">
                         <figure>
-                            <img src="images/list06.png" alt="Holiday Gift Guide">
+                            <img src="images/list06.png" alt="Massive Anniversary Show">
                             <figcaption>
                                 <dl>
-                                    <dt>Holiday Gift Guide: Ugly Sweaters</dt>
-                                    <dd>GEAR</dd>
+                                    <dt>‘This Week in Marvel’ Celebrates 500 Episodes with Massive Anniversary Show</dt>
+                                    <dd>PODCASTS</dd>
                                     <dd>6 DAYS AGO</dd>
                                 </dl>
                             </figcaption>
@@ -551,99 +555,98 @@
 
         <section>
             <h2>AVENGERS: ENDGAME CHARACTER POSTERS</h2>
-            <ul>
-                <li>
-                    <a href=""><img src="images/ironman.png" alt="ironman"></a>
-                </li>
-                <li>
-                    <a href=""><img src="images/captain.png" alt="captain"></a>
-                </li>
-                <li>
-                    <a href=""><img src="images/widow.png" alt="widow"></a>
-                </li>
-                <li>
-                    <a href=""><img src="images/thor.png" alt="thor"></a>
-                </li>
-                <li>
-                    <a href=""><img src="images/hulk.png" alt="hulk"></a>
-                </li>
-                <li>
-                    <a href=""><img src="images/hawkeye.png" alt="hawkeye"></a>
-                </li>
-                <li>
-                    <a href=""><img src="images/marvel.png" alt="marvel"></a>
-                </li>
-                <li>
-                    <a href=""><img src="images/antman.png" alt="antman"></a>
-                </li>
-            </ul>
+            <div>
+                <ul class="posterList">
+                    <li>
+                        <a href="ironMan01.html"><img src="images/ironman.png" alt="ironman"></a>
+                    </li>
+                    <li>
+                        <a href="firstAvenger.html"><img src="images/captain.png" alt="captain"></a>
+                    </li>
+                    <li>
+                        <a href="blackWidowMovies.html"><img src="images/widow.png" alt="widow"></a>
+                    </li>
+                    <li>
+                        <a href="thor01.html"><img src="images/thor.png" alt="thor"></a>
+                    </li>
+                    <li>
+                        <a href="hulk.html"><img src="images/hulk.png" alt="hulk"></a>
+                    </li>
+                    <li>
+                        <a href="clintBartonCha.html"><img src="images/hawkeye.png" alt="hawkeye"></a>
+                    </li>
+                    <li>
+                        <a href="captainMarvel01.html"><img src="images/marvel.png" alt="marvel"></a>
+                    </li>
+                    <li>
+                        <a href="antMan01.html"><img src="images/antman.png" alt="antman"></a>
+                    </li>
+                </ul>
+            </div>
         </section>
         <!--? posterArea fin -->
 
-        <section>
-            <h2>video section</h2>
-            <div>
-                <ul>
-                    <li>
-                        <iframe src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6285630238001&brand=marvel" width="640" height="360" allowfullscreen></iframe>
-                        <dl>
-                            <dt>MARVEL'S VOICES: COMUNIDADES #1 Trailer | Marvel Comics</dt>
-                            <dd>TRAILERS & EXTRAS</dd>
-                            <dd>Marvel celebrates the mighty Latin and Latinx characters and creators from across the Marvel Universe!</dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <iframe src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6277840906001&brand=marvel"width="640" height="360" allowfullscreen frameborder="0"></iframe>`
-                        <dl>
-                            <dt>Marvel's Guardians of the Galaxy - "You Got This" TV Spot</dt>
-                            <dd>TRAILERS & EXTRAS</dd>
-                            <dd>Just one week until ‘Marvel’s Guardians of the Galaxy’ arrives! Watch the TV spot for @GOTGtheGame, out Oct 26! Pre-order now: sqex.link/mwgv</dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <iframe src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6277129033001&brand=marvel"width="640" height="360" allowfullscreen frameborder="0"></iframe>`
-                        <dl>
-                            <dt>HAWKEYE: KATE BISHOP #1 Trailer | Marvel Comics</dt>
-                            <dd>TRAILERS & EXTRAS</dd>
-                            <dd>Swanky resort? Check. Jewel heist? Check. Almost definitely 100% a trap? Check. Don't miss this exciting new miniseries from New York Times bestselling writer Marieke Nijkamp and artist Enid Balám!</dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <iframe src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6262751537001&brand=marvel"width="640" height="360" allowfullscreen frameborder="0"></iframe>`
-                        <dl>
-                            <dt>Marvel Studios' What If...? | Official Trailer | Disney+</dt>
-                            <dd>TRAILERS & EXTRAS</dd>
-                            <dd>Enter the multiverse of unlimited possibilities. Marvel Studios' first animated series, What If...?, starts streaming August 11 with new episodes Wednesdays on Disney+.</dd>
-                        </dl>
-                    </li>
-                </ul>
-                <ol>
-                    <li>
-                        <a href="">
-                            <img src="images/thumb01.png" alt="title">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="images/thumb02.png" alt="title">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="images/thumb03.png" alt="title">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="images/thumb04.png" alt="title">
-                        </a>
-                    </li>
-                </ol>
-            </div>
-        </section>
+        <div class="sliderContainer">
+            <ul class="videoSlider">
+                <li>
+                    <iframe src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6285630238001&brand=marvel" width="640" height="360" allowfullscreen></iframe>
+                    <dl>
+                        <dt>MARVEL'S VOICES: COMUNIDADES #1 Trailer | Marvel Comics</dt>
+                        <dd>TRAILERS & EXTRAS</dd>
+                        <dd>Marvel celebrates the mighty Latin and Latinx characters and creators from across the Marvel Universe!</dd>
+                    </dl>
+                </li>
+                <li>
+                    <iframe src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6277840906001&brand=marvel"width="640" height="360" allowfullscreen></iframe>
+                    <dl>
+                        <dt>Marvel's Guardians of the Galaxy - "You Got This" TV Spot</dt>
+                        <dd>TRAILERS & EXTRAS</dd>
+                        <dd>Just one week until ‘Marvel’s Guardians of the Galaxy’ arrives! Watch the TV spot for @GOTGtheGame, out Oct 26! Pre-order now: sqex.link/mwgv</dd>
+                    </dl>
+                </li>
+                <li>
+                    <iframe src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6277129033001&brand=marvel"width="640" height="360" allowfullscreen></iframe>
+                    <dl>
+                        <dt>HAWKEYE: KATE BISHOP #1 Trailer | Marvel Comics</dt>
+                        <dd>TRAILERS & EXTRAS</dd>
+                        <dd>Swanky resort? Check. Jewel heist? Check. Almost definitely 100% a trap? Check. Don't miss this exciting new miniseries from New York Times bestselling writer Marieke Nijkamp and artist Enid Balám!</dd>
+                    </dl>
+                </li>
+                <li>
+                    <iframe src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6262751537001&brand=marvel"width="640" height="360" allowfullscreen></iframe>
+                    <dl>
+                        <dt>Marvel Studios' What If...? | Official Trailer | Disney+</dt>
+                        <dd>TRAILERS & EXTRAS</dd>
+                        <dd>Enter the multiverse of unlimited possibilities. Marvel Studios' first animated series, What If...?, starts streaming August 11 with new episodes Wednesdays on Disney+.</dd>
+                    </dl>
+                </li>
+            </ul>
+            <ol class="videoPager">
+                <li>
+                    <a href="" data-slide-index="0">
+                        <img src="images/thumb01.png" alt="title">
+                    </a>
+                </li>
+                <li>
+                    <a href="" data-slide-index="1">
+                        <img src="images/thumb02.png" alt="title">
+                    </a>
+                </li>
+                <li>
+                    <a href="" data-slide-index="2">
+                        <img src="images/thumb03.png" alt="title">
+                    </a>
+                </li>
+                <li>
+                    <a href="" data-slide-index="3">
+                        <img src="images/thumb04.png" alt="title">
+                    </a>
+                </li>
+            </ol>
+        </div>
         <!--? trailerArea fin -->
 
-        <section>
+        <section class="latestNews">
             <h2>related news</h2>
             <ul>
                 <li>
@@ -733,7 +736,7 @@
         <!--? relatednews fin -->
 
         <figure>
-            <img src="images/footer_banner.png" alt="insider">
+            <!-- <img src="images/footer_banner.png" alt="insider"> -->
             <figcaption>
                 <dl>
                     <dt>Marvel Insider</dt>
@@ -787,12 +790,12 @@
                     <li><a href="https://twitter.com/marvel">twitter</a></li>
                 </ul>
             </div>
+            <ul>
+                <li><a href="license.html">License Agreement</a></li>
+                <li><a href="insiderTerm.html">Marvel Insider Terms</a></li>
+                <li>ⓒ2021 MARVEL</li>
+            </ul>
         </div>
-        <ul>
-            <li><a href="license.html">License Agreement</a></li>
-            <li><a href="insiderTerm.html">Marvel Insider Terms</a></li>
-            <li>ⓒ2021 MARVEL</li>
-        </ul>
     </footer>
     <!--? footerArea fin -->
 </body>

@@ -52,6 +52,7 @@
         "iframe[src*='player.vimeo.com']",
         "iframe[src*='www.youtube.com']",
         "iframe[src*='www.kickstarter.com']",
+        "iframe[src*='assets.espn.go.com']",
         "object",
         "embed"
       ];

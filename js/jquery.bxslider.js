@@ -14,7 +14,7 @@
     slideSelector: '',
     infiniteLoop: true,
     hideControlOnEnd: false,
-    speed: 500,
+    speed: 1000,
     easing: null,
     slideMargin: 0,
     startSlide: 0,
@@ -51,7 +51,7 @@
     pagerShortSeparator: ' / ',
     pagerSelector: null,
     buildPager: null,
-    pagerCustom: null,
+    // pagerCustom: '.customPager',
 
     // CONTROLS
     controls: true,
@@ -67,7 +67,7 @@
 
     // AUTO
     auto: false,
-    pause: 4000,
+    pause: 7000,
     autoStart: true,
     autoDirection: 'next',
     stopAutoOnClick: false,
@@ -89,7 +89,7 @@
     onSlideNext: function() { return true; },
     onSlidePrev: function() { return true; },
     onSliderResize: function() { return true; },
-	onAutoChange: function() { return true; } //calls when auto slides starts and stops
+	  onAutoChange: function() { return true; } //calls when auto slides starts and stops
   };
 
   $.fn.bxSlider = function(options) {

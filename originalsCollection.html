@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MARVEL</title>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
     <script src="js/core.js"></script>
     <link rel="stylesheet" href="css/import.css">
 </head>
@@ -13,11 +15,11 @@
     <div id="loginPanel">
         <h2>
             <img src="images/logo.png" alt="marvel logo">
-            <button class="material-icons">close</button>
+            <button class="material-icons btn_close">close</button>
         </h2>
         <form>
             <input type="email" title="please enter your email." placeholder="Email Address">
-            <input type="password" title="Please enter your PIN number." placeholder="Password">
+            <input type="password" title="Please enter your PIN number." placeholder="PassWord">
             <input type="button" value="login">
         </form>
         <a href="#">create an account</a>
@@ -27,17 +29,19 @@
     <div id="joinPanel">
         <h2>
             <img src="images/logo.png" alt="marvel logo">
-            <button class="material-icons">close</button>>
+            <button class="material-icons btn_close">close</button>
         </h2>
-        <input type="text" title="please enter your first name." placeholder="First Name">
-        <input type="text" title="please enter your last name." placeholder="Last Name">
-        <input type="email" title="please enter your email." placeholder="Email Address">
-        <input type="password" title="Please enter your PIN number." placeholder="Password">
+        <form>
+            <input type="text" title="please enter your first name." placeholder="First Name">
+            <input type="text" title="please enter your last name." placeholder="Last Name">
+            <input type="email" title="please enter your email." placeholder="Email Address">
+            <input type="password" title="Please enter your PIN number." placeholder="Password">
+        </form>
         <div>
             <label for="selectMonth">Birth Date</label>
             <span class="inputSelect">
                 <select class="month" id="selectMonth">
-                    <option selected>month</option>
+                    <option selected>Month</option>
                     <option>jan</option>
                     <option>feb</option>
                     <option>mar</option>
@@ -244,140 +248,160 @@
         <a href="#">create account</a>
     </div>
     <!--? joinPanel fin  -->
-    
-    <header class="nonBG">
+
+    <header>
         <div>
             <h1>
                 <a href="index.html">
                     <img src="images/LOGO.png" alt="marvel">
                 </a>
             </h1>
+            <div class="sideContainer">
+                <button class="material-icons mui">menu</button>
+                <a href="search.html" class="material-icons btn_search">search</a>
+                <input type="button" class="btn_popUp" value="login" data-callPopup="loginPanel">
+                <input type="button" class="btn_popUp" value="joinin" data-callPopup="joinPanel">
+            </div>
             <nav>
                 <ul>
-                    <li class="characters">characters
-                        <h2>A recent characters</h2>
-                        <ul>
-                            <li><a href="hawkEyeCharacters.html"><img src="images/characters/hawkEye.png" alt="hawkEye"></a></li>
-                            <li><a href="eterNalsCharacters.html"><img src="images/characters/eternals.png" alt="eternals"></a></li>
-                            <li><a href="starFoxCharacters.html"><img src="images/characters/starFox.png" alt="starFox"></a></li>
-                            <li><a href="ironManCharacters.html"><img src="images/characters/ironMan.png" alt="ironMan"></a></li>
-                            <li><a href="spiderManCharacters.html"><img src="images/characters/spiderMan.png" alt="spiaderMan"></a></li>
-                        </ul>
+                    <li class="characters">
+                        <span data-GNBName="characters">characters</span>
+                        <div id="characters">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>A recent characters</h2>
+                            <ul>
+                                <li><a href="hawkEyeCharacters.html"><img src="images/characters/hawkEye.png" alt="hawkEye"><span>hawkEye</span></a></li>
+                                <li><a href="eterNalsCharacters.html"><img src="images/characters/eternals.png" alt="eternals"><span>eterNals</span></a></li>
+                                <li><a href="starFoxCharacters.html"><img src="images/characters/starFox.png" alt="starFox"><span>starFox</span></a></li>
+                                <li><a href="ironManCharacters.html"><img src="images/characters/ironMan.png" alt="ironMan"><span>ironMan</span></a></li>
+                                <li><a href="spiderManCharacters.html"><img src="images/characters/spiderMan.png" alt="spiaderMan"><span>spiderMan</span></a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="comics">comics
-                        <h2>Popular comics</h2>
-                        <ul>
-                            <li><a href="eterNalsComics.html"><img src="images/comics/eternals.png" alt="eternals"></a></li>
-                            <li><a href="hulkComics.html"><img src="images/comics/hulk.png" alt="hulk"></a></li>
-                            <li><a href="spiderManComics.html"><img src="images/comics/spiderman.png" alt="spiderman"></a></li>
-                            <li><a href="thingComics.html"><img src="images/comics/thing.png" alt="thing"></a></li>
-                        </ul>
+                    <li class="comics">
+                        <span data-GNBName="comics">comics</span>
+                        <div id="comics">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>Popular comics</h2>
+                            <ul>
+                                <li><a href="eterNalsComics.html"><img src="images/comics/eternals.png" alt="eternals"><span>eternals</span></a></li>
+                                <li><a href="hulkComics.html"><img src="images/comics/hulk.png" alt="hulk"><span>hulk</span></a></li>
+                                <li><a href="spiderManComics.html"><img src="images/comics/spiderman.png" alt="spiderman"><span>spiderman</span></a></li>
+                                <li><a href="thingComics.html"><img src="images/comics/thing.png" alt="thing"><span>thing</span></a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="movies">movies
-                        <h2>movies</h2>
-                        <ul>
-                            <li><a href="avenersMovies.html"><img src="images/movies/avengers.png" alt="avengers"></a></li>
-                            <li><a href="blackWidowMovies.html"><img src="images/movies/blackWidow.png" alt="blackWidow"></a></li>
-                            <li><a href="eternalsMovies.html"><img src="images/movies/eternals.png" alt="eternals"></a></li>
-                            <li><a href="shanchiMovies.html"><img src="images/movies/shangchi.png" alt="shangchi"></a></li>
-                            <li><a href="spiderManMovies.html"><img src="images/movies/spiderMan.png" alt="spiderMan"></a></li>
-                        </ul>
+                    <li class="movies">
+                        <span data-GNBName="movies">movies</span>
+                        <div id="movies">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>movies</h2>
+                            <ul>
+                                <li><a href="avengersMovies.html"><img src="images/movies/avengers.png" alt="avengers"><span>avengers</span></a></li>
+                                <li><a href="blackWidowMovies.html"><img src="images/movies/blackWidow.png" alt="blackWidow"><span>blackWidow</span></a></li>
+                                <li><a href="eterNalsMovies.html"><img src="images/movies/eternals.png" alt="eternals"><span>eternals</span></a></li>
+                                <li><a href="shangChiMovies.html"><img src="images/movies/shangchi.png" alt="shangchi"><span>shangchi</span></a></li>
+                                <li><a href="spiderManMovies.html"><img src="images/movies/spiderMan.png" alt="spiderMan"><span>spiderman</span></a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="news">news
-                        <h2>trending news</h2>
-                        <ul>
-                            <li>
-                                <a href="moviesNews.html">
-                                    <figure>
-                                        <img src="images/news/movies.png" alt="spiderManMoviesnews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>movies</dt>
-                                                <dd>‘Spider-Man: No Way Home’: Tom Holland and Zendaya on New and Returning Surprise Characters</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="comicsNews.html">
-                                    <figure>
-                                        <img src="images/news/comics.png" alt="hulkComicsNews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>COMICS</dt>
-                                                <dd>Hulk's Rage Meets Thor's Thunder in Epic New Crossover</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tvShowNews.html">
-                                    <figure>
-                                        <img src="images/news/tvShows.png" alt="hawkEyeTvShowsNews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>TV SHOWS</dt>
-                                                <dd>‘Hawkeye’: Laura Barton’s Reveal and Keeping Christmas Alive at the Farm House</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="gamesNews.html">
-                                    <figure>
-                                        <img src="images/news/games.png" alt="guardiansGamesNews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>GAMES</dt>
-                                                <dd>Latest Trailer from Marvel's Guardians of the Galaxy Reveals a Mysterious Past...and Future?</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="more">more
-                        <h2>more</h2>
-                        <ul>
-                            <li>
-                                <a href="cultureMore.html">
-                                    <figure>
-                                        <img src="images/more/culture.png" alt="culture">
+                    <li class="news">
+                        <span data-GNBName="news">news</span>
+                        <div id="news">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>trending news</h2>
+                            <ul>
+                                <li>
+                                    <a href="moviesNews.html">
+                                        <figure>
+                                            <img src="images/news/movies.png" alt="spiderManMoviesnews">
                                             <figcaption>
-                                                culture
+                                                <dl>
+                                                    <dt>MOVIES</dt>
+                                                    <dd>‘Spider-Man: No Way Home’: Tom Holland and Zendaya on New and Returning Surprise Characters</dd>
+                                                </dl>
                                             </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="booksMore.html">
-                                    <figure>
-                                        <img src="images/more/books.png" alt="books">
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="comicsNews.html">
+                                        <figure>
+                                            <img src="images/news/comics.png" alt="hulkComicsNews">
                                             <figcaption>
-                                                books
+                                                <dl>
+                                                    <dt>COMICS</dt>
+                                                    <dd>Hulk's Rage Meets Thor's Thunder in Epic New Crossover</dd>
+                                                </dl>
                                             </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                        </ul>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tvShowsNews.html">
+                                        <figure>
+                                            <img src="images/news/tvShows.png" alt="hawkEyeTvShowsNews">
+                                            <figcaption>
+                                                <dl>
+                                                    <dt>TV SHOWS</dt>
+                                                    <dd>‘Hawkeye’: Laura Barton’s Reveal and Keeping Christmas Alive at the Farm House</dd>
+                                                </dl>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="gamesNews.html">
+                                        <figure>
+                                            <img src="images/news/games.png" alt="guardiansGamesNews">
+                                            <figcaption>
+                                                <dl>
+                                                    <dt>GAMES</dt>
+                                                    <dd>Latest Trailer from Marvel's Guardians of the Galaxy Reveals a Mysterious Past...and Future?</dd>
+                                                </dl>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more">
+                        <span data-GNBName="more">more</span>
+                        <div id="more">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>more</h2>
+                            <ul>
+                                <li>
+                                    <a href="cultureMore.html">
+                                        <figure>
+                                            <img src="images/more/culture.png" alt="culture">
+                                                <figcaption>
+                                                    culture
+                                                </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="booksMore.html">
+                                        <figure>
+                                            <img src="images/more/books.png" alt="books">
+                                                <figcaption>
+                                                    books
+                                                </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </nav>
-            <div class="sideContainer">
-                <a class="material-icons">search</a>
-                <input type="button" value="login" data-callPopup="loginPanel">
-                <input type="button" value="join in" data-callPopup="joinPanel">
-            </div>
         </div>
     </header>
     <!--? header fin -->
 
     <div class="gamesNewsList">
-        <h2>newws list</h2>
         <article>
             <div>
                 <strong>GEAR</strong>
@@ -387,41 +411,41 @@
                 <small>The smash-hit game unites with adidas for a limited collection next year!</small>
             </h3>
             <p>Cosmic colors, stellar threads, and fresh fits based on your favorite band of space misfits are coming with the new Marvel’s Guardians of the Galaxy video game adidas Originals Collection. This limited collection is due to arrive in the first half of 2022.</p>
-            <div>
-                <iframe src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6287013170001&brand=marvel" width="640" height="360" allowfullscreen></iframe>
+            <div class="videoSection">
+                <iframe src="https://www.youtube.com/embed/lz4WY0xbIxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>“Early in Marvel’s Guardians of the Galaxy development the Eidos-Montréal team had a wonderful idea to incorporate a vintage 1980s adidas silhouette - the Forum 84 Hi - into the character design for young Peter Quill. So, we started planning with Disney and talking with adidas,” Eric Monacelli, Senior Director of Production and Marvel’s Guardians of the Galaxy Project Lead for Marvel Games, explained.</p>
                 <p>“The designers at adidas were greatly inspired by the unique look and feel of the game and the original, specific Eidos-Montréal take on the now classic Guardians team. It motivated us to work collaboratively to build what was going to be one sneaker into an entire set, communicating two important core tenets of our Guardians - family and team - authentically via an extraordinary collection of six sneakers.”</p>
                 <p>We caught up with the minds behind the collaboration to hear how it all came together.</p>
                 <p>When did you realize that a collection could be made from the Marvel's Guardians of the Galaxy video game?</p>
-                <p><strong>Bruno Gauthier Leblanc (Art Director - Eidos-Montréal):</strong>When we started designing young Star-Lord, we thought it would be fitting he’d wear a pair of adidas. I believe them to be iconic to that era. Afterwards the team started saying how great it would be if we’d actually get to make a real pair. Well, lo and behold, our creative director pitched the idea to Marvel and they loved it and the rest is history.</p>
-                <p><strong>Tony Holmes (Senior Product Manager - adidas):</strong>When talking with the Marvel team and hearing about the game what was the game about. We thought we could bring the characters to life through footwear with the inspiration of the characters incorporated in the shoes. We choose the footwear models that we thought fit the characters attitude.</p>
+                <p><strong>Bruno Gauthier Leblanc (Art Director - Eidos-Montréal)</strong>When we started designing young Star-Lord, we thought it would be fitting he’d wear a pair of adidas. I believe them to be iconic to that era. Afterwards the team started saying how great it would be if we’d actually get to make a real pair. Well, lo and behold, our creative director pitched the idea to Marvel and they loved it and the rest is history.</p>
+                <p><strong>Tony Holmes (Senior Product Manager - adidas)</strong>When talking with the Marvel team and hearing about the game what was the game about. We thought we could bring the characters to life through footwear with the inspiration of the characters incorporated in the shoes. We choose the footwear models that we thought fit the characters attitude.</p>
                 <p>How did you select the specific silhouettes for each character?</p>
-                <p><strong>Gauthier Leblanc:</strong>Our take on these five Guardians is designed with the philosophy that one element in their concept should stand out and be what encompasses that character. We took those elements to then match the shoes to the Guardians.</p>
-                <p><strong>James Lui (Senior Designer, Footwear, Exclusives - adidas):</strong>Similar to the characters in Marvel’s Guardians of the Galaxy, each adidas silhouette is unique in its own way. From a design perspective, we wanted to make sure that each footwear style would highlight the characteristics and fit the style of each hero.</p>
+                <p><strong>Gauthier Leblanc</strong>Our take on these five Guardians is designed with the philosophy that one element in their concept should stand out and be what encompasses that character. We took those elements to then match the shoes to the Guardians.</p>
+                <p><strong>James Lui (Senior Designer, Footwear, Exclusives - adidas)</strong>Similar to the characters in Marvel’s Guardians of the Galaxy, each adidas silhouette is unique in its own way. From a design perspective, we wanted to make sure that each footwear style would highlight the characteristics and fit the style of each hero.</p>
                 <p>Star-Lord has an old-school charm and is an expert in galactic combat and battle techniques; similarly, the Forum mid has an undeniable retro appeal and is a proven contender in its own area of expertise.</p>
                 <p>Drax is fierce and headstrong, with superhuman strength and a formidable human-mutate physique. The Ozelia is built like a classic sneaker but features amplified characteristics like a maximal midsole and molded panels and lines that draw similar visuals to Drax’s brutish form.</p>
                 <p>Gamora is known across the universe as being a warrior with unmatched strength, speed and skill - and also for her lineage to Thanos. The ZX 2K Boost, the most recent silhouette to bear the iconic ZX moniker, is sleek and sharp like Gamora’s blades and takes color and material references from her armor and appearance.</p>
             </div>
-            <div>
-                <iframe src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6287014826001&brand=marvel" width="640" height="360" allowfullscreen></iframe>
+            <div class="videoSection">
+                <iframe src="https://www.youtube.com/embed/ARRPKcttTh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>What were the primary sources of inspiration for the design of each sneaker in the collection?</p>
-                <p><strong>Lui:</strong>A key starting point for the design of each sneaker was the unique visual cues from each of the characters - whether it’s the stitching details on Star-Lord’s leather jacket, Groot’s earthy color palette, or Drax’s unmistakable tattoos. From there, we wanted to inlay various design discovery elements that helped further bring the story of each character to life. Bringing it all together across the collection are unique signifiers of the Guardians of the Galaxy as a Super Hero team - with matching sockliners, hang tags, labels, and packaging.</p>
+                <p><strong>Lui</strong>A key starting point for the design of each sneaker was the unique visual cues from each of the characters - whether it’s the stitching details on Star-Lord’s leather jacket, Groot’s earthy color palette, or Drax’s unmistakable tattoos. From there, we wanted to inlay various design discovery elements that helped further bring the story of each character to life. Bringing it all together across the collection are unique signifiers of the Guardians of the Galaxy as a Super Hero team - with matching sockliners, hang tags, labels, and packaging.</p>
                 <p>To capture the essence of the plant-life super-being that is Groot, we started with the rugged trail version of the modern classic NMD R1. Unique to the style is a lugged outsole helps to naturally grip the floor, and the mud-guard that runs along the bottom of the shoe helps protect the foot. Adding to this, we used a two-tone knit in shades of brown as a nod to Groot’s roots for the upper, and an embroidered detail featuring "I AM GROOT" in an alien language featured in the game.</p>
                 <p>Rocket is a weapons specialist, elite marksman, and master tactician, who takes on amplified abilities from its racoon counterparts. We started with the ZX 1K Boost silhouette as a base - it’s a modern interpretation of a familiar style, using the latest technology for optimal performance. We added technical features like speed lacing and high-vis reflective elements inspired by Rocket’s weaponry.</p>
                 <p>How did the art and designs from the game factor into the shoe designs when thinking about each sneaker?</p>
-                <p><strong>Lui:</strong>With the development of the Marvel’s Guardians of the Galaxy game, we wanted to make sure the footwear designs were reflective of the latest interpretation of each character from the game. The team worked closely together with the Marvel and Eidos-Montréal teams to ensure design language, color codes, and graphic details and storytelling were consistent across the collection.</p>
+                <p><strong>Lui</strong>With the development of the Marvel’s Guardians of the Galaxy game, we wanted to make sure the footwear designs were reflective of the latest interpretation of each character from the game. The team worked closely together with the Marvel and Eidos-Montréal teams to ensure design language, color codes, and graphic details and storytelling were consistent across the collection.</p>
                 <p>The sneaker box is unique and its features are directly from the game. What was the design process for that aspect of the collection?</p>
-                <p><strong>Holmes:</strong>For the box we incorporated the cosmic swirl from the game to give it a unique look that would give it a feel and connection to the game. The tissue paper was a combination of the Marvel and adidas logos repeated on the paper in the Marvel red color to show the Marvel/adidas collaboration.</p>
+                <p><strong>Holmes</strong>For the box we incorporated the cosmic swirl from the game to give it a unique look that would give it a feel and connection to the game. The tissue paper was a combination of the Marvel and adidas logos repeated on the paper in the Marvel red color to show the Marvel/adidas collaboration.</p>
                 <p>The insert cards that were in each box were specific to each character in the game. The cards had the bio of each character along with a quick talk about what their journey would be in the game. The picture of the model of the shoe was also on the card to give it more inspiration of the characters. These elements together will made it a future collector’s item.</p>
                 <p>The hang tag on one side featured the Marvel’s Galaxy of the Guardians logo in the reflective silver print. The side featured the standard red Marvel logo with reflective silver Trefoil. This hang was unique and gave it shelf appeal that the consumer would notice and come over to check out.</p>
                 <p>The insoles were color inspiration from the characters along with the Marvel and adidas logos for collaboration.</p>
             </div>
-            <div>
-                <iframe src="https://assets.espn.go.com/players/web-player-bundle/next/embed/share.html#id=6287142015001&brand=marvel" width="640" height="360" allowfullscreen></iframe>
+            <div class="videoSection">
+                <iframe src="https://www.youtube.com/embed/zkY3coZmLuE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>How was working with Marvel and Eidos-Montréal to make this collection happen?</p>
                 <p>Gauthier Leblanc: Marvel was very supportive and extremely excited about this collection. We have a bunch of sneakerheads on our own team as well which made this collection even more special.</p>
-                <p><strong>Lui:</strong>The collaborative effort between adidas, Marvel, and Eidos-Montréal has been a dream - each team brought their own perspective and expertise to make sure the collection was right for sneakerheads, adidas fans, Marvel enthusiasts, Guardians of the Galaxy fanatics, and beyond. From ideation to execution, the process saw a tremendous level of communication, respect, and passion for the project.</p>
-                <p><strong>Holmes:</strong>The collaborative effort between adidas, Marvel, and Eidos-Montréal was exciting. It was the first time I had ever worked with Marvel and the team. The was great to work with and very hands on which made the process of the project go smoothly. The personalities of the teams worked well together even though there were a lot of people involved. The professionalism, passion, respect between the team were second to none. I would love to work with Marvel on future projects if any come across my desk again.</p>
+                <p><strong>Lui</strong>The collaborative effort between adidas, Marvel, and Eidos-Montréal has been a dream - each team brought their own perspective and expertise to make sure the collection was right for sneakerheads, adidas fans, Marvel enthusiasts, Guardians of the Galaxy fanatics, and beyond. From ideation to execution, the process saw a tremendous level of communication, respect, and passion for the project.</p>
+                <p><strong>Holmes</strong>The collaborative effort between adidas, Marvel, and Eidos-Montréal was exciting. It was the first time I had ever worked with Marvel and the team. The was great to work with and very hands on which made the process of the project go smoothly. The personalities of the teams worked well together even though there were a lot of people involved. The professionalism, passion, respect between the team were second to none. I would love to work with Marvel on future projects if any come across my desk again.</p>
                 <p>Sign up to learn specifics over at www.adidas.com/gotg as to when, how, where, and if they’ll be available in your region. Follow @MarvelGames, @GOTGTheGame, and @adidas for the latest information. Marvel’s Guardians of the Galaxy is available now on PlayStation, Xbox, PC, and Nintendo platforms.</p>
             </div>
         </article>
@@ -467,12 +491,12 @@
                     <li><a href="https://twitter.com/marvel">twitter</a></li>
                 </ul>
             </div>
+            <ul>
+                <li><a href="license.html">License Agreement</a></li>
+                <li><a href="insiderTerm.html">Marvel Insider Terms</a></li>
+                <li>ⓒ2021 MARVEL</li>
+            </ul>
         </div>
-        <ul>
-            <li><a href="license.html">License Agreement</a></li>
-            <li><a href="insiderTerm.html">Marvel Insider Terms</a></li>
-            <li>ⓒ2021 MARVEL</li>
-        </ul>
     </footer>
     <!--? footerArea fin -->
 </body>

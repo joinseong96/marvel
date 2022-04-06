@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MARVEL</title>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
     <script src="js/core.js"></script>
     <link rel="stylesheet" href="css/import.css">
 </head>
@@ -13,11 +15,11 @@
     <div id="loginPanel">
         <h2>
             <img src="images/logo.png" alt="marvel logo">
-            <button class="material-icons">close</button>
+            <button class="material-icons btn_close">close</button>
         </h2>
         <form>
             <input type="email" title="please enter your email." placeholder="Email Address">
-            <input type="password" title="Please enter your PIN number." placeholder="Password">
+            <input type="password" title="Please enter your PIN number." placeholder="PassWord">
             <input type="button" value="login">
         </form>
         <a href="#">create an account</a>
@@ -27,17 +29,19 @@
     <div id="joinPanel">
         <h2>
             <img src="images/logo.png" alt="marvel logo">
-            <button class="material-icons">close</button>>
+            <button class="material-icons btn_close">close</button>
         </h2>
-        <input type="text" title="please enter your first name." placeholder="First Name">
-        <input type="text" title="please enter your last name." placeholder="Last Name">
-        <input type="email" title="please enter your email." placeholder="Email Address">
-        <input type="password" title="Please enter your PIN number." placeholder="Password">
+        <form>
+            <input type="text" title="please enter your first name." placeholder="First Name">
+            <input type="text" title="please enter your last name." placeholder="Last Name">
+            <input type="email" title="please enter your email." placeholder="Email Address">
+            <input type="password" title="Please enter your PIN number." placeholder="Password">
+        </form>
         <div>
             <label for="selectMonth">Birth Date</label>
             <span class="inputSelect">
                 <select class="month" id="selectMonth">
-                    <option selected>month</option>
+                    <option selected>Month</option>
                     <option>jan</option>
                     <option>feb</option>
                     <option>mar</option>
@@ -244,139 +248,160 @@
         <a href="#">create account</a>
     </div>
     <!--? joinPanel fin  -->
-    
-    <header class="nonBG">
+
+    <header>
         <div>
             <h1>
                 <a href="index.html">
                     <img src="images/LOGO.png" alt="marvel">
                 </a>
             </h1>
+            <div class="sideContainer">
+                <button class="material-icons mui">menu</button>
+                <a href="search.html" class="material-icons btn_search">search</a>
+                <input type="button" class="btn_popUp" value="login" data-callPopup="loginPanel">
+                <input type="button" class="btn_popUp" value="joinin" data-callPopup="joinPanel">
+            </div>
             <nav>
                 <ul>
-                    <li class="characters">characters
-                        <h2>A recent characters</h2>
-                        <ul>
-                            <li><a href="hawkEyeCharacters.html"><img src="images/characters/hawkEye.png" alt="hawkEye"></a></li>
-                            <li><a href="eterNalsCharacters.html"><img src="images/characters/eternals.png" alt="eternals"></a></li>
-                            <li><a href="starFoxCharacters.html"><img src="images/characters/starFox.png" alt="starFox"></a></li>
-                            <li><a href="ironManCharacters.html"><img src="images/characters/ironMan.png" alt="ironMan"></a></li>
-                            <li><a href="spiderManCharacters.html"><img src="images/characters/spiderMan.png" alt="spiaderMan"></a></li>
-                        </ul>
+                    <li class="characters">
+                        <span data-GNBName="characters">characters</span>
+                        <div id="characters">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>A recent characters</h2>
+                            <ul>
+                                <li><a href="hawkEyeCharacters.html"><img src="images/characters/hawkEye.png" alt="hawkEye"><span>hawkEye</span></a></li>
+                                <li><a href="eterNalsCharacters.html"><img src="images/characters/eternals.png" alt="eternals"><span>eterNals</span></a></li>
+                                <li><a href="starFoxCharacters.html"><img src="images/characters/starFox.png" alt="starFox"><span>starFox</span></a></li>
+                                <li><a href="ironManCharacters.html"><img src="images/characters/ironMan.png" alt="ironMan"><span>ironMan</span></a></li>
+                                <li><a href="spiderManCharacters.html"><img src="images/characters/spiderMan.png" alt="spiaderMan"><span>spiderMan</span></a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="comics">comics
-                        <h2>Popular comics</h2>
-                        <ul>
-                            <li><a href="eterNalsComics.html"><img src="images/comics/eternals.png" alt="eternals"></a></li>
-                            <li><a href="hulkComics.html"><img src="images/comics/hulk.png" alt="hulk"></a></li>
-                            <li><a href="spiderManComics.html"><img src="images/comics/spiderman.png" alt="spiderman"></a></li>
-                            <li><a href="thingComics.html"><img src="images/comics/thing.png" alt="thing"></a></li>
-                        </ul>
+                    <li class="comics">
+                        <span data-GNBName="comics">comics</span>
+                        <div id="comics">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>Popular comics</h2>
+                            <ul>
+                                <li><a href="eterNalsComics.html"><img src="images/comics/eternals.png" alt="eternals"><span>eternals</span></a></li>
+                                <li><a href="hulkComics.html"><img src="images/comics/hulk.png" alt="hulk"><span>hulk</span></a></li>
+                                <li><a href="spiderManComics.html"><img src="images/comics/spiderman.png" alt="spiderman"><span>spiderman</span></a></li>
+                                <li><a href="thingComics.html"><img src="images/comics/thing.png" alt="thing"><span>thing</span></a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="movies">movies
-                        <h2>movies</h2>
-                        <ul>
-                            <li><a href="avenersMovies.html"><img src="images/movies/avengers.png" alt="avengers"></a></li>
-                            <li><a href="blackWidowMovies.html"><img src="images/movies/blackWidow.png" alt="blackWidow"></a></li>
-                            <li><a href="eternalsMovies.html"><img src="images/movies/eternals.png" alt="eternals"></a></li>
-                            <li><a href="shanchiMovies.html"><img src="images/movies/shangchi.png" alt="shangchi"></a></li>
-                            <li><a href="spiderManMovies.html"><img src="images/movies/spiderMan.png" alt="spiderMan"></a></li>
-                        </ul>
+                    <li class="movies">
+                        <span data-GNBName="movies">movies</span>
+                        <div id="movies">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>movies</h2>
+                            <ul>
+                                <li><a href="avengersMovies.html"><img src="images/movies/avengers.png" alt="avengers"><span>avengers</span></a></li>
+                                <li><a href="blackWidowMovies.html"><img src="images/movies/blackWidow.png" alt="blackWidow"><span>blackWidow</span></a></li>
+                                <li><a href="eterNalsMovies.html"><img src="images/movies/eternals.png" alt="eternals"><span>eternals</span></a></li>
+                                <li><a href="shangChiMovies.html"><img src="images/movies/shangchi.png" alt="shangchi"><span>shangchi</span></a></li>
+                                <li><a href="spiderManMovies.html"><img src="images/movies/spiderMan.png" alt="spiderMan"><span>spiderman</span></a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="news">news
-                        <h2>trending news</h2>
-                        <ul>
-                            <li>
-                                <a href="moviesNews.html">
-                                    <figure>
-                                        <img src="images/news/movies.png" alt="spiderManMoviesnews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>movies</dt>
-                                                <dd>‘Spider-Man: No Way Home’: Tom Holland and Zendaya on New and Returning Surprise Characters</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="comicsNews.html">
-                                    <figure>
-                                        <img src="images/news/comics.png" alt="hulkComicsNews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>COMICS</dt>
-                                                <dd>Hulk's Rage Meets Thor's Thunder in Epic New Crossover</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tvShowsNews.html">
-                                    <figure>
-                                        <img src="images/news/tvShows.png" alt="hawkEyeTvShowsNews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>TV SHOWS</dt>
-                                                <dd>‘Hawkeye’: Laura Barton’s Reveal and Keeping Christmas Alive at the Farm House</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="gamesNews.html">
-                                    <figure>
-                                        <img src="images/news/games.png" alt="guardiansGamesNews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>GAMES</dt>
-                                                <dd>Latest Trailer from Marvel's Guardians of the Galaxy Reveals a Mysterious Past...and Future?</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="more">more
-                        <h2>more</h2>
-                        <ul>
-                            <li>
-                                <a href="cultureMore.html">
-                                    <figure>
-                                        <img src="images/more/culture.png" alt="culture">
+                    <li class="news">
+                        <span data-GNBName="news">news</span>
+                        <div id="news">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>trending news</h2>
+                            <ul>
+                                <li>
+                                    <a href="moviesNews.html">
+                                        <figure>
+                                            <img src="images/news/movies.png" alt="spiderManMoviesnews">
                                             <figcaption>
-                                                culture
+                                                <dl>
+                                                    <dt>MOVIES</dt>
+                                                    <dd>‘Spider-Man: No Way Home’: Tom Holland and Zendaya on New and Returning Surprise Characters</dd>
+                                                </dl>
                                             </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="booksMore.html">
-                                    <figure>
-                                        <img src="images/more/books.png" alt="books">
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="comicsNews.html">
+                                        <figure>
+                                            <img src="images/news/comics.png" alt="hulkComicsNews">
                                             <figcaption>
-                                                books
+                                                <dl>
+                                                    <dt>COMICS</dt>
+                                                    <dd>Hulk's Rage Meets Thor's Thunder in Epic New Crossover</dd>
+                                                </dl>
                                             </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                        </ul>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tvShowsNews.html">
+                                        <figure>
+                                            <img src="images/news/tvShows.png" alt="hawkEyeTvShowsNews">
+                                            <figcaption>
+                                                <dl>
+                                                    <dt>TV SHOWS</dt>
+                                                    <dd>‘Hawkeye’: Laura Barton’s Reveal and Keeping Christmas Alive at the Farm House</dd>
+                                                </dl>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="gamesNews.html">
+                                        <figure>
+                                            <img src="images/news/games.png" alt="guardiansGamesNews">
+                                            <figcaption>
+                                                <dl>
+                                                    <dt>GAMES</dt>
+                                                    <dd>Latest Trailer from Marvel's Guardians of the Galaxy Reveals a Mysterious Past...and Future?</dd>
+                                                </dl>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more">
+                        <span data-GNBName="more">more</span>
+                        <div id="more">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>more</h2>
+                            <ul>
+                                <li>
+                                    <a href="cultureMore.html">
+                                        <figure>
+                                            <img src="images/more/culture.png" alt="culture">
+                                                <figcaption>
+                                                    culture
+                                                </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="booksMore.html">
+                                        <figure>
+                                            <img src="images/more/books.png" alt="books">
+                                                <figcaption>
+                                                    books
+                                                </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </nav>
-            <div class="sideContainer">
-                <a class="material-icons">search</a>
-                <input type="button" value="login" data-callPopup="loginPanel">
-                <input type="button" value="join in" data-callPopup="joinPanel">
-            </div>
         </div>
     </header>
     <!--? header fin -->
 
-    <div class="aboutFotContainer">
+    <div class="licenseFotContainer">
         <h2>MARVEL CORPORATE INFORMATION</h2>
             <!--! <img src="images/footer/ABOUTMAIN.png" alt="marvel studios"> -->
         <!--? mainBanner Area fin -->
@@ -384,34 +409,44 @@
         <section>
             <h3>MARVEL DIGITAL COMICS LICENSE AGREEMENT AND TERMS OF USE</h3>
             <ul>
-                <li><strong>LAST MODIFIED: APRIL 29, 2021</strong>This Marvel Digital Comics License Agreement and Terms of Use (the "Agreement") is an agreement between you and Marvel Worldwide, Inc. (with its affiliates and subsidiaries, "Marvel" or "we"). Please read this Marvel Digital Comics License Agreement and Terms of Use, the Marvel Privacy Policy (the "Marvel Privacy Policy"), the Marvel Terms & Conditions (the "Marvel Terms & Conditions") and other applicable rules, policies, and terms posted on the Marvel website or any Marvel Comics Apps before using the Marvel Comics Apps and Digital Content (each as defined below). In the event of a conflict between those terms and the terms of this Agreement, this Agreement will govern.By downloading and/or using the Marvel Comics Apps and/or any Digital Content, you agree to be bound by the terms of this Agreement, of the Marvel Privacy Policy and the Marvel Terms & Conditions. If you do not accept these terms, then you may not download or use the Marvel Comics Apps or any Digital Content. In addition, when using the Marvel Comics App(s) and any Digital Content, you shall be subject to any posted guidelines or rules applicable to such service, features or offers that may be posted from time to time. All such guidelines or rules are hereby incorporated by reference into this Agreement.</li>
-                <li><strong>DEFINED TERMS</strong>For the purposes of this Agreement:<br>
-                    "Digital Content" means digitized comic books, including single issues and trade publications, games, video, audio and other digital content provided hereunder.<br>
-                    "Marvel Comics Apps" means, collectively, Marvel's digital comics reader, storefront applications, websites and/or software (including any updates/upgrades to that software) through which you can: (1) browse, shop for, download and/or stream, read and/or otherwise use Digital Content or other items offered by us for use on one (1) or more select devices (e.g., smartphones, tablets, PC/Mac, et al.); and (2) manage your Digital Content and account settings.<br>
-                    "Subscription-based Content" means Digital Content made available to you on a subscription basis, such as the Marvel Unlimited service.</li>
+                <li>
+                    <strong>LAST MODIFIED: APRIL 29, 2021</strong>This Marvel Digital Comics License Agreement and Terms of Use (the "Agreement") is an agreement between you and Marvel Worldwide, Inc. (with its affiliates and subsidiaries, "Marvel" or "we"). Please read this Marvel Digital Comics License Agreement and Terms of Use, the Marvel Privacy Policy (the "Marvel Privacy Policy"), the Marvel Terms & Conditions (the "Marvel Terms & Conditions") and other applicable rules, policies, and terms posted on the Marvel website or any Marvel Comics Apps before using the Marvel Comics Apps and Digital Content (each as defined below). In the event of a conflict between those terms and the terms of this Agreement, this Agreement will govern.By downloading and/or using the Marvel Comics Apps and/or any Digital Content, you agree to be bound by the terms of this Agreement, of the Marvel Privacy Policy and the Marvel Terms & Conditions. If you do not accept these terms, then you may not download or use the Marvel Comics Apps or any Digital Content. In addition, when using the Marvel Comics App(s) and any Digital Content, you shall be subject to any posted guidelines or rules applicable to such service, features or offers that may be posted from time to time. All such guidelines or rules are hereby incorporated by reference into this Agreement.
+                </li>
+                <li>
+                    <strong>DEFINED TERMS</strong>For the purposes of this Agreement:
+                    "Digital Content" means digitized comic books, including single issues and trade publications, games, video, audio and other digital content provided hereunder.
+                    "Marvel Comics Apps" means, collectively, Marvel's digital comics reader, storefront applications, websites and/or software (including any updates/upgrades to that software) through which you can: (1) browse, shop for, download and/or stream, read and/or otherwise use Digital Content or other items offered by us for use on one (1) or more select devices (e.g., smartphones, tablets, PC/Mac, et al.); and (2) manage your Digital Content and account settings.
+                    "Subscription-based Content" means Digital Content made available to you on a subscription basis, such as the Marvel Unlimited service.
+                </li>
             </ul>
             <ol>
-                <li><strong>DIGITAL COMICS AND OTHER DIGITAL CONTENT</strong>Digital Content. You understand and agree that the Marvel Comics Apps and Digital Content you receive through the Marvel Comics Apps is owned by Marvel and is protected by the copyright laws of the United States, as well as other intellectual property laws and treaties. Marvel does not transfer any title, right or interest to or in the Marvel Comics Apps and/or Digital Content to you.<br>
-                    Use of Digital Content. Upon your download and/or streaming and/or use of Digital Content and payment of any applicable fees (including applicable taxes), Marvel grants you a non-exclusive and non-assignable license to access, view, download, use and display such Digital Content only on the number and type(s) (if so limited) of devices specified in the Marvel Comics Apps or in the third party store in which the app was obtained (e.g., the iTunes app store), and solely for your personal, non-commercial use consistent with the terms of this Agreement. Digital Content is licensed to you by Marvel; not sold, transferred or assigned to you. Marvel may post additional terms for Digital Content in the Marvel Comics Apps. Those terms will also apply, but in the event of a conflict between those terms and the terms of this Agreement, this Agreement will govern.<br>
-                    Limitations. Unless otherwise stated in writing by Marvel, you must not copy, redistribute, sell, rent, lease, convey, reconvey or sublicense the Digital Content. You must not attempt to circumvent, avoid, bypass, remove, deactivate, impair or otherwise defeat any encryption, rights signaling or copy protection technology in which the Digital Content is wrapped or otherwise associated with, and you must not edit, modify, translate or create derivative works or adaptations of the Digital Content. You must not duplicate or otherwise reproduce (including but not limited to â€œburningâ€) the Digital Content, or any portion thereof, onto any physical medium, memory or device (other than within your set of personal devices that are registered for access to your own personal account with Marvel's service), including but not limited to CDs, DVDs, computers or other hardware, or any other medium now known or hereafter devised.<br>
-                    Subscription-based Content. You may cancel your subscription as permitted in our cancellation policy for such Subscription-based Content. We reserve the right to change subscription terms and fees from time to time, effective as of the beginning of the next subscription term upon notice to you. The Marvel Unlimited subscription service is governed by its terms of use located in the Account section of the Marvel Unlimited app and on the Marvel website.<br>
-                    Offline Subscription-based Content. Marvel may, from time to time, permit you to download certain Subscription-based Content for offline use. Marvel may place limitations on such use, including, without limitation, the number of issues available offline at any given time and the length of offline availability. Marvel reserves the right, in its sole discretion, to change the terms of such offline use from time to time, without prior notice to you. Marvel further reserves the right, in its sole discretion, to terminate the ability to download and access offline content at any time, without prior notice to you.</li>
-                <li><strong>MARVEL COMICS APPS</strong>Use of the Marvel Comics Apps. You may use the Marvel Comics Apps, including the software comprising them, solely on the number and type(s) (if so limited) of devices for which you downloaded such content. You may not separate any individual component of such software for use on another device or computer, may not transfer it for use on another device or computer or use it, or any portion of it, over a network, and may not sell, rent, lease, lend, distribute, or sublicense or otherwise assign any rights to such software in whole or in part.<br>
-                    App Updates. In order to keep your Marvel Comics Apps up-to-date, Marvel may make available updates/upgrades to the app. If you do not download such updates/upgrades, you may not receive certain features and/or functionality and/or you may lose certain features and/or functionality of the app.<br>
-                    No Reverse Engineering, Decompilation, Disassembly, or Circumvention. You may not modify, reverse engineer, decompile, reproduce, copy, disassemble the Marvel Comics Apps or otherwise reduce the computer file in which the Digital Content is stored to a human-readable form, whether in whole or in part, create any derivative works from or of the Marvel Comics Apps, or bypass, modify, defeat, or tamper with or circumvent any of the functions or protections of the Marvel Comics Apps; e.g., by modifying, defeating, augmenting or substituting any digital rights management functionality.</li>
-                <li><strong>GENERAL</strong>Compliance with Law and Reservation of Rights. You must use the Marvel Comics Apps and the Digital Content in compliance with all applicable laws. All licenses are non-exclusive and all rights not expressly granted in this Agreement are reserved to Marvel.<br>
-                    Export Regulations. You must comply with all applicable export and re-export restrictions and regulations, and you must not transfer, or encourage, assist, or authorize the transfer of, the Digital Content, or Marvel Comics Apps to a prohibited country or otherwise in violation of any such restrictions or regulations.<br>
-                    Collection of Usage Information. The Marvel Comics Apps will provide Marvel with information and data related to the Digital Content on your device and your use of it (such as registration information, information on what a user has purchased, information on the user's activity in the app, device details, et al.). Information we receive from or about you is subject to the Marvel Privacy Policy, and any personal information transferred by Marvel is subject to such privacy policy and to applicable law.<br>
+                <li>
+                    <strong>DIGITAL COMICS AND OTHER DIGITAL CONTENT</strong>Digital Content. You understand and agree that the Marvel Comics Apps and Digital Content you receive through the Marvel Comics Apps is owned by Marvel and is protected by the copyright laws of the United States, as well as other intellectual property laws and treaties. Marvel does not transfer any title, right or interest to or in the Marvel Comics Apps and/or Digital Content to you.
+                    Use of Digital Content. Upon your download and/or streaming and/or use of Digital Content and payment of any applicable fees (including applicable taxes), Marvel grants you a non-exclusive and non-assignable license to access, view, download, use and display such Digital Content only on the number and type(s) (if so limited) of devices specified in the Marvel Comics Apps or in the third party store in which the app was obtained (e.g., the iTunes app store), and solely for your personal, non-commercial use consistent with the terms of this Agreement. Digital Content is licensed to you by Marvel; not sold, transferred or assigned to you. Marvel may post additional terms for Digital Content in the Marvel Comics Apps. Those terms will also apply, but in the event of a conflict between those terms and the terms of this Agreement, this Agreement will govern.
+                    Limitations. Unless otherwise stated in writing by Marvel, you must not copy, redistribute, sell, rent, lease, convey, reconvey or sublicense the Digital Content. You must not attempt to circumvent, avoid, bypass, remove, deactivate, impair or otherwise defeat any encryption, rights signaling or copy protection technology in which the Digital Content is wrapped or otherwise associated with, and you must not edit, modify, translate or create derivative works or adaptations of the Digital Content. You must not duplicate or otherwise reproduce (including but not limited to â€œburningâ€) the Digital Content, or any portion thereof, onto any physical medium, memory or device (other than within your set of personal devices that are registered for access to your own personal account with Marvel's service), including but not limited to CDs, DVDs, computers or other hardware, or any other medium now known or hereafter devised.
+                    Subscription-based Content. You may cancel your subscription as permitted in our cancellation policy for such Subscription-based Content. We reserve the right to change subscription terms and fees from time to time, effective as of the beginning of the next subscription term upon notice to you. The Marvel Unlimited subscription service is governed by its terms of use located in the Account section of the Marvel Unlimited app and on the Marvel website.
+                    Offline Subscription-based Content. Marvel may, from time to time, permit you to download certain Subscription-based Content for offline use. Marvel may place limitations on such use, including, without limitation, the number of issues available offline at any given time and the length of offline availability. Marvel reserves the right, in its sole discretion, to change the terms of such offline use from time to time, without prior notice to you. Marvel further reserves the right, in its sole discretion, to terminate the ability to download and access offline content at any time, without prior notice to you.
+                </li>
+                <li>
+                    <strong>MARVEL COMICS APPS</strong>Use of the Marvel Comics Apps. You may use the Marvel Comics Apps, including the software comprising them, solely on the number and type(s) (if so limited) of devices for which you downloaded such content. You may not separate any individual component of such software for use on another device or computer, may not transfer it for use on another device or computer or use it, or any portion of it, over a network, and may not sell, rent, lease, lend, distribute, or sublicense or otherwise assign any rights to such software in whole or in part.
+                    App Updates. In order to keep your Marvel Comics Apps up-to-date, Marvel may make available updates/upgrades to the app. If you do not download such updates/upgrades, you may not receive certain features and/or functionality and/or you may lose certain features and/or functionality of the app.
+                    No Reverse Engineering, Decompilation, Disassembly, or Circumvention. You may not modify, reverse engineer, decompile, reproduce, copy, disassemble the Marvel Comics Apps or otherwise reduce the computer file in which the Digital Content is stored to a human-readable form, whether in whole or in part, create any derivative works from or of the Marvel Comics Apps, or bypass, modify, defeat, or tamper with or circumvent any of the functions or protections of the Marvel Comics Apps; e.g., by modifying, defeating, augmenting or substituting any digital rights management functionality.
+                </li>
+                <li>
+                    <strong>GENERAL</strong>Compliance with Law and Reservation of Rights. You must use the Marvel Comics Apps and the Digital Content in compliance with all applicable laws. All licenses are non-exclusive and all rights not expressly granted in this Agreement are reserved to Marvel.
+                    Export Regulations. You must comply with all applicable export and re-export restrictions and regulations, and you must not transfer, or encourage, assist, or authorize the transfer of, the Digital Content, or Marvel Comics Apps to a prohibited country or otherwise in violation of any such restrictions or regulations.
+                    Collection of Usage Information. The Marvel Comics Apps will provide Marvel with information and data related to the Digital Content on your device and your use of it (such as registration information, information on what a user has purchased, information on the user's activity in the app, device details, et al.). Information we receive from or about you is subject to the Marvel Privacy Policy, and any personal information transferred by Marvel is subject to such privacy policy and to applicable law.
                     Patents/Copyrights. The Marvel Comics Apps, and/or methods used in connection with the app, may be covered by copyright and one or more patents or pending patent applications and as trade secrets, and the Digital Content is protected by copyright, trademarks and other applicable law.
-                    Suspension of Access. We may modify, suspend, or discontinue access to certain Digital Content in the event of a rights issue or other business or legal issue.<br>
-                    Termination. Your rights under this Agreement will automatically terminate if you fail to comply with any term of this Agreement. In case of such termination, you must cease all use of the Marvel Comics Apps and Digital Content, and Marvel reserves the right to immediately revoke your access to the Marvel Comics Apps or to Digital Content without refund of any fees. Marvel's failure to exercise or enforce any term of this Agreement will not constitute a waiver of such term or any of Marvel's rights or remedies.<br>
-                    Disclaimer of Warranties. USE OF THE MARVEL COMICS APPS AND DIGITAL CONTENT, AND SOFTWARE IS AT YOUR SOLE RISK. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY MARVEL OR AN AUTHORIZED REPRESENTATIVE OF MARVEL CREATES A WARRANTY, AND THE MARVEL COMICS APPS AND DIGITAL CONTENT ARE PROVIDED "AS IS" WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND, AND MARVEL AND ITS LICENSORS DISCLAIM ALL WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING BUT ONT LIMITED TO, IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, QUIET ENJOYMENT, SATISFACTORY QUALITY, NON-INFRINGEMENT OF THIRD-PARTY RIGHTS, AND THEIR EQUIVALENTS UNDER THE LAWS OF ANY JURISDICTION . THE LAWS OF CERTAIN JURISDICTIONS DO NOT ALLOW THE DISCLAIMER OF IMPLIED WARRANTIES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS, EXCLUSIONS OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS.<br>
-                    Limitation of Liability. TO THE EXTENT NOT PROHIBITED BY LAW, MARVEL AND ITS LICENSORS AND AFFILIATES WILL NOT BE LIABLE TO YOU FOR ANY INCIDENTAL OR CONSEQUENTIAL DAMAGES FOR BREACH OF ANY EXPRESS OR IMPLIED WARRANTY, BREACH OF CONTRACT, NEGLIGENCE, STRICT LIABILITY, OR ANY OTHER LEGAL THEORY RELATED TO THE MARVEL COMICS APPS AND DIGITAL CONTENT, SUCH AS ANY DAMAGES ARISING OUT OF LOSS OF PROFITS, REVENUE, DATA, OR USE OF THE MARVEL COMICS APPS AND DIGITAL CONTENT OR ANY ASSOCIATED PRODUCT, EVEN IF MARVEL HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN ANY CASE, MARVEL'S AND ITS AFFILIATES' AGGREGATE LIABILITY UNDER THIS AGREEMENT WITH RESPECT TO ANY CLAIM RELATING TO PURCHASE OF DIGITAL CONTENT IS LIMITED TO THE AMOUNT YOU ACTUALLY PAID FOR THAT DIGITAL CONTENT. THE LAWS OF CERTAIN JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE EXCLUSIONS OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS.<br>
-                    Governing Law; Disputes. The laws of the state of New York, United States of America, without regard to principles of conflict of laws, will govern this Agreement and any dispute of any sort that might arise between you and Marvel. You agree that any cause of action that may arise under this Agreement shall be commenced and be heard in the appropriate court in the State of New York, County of New York, United States of America. You agree to submit to the personal and exclusive jurisdiction of the courts located within New York County in the State of New York.<br>
-                    Complete Agreement and Severability. This is the entire agreement between us and you regarding the Marvel Comics Apps and Digital Content and supersedes all prior understandings regarding such subject matter. If any term or condition of this Agreement is deemed invalid, void, or for any reason unenforceable, that part will be deemed severable and will not affect the validity and enforceability of any remaining term or condition.<br>
-                    Amendment. We may amend any of the terms of this Agreement in our sole discretion by posting the revised terms on the Marvel Comics Apps and/or the Marvel website. Your continued use of the Marvel Comics Apps and Digital Content after the effective date of any such amendment constitutes your agreement to be bound by such amendment.<br>
-                    Contact Information. For help with any Marvel Comics Apps and/or Digital Content, please reach out to Marvel Customer Support at help.marvel.com or use the "Contact Us" button in the Marvel Unlimited app.<br>
-                    For communications concerning this Agreement, please reach out to Marvel Customer Support at help.marvel.com or use the "Contact Us" button in the Marvel Unlimited app.</li>
+                    Suspension of Access. We may modify, suspend, or discontinue access to certain Digital Content in the event of a rights issue or other business or legal issue.
+                    Termination. Your rights under this Agreement will automatically terminate if you fail to comply with any term of this Agreement. In case of such termination, you must cease all use of the Marvel Comics Apps and Digital Content, and Marvel reserves the right to immediately revoke your access to the Marvel Comics Apps or to Digital Content without refund of any fees. Marvel's failure to exercise or enforce any term of this Agreement will not constitute a waiver of such term or any of Marvel's rights or remedies.
+                    Disclaimer of Warranties. USE OF THE MARVEL COMICS APPS AND DIGITAL CONTENT, AND SOFTWARE IS AT YOUR SOLE RISK. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY MARVEL OR AN AUTHORIZED REPRESENTATIVE OF MARVEL CREATES A WARRANTY, AND THE MARVEL COMICS APPS AND DIGITAL CONTENT ARE PROVIDED "AS IS" WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND, AND MARVEL AND ITS LICENSORS DISCLAIM ALL WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING BUT ONT LIMITED TO, IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, QUIET ENJOYMENT, SATISFACTORY QUALITY, NON-INFRINGEMENT OF THIRD-PARTY RIGHTS, AND THEIR EQUIVALENTS UNDER THE LAWS OF ANY JURISDICTION . THE LAWS OF CERTAIN JURISDICTIONS DO NOT ALLOW THE DISCLAIMER OF IMPLIED WARRANTIES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS, EXCLUSIONS OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS.
+                    Limitation of Liability. TO THE EXTENT NOT PROHIBITED BY LAW, MARVEL AND ITS LICENSORS AND AFFILIATES WILL NOT BE LIABLE TO YOU FOR ANY INCIDENTAL OR CONSEQUENTIAL DAMAGES FOR BREACH OF ANY EXPRESS OR IMPLIED WARRANTY, BREACH OF CONTRACT, NEGLIGENCE, STRICT LIABILITY, OR ANY OTHER LEGAL THEORY RELATED TO THE MARVEL COMICS APPS AND DIGITAL CONTENT, SUCH AS ANY DAMAGES ARISING OUT OF LOSS OF PROFITS, REVENUE, DATA, OR USE OF THE MARVEL COMICS APPS AND DIGITAL CONTENT OR ANY ASSOCIATED PRODUCT, EVEN IF MARVEL HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN ANY CASE, MARVEL'S AND ITS AFFILIATES' AGGREGATE LIABILITY UNDER THIS AGREEMENT WITH RESPECT TO ANY CLAIM RELATING TO PURCHASE OF DIGITAL CONTENT IS LIMITED TO THE AMOUNT YOU ACTUALLY PAID FOR THAT DIGITAL CONTENT. THE LAWS OF CERTAIN JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE EXCLUSIONS OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS.
+                    Governing Law; Disputes. The laws of the state of New York, United States of America, without regard to principles of conflict of laws, will govern this Agreement and any dispute of any sort that might arise between you and Marvel. You agree that any cause of action that may arise under this Agreement shall be commenced and be heard in the appropriate court in the State of New York, County of New York, United States of America. You agree to submit to the personal and exclusive jurisdiction of the courts located within New York County in the State of New York.
+                    Complete Agreement and Severability. This is the entire agreement between us and you regarding the Marvel Comics Apps and Digital Content and supersedes all prior understandings regarding such subject matter. If any term or condition of this Agreement is deemed invalid, void, or for any reason unenforceable, that part will be deemed severable and will not affect the validity and enforceability of any remaining term or condition.
+                    Amendment. We may amend any of the terms of this Agreement in our sole discretion by posting the revised terms on the Marvel Comics Apps and/or the Marvel website. Your continued use of the Marvel Comics Apps and Digital Content after the effective date of any such amendment constitutes your agreement to be bound by such amendment.
+                    Contact Information. For help with any Marvel Comics Apps and/or Digital Content, please reach out to Marvel Customer Support at help.marvel.com or use the "Contact Us" button in the Marvel Unlimited app.
+                    For communications concerning this Agreement, please reach out to Marvel Customer Support at help.marvel.com or use the "Contact Us" button in the Marvel Unlimited app.
+                </li>
             </ol>
         </section>
     </div>
@@ -455,12 +490,12 @@
                     <li><a href="https://twitter.com/marvel">twitter</a></li>
                 </ul>
             </div>
+            <ul>
+                <li><a href="license.html">License Agreement</a></li>
+                <li><a href="insiderTerm.html">Marvel Insider Terms</a></li>
+                <li>ⓒ2021 MARVEL</li>
+            </ul>
         </div>
-        <ul>
-            <li><a href="license.html">License Agreement</a></li>
-            <li><a href="insiderTerm.html">Marvel Insider Terms</a></li>
-            <li>ⓒ2021 MARVEL</li>
-        </ul>
     </footer>
     <!--? footerArea fin -->
 </body>

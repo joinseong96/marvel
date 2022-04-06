@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MARVEL</title>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
     <script src="js/core.js"></script>
     <link rel="stylesheet" href="css/import.css">
 </head>
@@ -13,11 +15,11 @@
     <div id="loginPanel">
         <h2>
             <img src="images/logo.png" alt="marvel logo">
-            <button class="material-icons">close</button>
+            <button class="material-icons btn_close">close</button>
         </h2>
         <form>
             <input type="email" title="please enter your email." placeholder="Email Address">
-            <input type="password" title="Please enter your PIN number." placeholder="Password">
+            <input type="password" title="Please enter your PIN number." placeholder="PassWord">
             <input type="button" value="login">
         </form>
         <a href="#">create an account</a>
@@ -27,17 +29,19 @@
     <div id="joinPanel">
         <h2>
             <img src="images/logo.png" alt="marvel logo">
-            <button class="material-icons">close</button>>
+            <button class="material-icons btn_close">close</button>
         </h2>
-        <input type="text" title="please enter your first name." placeholder="First Name">
-        <input type="text" title="please enter your last name." placeholder="Last Name">
-        <input type="email" title="please enter your email." placeholder="Email Address">
-        <input type="password" title="Please enter your PIN number." placeholder="Password">
+        <form>
+            <input type="text" title="please enter your first name." placeholder="First Name">
+            <input type="text" title="please enter your last name." placeholder="Last Name">
+            <input type="email" title="please enter your email." placeholder="Email Address">
+            <input type="password" title="Please enter your PIN number." placeholder="Password">
+        </form>
         <div>
             <label for="selectMonth">Birth Date</label>
             <span class="inputSelect">
                 <select class="month" id="selectMonth">
-                    <option selected>month</option>
+                    <option selected>Month</option>
                     <option>jan</option>
                     <option>feb</option>
                     <option>mar</option>
@@ -244,134 +248,155 @@
         <a href="#">create account</a>
     </div>
     <!--? joinPanel fin  -->
-    
-    <header class="nonBG">
+
+    <header>
         <div>
             <h1>
                 <a href="index.html">
                     <img src="images/LOGO.png" alt="marvel">
                 </a>
             </h1>
+            <div class="sideContainer">
+                <button class="material-icons mui">menu</button>
+                <a href="search.html" class="material-icons btn_search">search</a>
+                <input type="button" class="btn_popUp" value="login" data-callPopup="loginPanel">
+                <input type="button" class="btn_popUp" value="joinin" data-callPopup="joinPanel">
+            </div>
             <nav>
                 <ul>
-                    <li class="characters">characters
-                        <h2>A recent characters</h2>
-                        <ul>
-                            <li><a href="hawkEyeCharacters.html"><img src="images/characters/hawkEye.png" alt="hawkEye"></a></li>
-                            <li><a href="eterNalsCharacters.html"><img src="images/characters/eternals.png" alt="eternals"></a></li>
-                            <li><a href="starFoxCharacters.html"><img src="images/characters/starFox.png" alt="starFox"></a></li>
-                            <li><a href="ironManCharacters.html"><img src="images/characters/ironMan.png" alt="ironMan"></a></li>
-                            <li><a href="spiderManCharacters.html"><img src="images/characters/spiderMan.png" alt="spiaderMan"></a></li>
-                        </ul>
+                    <li class="characters">
+                        <span data-GNBName="characters">characters</span>
+                        <div id="characters">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>A recent characters</h2>
+                            <ul>
+                                <li><a href="hawkEyeCharacters.html"><img src="images/characters/hawkEye.png" alt="hawkEye"><span>hawkEye</span></a></li>
+                                <li><a href="eterNalsCharacters.html"><img src="images/characters/eternals.png" alt="eternals"><span>eterNals</span></a></li>
+                                <li><a href="starFoxCharacters.html"><img src="images/characters/starFox.png" alt="starFox"><span>starFox</span></a></li>
+                                <li><a href="ironManCharacters.html"><img src="images/characters/ironMan.png" alt="ironMan"><span>ironMan</span></a></li>
+                                <li><a href="spiderManCharacters.html"><img src="images/characters/spiderMan.png" alt="spiaderMan"><span>spiderMan</span></a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="comics">comics
-                        <h2>Popular comics</h2>
-                        <ul>
-                            <li><a href="eterNalsComics.html"><img src="images/comics/eternals.png" alt="eternals"></a></li>
-                            <li><a href="hulkComics.html"><img src="images/comics/hulk.png" alt="hulk"></a></li>
-                            <li><a href="spiderManComics.html"><img src="images/comics/spiderman.png" alt="spiderman"></a></li>
-                            <li><a href="thingComics.html"><img src="images/comics/thing.png" alt="thing"></a></li>
-                        </ul>
+                    <li class="comics">
+                        <span data-GNBName="comics">comics</span>
+                        <div id="comics">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>Popular comics</h2>
+                            <ul>
+                                <li><a href="eterNalsComics.html"><img src="images/comics/eternals.png" alt="eternals"><span>eternals</span></a></li>
+                                <li><a href="hulkComics.html"><img src="images/comics/hulk.png" alt="hulk"><span>hulk</span></a></li>
+                                <li><a href="spiderManComics.html"><img src="images/comics/spiderman.png" alt="spiderman"><span>spiderman</span></a></li>
+                                <li><a href="thingComics.html"><img src="images/comics/thing.png" alt="thing"><span>thing</span></a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="movies">movies
-                        <h2>movies</h2>
-                        <ul>
-                            <li><a href="avenersMovies.html"><img src="images/movies/avengers.png" alt="avengers"></a></li>
-                            <li><a href="blackWidowMovies.html"><img src="images/movies/blackWidow.png" alt="blackWidow"></a></li>
-                            <li><a href="eternalsMovies.html"><img src="images/movies/eternals.png" alt="eternals"></a></li>
-                            <li><a href="shanchiMovies.html"><img src="images/movies/shangchi.png" alt="shangchi"></a></li>
-                            <li><a href="spiderManMovies.html"><img src="images/movies/spiderMan.png" alt="spiderMan"></a></li>
-                        </ul>
+                    <li class="movies">
+                        <span data-GNBName="movies">movies</span>
+                        <div id="movies">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>movies</h2>
+                            <ul>
+                                <li><a href="avengersMovies.html"><img src="images/movies/avengers.png" alt="avengers"><span>avengers</span></a></li>
+                                <li><a href="blackWidowMovies.html"><img src="images/movies/blackWidow.png" alt="blackWidow"><span>blackWidow</span></a></li>
+                                <li><a href="eterNalsMovies.html"><img src="images/movies/eternals.png" alt="eternals"><span>eternals</span></a></li>
+                                <li><a href="shangChiMovies.html"><img src="images/movies/shangchi.png" alt="shangchi"><span>shangchi</span></a></li>
+                                <li><a href="spiderManMovies.html"><img src="images/movies/spiderMan.png" alt="spiderMan"><span>spiderman</span></a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="news">news
-                        <h2>trending news</h2>
-                        <ul>
-                            <li>
-                                <a href="moviesNews.html">
-                                    <figure>
-                                        <img src="images/news/movies.png" alt="spiderManMoviesnews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>movies</dt>
-                                                <dd>‘Spider-Man: No Way Home’: Tom Holland and Zendaya on New and Returning Surprise Characters</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="comicsNews.html">
-                                    <figure>
-                                        <img src="images/news/comics.png" alt="hulkComicsNews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>COMICS</dt>
-                                                <dd>Hulk's Rage Meets Thor's Thunder in Epic New Crossover</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tvShowsNews.html">
-                                    <figure>
-                                        <img src="images/news/tvShows.png" alt="hawkEyeTvShowsNews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>TV SHOWS</dt>
-                                                <dd>‘Hawkeye’: Laura Barton’s Reveal and Keeping Christmas Alive at the Farm House</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="gamesNews.html">
-                                    <figure>
-                                        <img src="images/news/games.png" alt="guardiansGamesNews">
-                                        <figcaption>
-                                            <dl>
-                                                <dt>GAMES</dt>
-                                                <dd>Latest Trailer from Marvel's Guardians of the Galaxy Reveals a Mysterious Past...and Future?</dd>
-                                            </dl>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="more">more
-                        <h2>more</h2>
-                        <ul>
-                            <li>
-                                <a href="cultureMore.html">
-                                    <figure>
-                                        <img src="images/more/culture.png" alt="culture">
+                    <li class="news">
+                        <span data-GNBName="news">news</span>
+                        <div id="news">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>trending news</h2>
+                            <ul>
+                                <li>
+                                    <a href="moviesNews.html">
+                                        <figure>
+                                            <img src="images/news/movies.png" alt="spiderManMoviesnews">
                                             <figcaption>
-                                                culture
+                                                <dl>
+                                                    <dt>MOVIES</dt>
+                                                    <dd>‘Spider-Man: No Way Home’: Tom Holland and Zendaya on New and Returning Surprise Characters</dd>
+                                                </dl>
                                             </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="booksMore.html">
-                                    <figure>
-                                        <img src="images/more/books.png" alt="books">
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="comicsNews.html">
+                                        <figure>
+                                            <img src="images/news/comics.png" alt="hulkComicsNews">
                                             <figcaption>
-                                                books
+                                                <dl>
+                                                    <dt>COMICS</dt>
+                                                    <dd>Hulk's Rage Meets Thor's Thunder in Epic New Crossover</dd>
+                                                </dl>
                                             </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                        </ul>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tvShowsNews.html">
+                                        <figure>
+                                            <img src="images/news/tvShows.png" alt="hawkEyeTvShowsNews">
+                                            <figcaption>
+                                                <dl>
+                                                    <dt>TV SHOWS</dt>
+                                                    <dd>‘Hawkeye’: Laura Barton’s Reveal and Keeping Christmas Alive at the Farm House</dd>
+                                                </dl>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="gamesNews.html">
+                                        <figure>
+                                            <img src="images/news/games.png" alt="guardiansGamesNews">
+                                            <figcaption>
+                                                <dl>
+                                                    <dt>GAMES</dt>
+                                                    <dd>Latest Trailer from Marvel's Guardians of the Galaxy Reveals a Mysterious Past...and Future?</dd>
+                                                </dl>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more">
+                        <span data-GNBName="more">more</span>
+                        <div id="more">
+                            <button class="material-icons btn_back">arrow_back_ios</button>
+                            <h2>more</h2>
+                            <ul>
+                                <li>
+                                    <a href="cultureMore.html">
+                                        <figure>
+                                            <img src="images/more/culture.png" alt="culture">
+                                                <figcaption>
+                                                    culture
+                                                </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="booksMore.html">
+                                        <figure>
+                                            <img src="images/more/books.png" alt="books">
+                                                <figcaption>
+                                                    books
+                                                </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </nav>
-            <div class="sideContainer">
-                <a class="material-icons">search</a>
-                <input type="button" value="login" data-callPopup="loginPanel">
-                <input type="button" value="join in" data-callPopup="joinPanel">
-            </div>
         </div>
     </header>
     <!--? header fin -->
@@ -397,12 +422,13 @@
                     Marketing Messages Marvel may, in its sole discretion, sort Marvel Insiders into different marketing-message groups such that not all Marvel Insiders receive the same marketing messages. You may opt-out of receiving marketing messages from Marvel at any time by reaching out to Marvel Customer Support at help.marvel.com or going to Email Preferences and doing so will not affect your ability to participate in the Program.
                     Transferability. Membership in the Program, any Rewards Points earned, any Rewards and any other related membership benefits are not transferable and may not be combined or merged with any other Marvel Insider's account or with any other Marvel or Marvel affiliate loyalty program.
                     Unauthorized Activity and Access. You are solely responsible for keeping your login credentials, email address and password confidential and for all activities that occur on your Marvel.com Account and Program account, including all unauthorized activities. Marvel is entitled to act on instructions it receives if correct login credentials are provided, and in such case Marvel will not be liable for: (i) any Rewards Points, credits, debits, or Rewards redemptions made in connection with your Program account, or (ii) any loss or damage arising from your failure to adequately safeguard your login credentials. You agree to immediately notify Marvel of any unauthorized use of your login credentials or Program account or any other breach of security related to the Program.</li>
-                <li><strong>EARNING REWARDS POINTS THROUGH QUALIFYING ACTIVITIES; CONVERSION OF REDEEMABLE REWARDS POINTS INTO REWARDS</strong>The Program includes two elements: Rewards Points and Rewards. “Rewards Points” are defined, collectively, as the following three categories of points:
+                <li><strong>EARNING REWARDS POINTS THROUGH QUALIFYING ACTIVITIES; CONVERSION OF REDEEMABLE REWARDS POINTS INTO REWARDS</strong>The Program includes two elements: Rewards Points and Rewards. “Rewards Points” are defined, collectively, as the following three categories of points:</li>
                     <ul>
                         <li>“Redeemable Rewards Points”: points accumulated through the completion of various Qualifying Activities (defined below) that are then redeemable for digital and/or physical rewards that are offered by Marvel to Marvel Insiders from time to time as part of the Program ("Rewards"). The number of Redeemable Rewards Points decreases with each reward you redeem. Redeemable Rewards Points balance carries over from year to year.</li>
                         <li>“Lifetime Rewards Points”: the total number of Redeemable Rewards Points accumulated by a Marvel Insider during the lifetime of the Marvel Insider’s participation in the Program (whether or not such Redeemable Rewards Points have been redeemed for Rewards).</li>
                         <li>“Fan Level Points”: points accumulated through the completion of various Qualifying Activities that are then used to calculate the applicable Membership Level (defined below)</li>
-                    </ul>Earning Rewards Points. "Rewards Points" will be earned for performing the qualifying activities designated by Marvel as part of the Program (such as, for example: by registering for the Program; by engaging in certain specified activities such as visiting or watching videos; by engaging in certain specified activities related to social networks; by checking in at a movie theater et al.) (each a "Qualifying Activity").  Rewards Points will appear in your Program following (usually within forty-eight (48) hours) completion of a Qualifying Activity. The conduct that constitutes a Qualifying Activity and/or the number of Rewards Points earned for such Qualifying Activity may be changed by Marvel from time to time, in its sole discretion. Also, Marvel may offer Rewards Points for engaging in a Qualifying Activity under one set of rules for one promotion, and may opt not to offer Rewards Points for engaging in that same activity under a subsequent or previous promotion. The current schedule of Qualifying Activities and the number of Rewards Points that may be earned for performing each is available HERE.You acknowledge and agree that: (i) Marvel's ability to accurately credit Rewards Points to your account based on your activities at third party sites, apps, locations, et al. (e.g., social networking sites) may be restricted by such third party’s terms, conditions or functions; (ii) Rewards Points are not valid unless earned in strict compliance with the requirements set forth by Marvel, and you shall not attempt to earn Points by any means (including without limitation, by using any script, bot or other automated means) that only simulates compliance with the applicable requirements; and (iii) Marvel's good faith determination of the amount of Rewards Points available to any Marvel Insider hereunder shall be final and binding.Any Rewards Points you earn are considered a limited, non-exclusive, revocable, non-assignable, personal, and non-transferable right solely for: (i) use towards the earning of Rewards and/or (ii) attaining a Membership Level (defined below), in accordance with these Insider Rewards Terms. Accordingly, you have no property, proprietary, intellectual property, ownership, or monetary interest in your Rewards Points, which remain Marvel property at all times. Rewards Points do not have any monetary or cash value and they may not be redeemed with us or any third party for cash or any cash equivalent except under the Program. Rewards Points are not transferable and cannot be combined with other offers or with another Marvel Insider's Rewards Points or Rewards. Rewards Points are not your personal property, and are not descendible, may not be inherited, bartered, purchased or sold to any third party. Any attempt to combine or transfer Rewards Points will result in disqualification from the Program and forfeiture of all Rewards Points in the Marvel Insider's Program account.Expiration of Redeemable Rewards Points. Unless otherwise specified, all Redeemable Rewards Points will expire twelve (12) months following the later of: (i) the date on which you were last logged into marvel.com and (ii) the date on which you redeem your Redeemable Rewards Points. Lifetime Rewards Points do not expire.Expiration of Fan Level Points. Fan Level Points will expire on December 31st of each calendar year.Promotional Redeemable Rewards Points. Marvel may from time to time conduct special promotions that include one or more offers for individual or specific Marvel Insiders to earn Redeemable Rewards Points through the completion of certain activities, or may offer all Marvel Insiders a one-time opportunity to earn special promotional Redeemable Rewards Points ("Promotional Redeemable Rewards Points"). The details of any such promotion, including a description of the conduct required, the number of Promotional Redeemable Rewards Points available and the expiration date of the corresponding Promotional Redeemable Rewards Points, will be communicated via the terms and conditions communicated to the eligible Marvel Insider(s) by email or in another communication from Marvel. If no special expiration date is provided in the description or terms and conditions of the offer for Promotional Redeemable Rewards Points, Promotional Redeemable Rewards Points shall expire as set forth in the "Expiration of Redeemable Rewards Points" Section above as if they were not Promotional Redeemable Rewards Points.</li>
+                    </ul>
+                <li>Earning Rewards Points. "Rewards Points" will be earned for performing the qualifying activities designated by Marvel as part of the Program (such as, for example: by registering for the Program; by engaging in certain specified activities such as visiting or watching videos; by engaging in certain specified activities related to social networks; by checking in at a movie theater et al.) (each a "Qualifying Activity").  Rewards Points will appear in your Program following (usually within forty-eight (48) hours) completion of a Qualifying Activity. The conduct that constitutes a Qualifying Activity and/or the number of Rewards Points earned for such Qualifying Activity may be changed by Marvel from time to time, in its sole discretion. Also, Marvel may offer Rewards Points for engaging in a Qualifying Activity under one set of rules for one promotion, and may opt not to offer Rewards Points for engaging in that same activity under a subsequent or previous promotion. The current schedule of Qualifying Activities and the number of Rewards Points that may be earned for performing each is available HERE.You acknowledge and agree that: (i) Marvel's ability to accurately credit Rewards Points to your account based on your activities at third party sites, apps, locations, et al. (e.g., social networking sites) may be restricted by such third party’s terms, conditions or functions; (ii) Rewards Points are not valid unless earned in strict compliance with the requirements set forth by Marvel, and you shall not attempt to earn Points by any means (including without limitation, by using any script, bot or other automated means) that only simulates compliance with the applicable requirements; and (iii) Marvel's good faith determination of the amount of Rewards Points available to any Marvel Insider hereunder shall be final and binding.Any Rewards Points you earn are considered a limited, non-exclusive, revocable, non-assignable, personal, and non-transferable right solely for: (i) use towards the earning of Rewards and/or (ii) attaining a Membership Level (defined below), in accordance with these Insider Rewards Terms. Accordingly, you have no property, proprietary, intellectual property, ownership, or monetary interest in your Rewards Points, which remain Marvel property at all times. Rewards Points do not have any monetary or cash value and they may not be redeemed with us or any third party for cash or any cash equivalent except under the Program. Rewards Points are not transferable and cannot be combined with other offers or with another Marvel Insider's Rewards Points or Rewards. Rewards Points are not your personal property, and are not descendible, may not be inherited, bartered, purchased or sold to any third party. Any attempt to combine or transfer Rewards Points will result in disqualification from the Program and forfeiture of all Rewards Points in the Marvel Insider's Program account.Expiration of Redeemable Rewards Points. Unless otherwise specified, all Redeemable Rewards Points will expire twelve (12) months following the later of: (i) the date on which you were last logged into marvel.com and (ii) the date on which you redeem your Redeemable Rewards Points. Lifetime Rewards Points do not expire.Expiration of Fan Level Points. Fan Level Points will expire on December 31st of each calendar year.Promotional Redeemable Rewards Points. Marvel may from time to time conduct special promotions that include one or more offers for individual or specific Marvel Insiders to earn Redeemable Rewards Points through the completion of certain activities, or may offer all Marvel Insiders a one-time opportunity to earn special promotional Redeemable Rewards Points ("Promotional Redeemable Rewards Points"). The details of any such promotion, including a description of the conduct required, the number of Promotional Redeemable Rewards Points available and the expiration date of the corresponding Promotional Redeemable Rewards Points, will be communicated via the terms and conditions communicated to the eligible Marvel Insider(s) by email or in another communication from Marvel. If no special expiration date is provided in the description or terms and conditions of the offer for Promotional Redeemable Rewards Points, Promotional Redeemable Rewards Points shall expire as set forth in the "Expiration of Redeemable Rewards Points" Section above as if they were not Promotional Redeemable Rewards Points.</li>
                 <li><strong>REDEEMING REDEEMABLE REWARDS POINTS</strong>Redeemable Rewards Points are redeemable only on Marvel.com and other (including third party) websites, apps or platforms designated by Marvel (collectively, the “Redemption Sites”). Redeemable Rewards Points will not be automatically applied to applicable transactions; you must affirmatively apply Redeemable Rewards Points as set forth on the Rewards page. Redeemable Rewards Points or offers to redeem Rewards may be subject to additional terms and conditions (including expiration) as well as the terms, conditions, and other policies of the Redemption Sites. You are solely responsible for all federal, state and local taxes and any other costs or expenses of accepting and using Rewards. Expired Rewards cannot be reinstated.Rewards are subject to change, availability, and other terms and conditions as may be communicated from time to time on the Rewards page, prior to and/or upon redemption.Other exclusions and restrictions may apply in connection with specific Qualifying Activities and/or Rewards and will be communicated with any Reward-specific offer.</li>
                 <li><strong>FAN LEVEL POINTS AND MEMBERSHIP LEVELS</strong>The number of Fan Level Points accrued per calendar year (January 1 - December 31) is used to determine your level of membership in the Program (“Membership Level”). There are four Membership Levels:</li>
                 <li>
@@ -484,12 +510,12 @@
                     <li><a href="https://twitter.com/marvel">twitter</a></li>
                 </ul>
             </div>
+            <ul>
+                <li><a href="license.html">License Agreement</a></li>
+                <li><a href="insiderTerm.html">Marvel Insider Terms</a></li>
+                <li>ⓒ2021 MARVEL</li>
+            </ul>
         </div>
-        <ul>
-            <li><a href="license.html">License Agreement</a></li>
-            <li><a href="insiderTerm.html">Marvel Insider Terms</a></li>
-            <li>ⓒ2021 MARVEL</li>
-        </ul>
     </footer>
     <!--? footerArea fin -->
 </body>

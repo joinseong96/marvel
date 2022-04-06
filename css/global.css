@@ -1,16 +1,1303 @@
 body{
     font-family: 'Poppins';
 }
+a{
+    text-decoration: none;
+}
+.active{
+    display: block;
+}
+
+@media screen and (max-width:767px){
+    [class*='Cha'] > figure img,
+    [class*='Com'] > figure img,
+    [class*='Mov'] > figure img,
+    [class*='News'] > figure img,
+    [class*='More'] > figure img{
+        width: 100%;
+    }
+    [class$='FotContainer']{
+        padding-top: 30px;
+    }
+    [class$='FotContainer'] > h2{
+        background: url('../images/footer/ABOUTMAIN.png') center / cover no-repeat; text-align: center;
+        font-weight: 700; font-size: 14px; color: #eee; line-height: 120px;
+    }
+    /* ? mainBanner Area in */
+    
+    [class$='FotContainer'] > section h3{
+        font-weight: 700; font-size: 20px; line-height: 26px; color: #000; font-style: italic; margin-bottom: 15px;
+    }
+    [class$='FotContainer'] > section p,
+    [class$='FotContainer'] > section ul li{
+        font-weight: 500; font-size: 10px; line-height: 16px; color: #333; margin-bottom: 15px;
+    }
+    [class$='FotContainer'] > section ul li{
+        list-style-type: none;
+    }
+    [class$='FotContainer'] > section ul li strong,
+    [class$='FotContainer'] > section ol li strong{
+        display: block; font-weight: 700; font-size: 16px; line-height: 22px; color: #000; margin-bottom: 15px; text-transform: uppercase;
+    }
+    [class$='FotContainer'] > section ul li:last-of-type{
+        margin-bottom: 15px;
+    }
+    /* ! FotContainer Area */
+
+    [id$='Panel'].active{
+        display: block;
+    }
+    [id$='Panel']{
+        display: none; position: relative; padding: 25px 4%;
+        box-sizing: border-box; background-color: #fff;
+    }
+    [id$='Panel'] h2{
+        max-width: 60px; margin: 0 auto 15px;
+    }
+    [id$='Panel'] h2 img{
+        width: 100%; 
+    }
+    [id$='Panel'] input{
+        width: 100%; margin-bottom: 15px; box-sizing: border-box; padding: 5px;
+        line-height: 15px; font-size: 10px; color: #999; font-weight: 400;
+    }
+    [id$='Panel'] .material-icons.btn_close{
+        position: absolute; right: 5px; top: 5px; background-color: #fff; border: none;
+    }
+    .sideContainer > *:not(a):hover{
+        background-color: #ed1d24;
+    }
+    #loginPanel{
+        position: fixed; z-index: 1100; top: 10%;
+    }
+    #joinPanel{
+        position: fixed; z-index: 1100; top: 10%;
+    }
+    #loginPanel a{
+        display: block;
+    }
+    #loginPanel input:last-of-type{
+        color: #eee; font-size: 10px; line-height: 15px; font-weight: 600; text-transform: uppercase;
+        background: #ed1d24; border: none; margin-bottom: 30px; cursor: pointer;
+    }
+    #loginPanel a,
+    #joinPanel a{
+        display: block; background: #000; text-align: center;
+        padding: 10px; box-sizing: border-box; color: #eee; font-size: 10px;
+        font-weight: 600; text-transform: uppercase; line-height: 15px;
+    }
+    #joinPanel form > input:last-of-type{
+        margin-bottom: 15px;
+    }
+    #joinPanel div{
+        margin-bottom: 15px;
+    }
+    #joinPanel div label{
+        display: block; font-size: 10px; color: #999; font-weight: 400; margin-bottom: 10px;
+    }
+    #joinPanel .inputSelect .month,
+    #joinPanel .inputSelect .day,
+    #joinPanel .inputSelect .year{
+        font-size: 10px; color: #999; font-weight: 400; border-color: #000;
+    }
+    /* #joinPanel .inputSelect:not(:first-of-type){
+        margin-left:
+    } */
+    #joinPanel .inputSelect .month{
+        width: 40%; padding: 7px 0;
+    }
+    #joinPanel .inputSelect .day,
+    #joinPanel .inputSelect .year{
+        width: 28%; padding: 7px 0;
+    }
+    #joinPanel ul{
+        max-width: 300px; margin: 0 auto;
+    }
+    #joinPanel ul::after{
+        display: block; content: ''; clear: both;
+    }
+    #joinPanel ul li > input{
+        width: 66px; float: left;
+    }
+    #joinPanel #firstCheckbox,
+    #joinPanel #secondCheckbox{
+        display: none;
+    }
+    #joinPanel #firstCheckbox[type='checkbox']:checked + label[for='firstCheckbox']{
+        background: url('../images/on_check.png') left 4px / 25px no-repeat, url('../images/checkbox.png') no-repeat left center;
+    }
+    #joinPanel #secondCheckbox[type='checkbox']:checked + label[for='secondCheckbox']{
+        background: url('../images/on_check.png') left -1px / 25px no-repeat, url('../images/checkbox.png') no-repeat left center;
+    }
+    #joinPanel ul li{
+        list-style-type: none; font-weight: 400; font-size: 10px; color: #333;
+    }
+    #joinPanel ul li > label{
+        display: block; padding: 0 0 3px 30px; margin-bottom: 15px;
+        background: url('../images/checkbox.png') no-repeat left center;
+    } 
+    #joinPanel ul li:nth-of-type(3){
+        margin-bottom: 15px;
+    }
+    #joinPanel ul li:nth-of-type(4){
+        margin-bottom: 30px;
+    }
+    /* ! joinPanel Area fin*/
+    
+    header > div nav ul > li div ul,
+    footer > div{
+        max-width: 240px; margin: 0 auto;
+    }
+    header{
+        position: fixed; top: 0; width: 100%; z-index: 1000; background-color: #000;
+    }
+    header > div:after{
+        content: ''; display: block; clear: both;
+    }
+    header > div{
+        position: relative; box-sizing: border-box;
+    }
+    header > div > *:not(h1){
+        color: #eee;
+    }
+    header > div > h1{
+        width: 25%; float: left; line-height: 0; max-width: 67px; padding: 5px 0 5px 1.8%;
+    }
+    header > div .sideContainer{
+        padding: 5px 1.8% 0 0;
+    }
+    header > div > h1 a{
+        display: block;
+    }
+    header > div > h1 a img{
+        width: 100%;
+    }
+    header > div nav{
+        width: 100%; display: none; padding: 20px 0 10px 0;
+    }
+    header > div nav ul{
+        display: flex; flex-direction: column; width: 100%; margin-top: 20px;
+    }
+    header > div nav .material-icons.btn_back{
+        position: absolute; top: 5%; left: 5%; color: #fff; background-color: transparent;
+        border: none; font-size: 14px; cursor: pointer;
+    }
+    header > div nav ul > li{
+        width: 100%; line-height: 25px; text-align: center; cursor: pointer;
+    }
+    header > div nav ul > li span{
+        display: block; width: 100%;
+    }
+    header > div nav ul > li > div ul{
+        display: flex; flex-flow: row wrap;
+    }
+    header > div nav ul > li > div ul li{
+        line-height: 0;
+    }
+    header > div nav ul > li.characters div ul li,
+    header > div nav ul > li.movies div ul li{
+        width: 20%;
+    }
+    header > div nav ul > li.comics div ul li{
+        width: 25%;
+    }
+    header > div nav ul > li.news div ul li:nth-of-type(2),
+    header > div nav ul > li.news div ul li:last-of-type{
+        margin-left: 3%;
+    }
+    header > div nav ul > li.news div ul li{
+        width: 47%; background-color: #000;
+    }
+    header > div nav ul > li.news div ul li figure{
+        background: #000; width: 100%;
+    }
+    header > div nav ul > li.news div ul li figcaption{
+        padding: 12px 0 15px; text-align: left; line-height: 14px;
+    }
+    header > div nav ul > li.news div ul li figcaption dt{
+        padding-bottom: 15px; font-size: 12px; color: #999;
+    }
+    header > div nav ul > li.news div ul li figcaption dd{
+        font-size: 10px; color: #eee;
+    }
+    header > div nav ul > li.more div h2{
+        display: block;
+    }
+    header > div nav ul > li.more div ul li{
+        width: 50%;
+    }
+    header > div nav ul > li span{
+        font-size: 12px; text-transform: uppercase;
+        font-weight: 600; letter-spacing: 2px;
+    }
+    /* header > div nav ul > li span:hover{
+        background-color: #ed1d24;
+    } */
+    header > div nav ul > li div{
+        display: none; position: absolute; left: 0; top: 8vw;
+        width: 100%; background-color: #000;
+    }
+    header > div nav ul > li div h2{
+        display: block; text-align: center; line-height: 20px; margin: 20px 0;
+        font-size: 14px; font-weight: 600; cursor: default; text-transform: uppercase;
+    }
+    header > div nav ul > li div ul li{
+        padding: 0; display: block; position: relative;
+    }
+    header > div nav ul > li div ul li a{
+        display: block;
+    }
+    header > div nav ul > li div ul li a img{
+        width: 100%;
+    }
+    header > div nav ul > li div ul li span{
+        display: none;
+    }
+    header > div nav ul > li div ul li figcaption:not(.news figcaption){
+        display: block; position: absolute; font-size: 18px; font-weight: 900; text-shadow: 1px 1px 1px black;
+        top: 50%; left: 0; color: #eee; text-align: center; width: 100%; text-transform: uppercase;
+    }
+    header > div nav ul > li:hover{
+        border-color: transparent;
+    }
+    header > div nav ul > li ul li:hover img{
+        filter: brightness(60%);
+    }
+    header > div nav ul > li div.active{
+        display: block;
+    }
+    header > div > div.sideContainer{
+        /* position: absolute; right: 0; top: 0;padding: 2.5vw 1.8% 0 0; */
+        text-align: right; width: 53%; float: right; line-height: 26px;
+    }
+    header > div > div.sideContainer .mui{
+        font-size: 18px; background-color: transparent; color: #eee; border: none; cursor: pointer; vertical-align: -20%;
+    }
+    header > div > div.sideContainer > *{
+        display: inline-block; vertical-align: middle;
+    }
+    header > div > div a.material-icons.btn_search{
+        color: #eee; font-size: 15px;
+    }
+    header > div > div > input{
+        background-color: transparent; border: none; color: #eee; font-size: 10px;
+        font-weight: 600; text-transform: uppercase; cursor: pointer; padding: 0;
+    }
+
+    /*! header fin */
+
+    .searchContainer{
+        background: url('../images/footer/ABOUTMAIN.png') center top / cover no-repeat; height: 145px;
+        display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;
+    }
+    .searchContainer input[type='search']{
+        border: 1px solid black; line-height: 30px; padding-left: 20%; font-size: 14px; color: black; width: 70%;
+        background: url('../images/search.png') no-repeat 15px center #fff;
+    }
+    /* ! search page */
+
+    .videoSection iframe{
+        width: 100%;
+        height: 40vw;
+    }
+    /* ! videoSection */
+
+    footer{
+        width: 100%; background-color:  #000;
+    }
+    footer > div{
+        padding-top: 6.4vw;
+    }
+    footer > div::after{
+        display: block; content: ''; clear: both;
+    }
+    footer > div ul{
+        list-style: none;
+    }
+    footer > div > ul:not(:last-of-type){
+        text-transform: uppercase; margin-bottom: 40px;
+    }
+    footer > div > ul:not(:last-of-type){
+        float: left; width: 50%;
+     }
+     footer > div > ul:not(:last-of-type) li:not(:last-child){
+         margin-bottom: 20px;
+     }
+    footer > div > ul li a{
+        display: block; color: #eee; font-size: 10px; font-weight: 700;
+        text-align: center;
+    }
+    footer > div ul:not(:last-of-type) li a{
+        display: block;
+    }
+    footer > div > h2{
+        width: 10%; margin: 0 auto 20px;
+    }
+    footer > div > h2 img{
+        width: 100%;
+    }
+    footer > div > div:first-of-type{
+        clear: both; padding-top: 15px; margin-bottom: 40px;
+    }
+    footer > div > div:first-of-type a{
+        font-size: 10px; display: block; color: #999;
+    }
+    footer > div > div:first-of-type a strong{
+        display: block; margin-bottom: 7px; color: #eee;
+    }
+    footer > div > div:first-of-type a:not(:last-of-type){
+        margin-bottom: 10px; background: url('../images/insider.png') left center / 65px no-repeat; 
+        padding-left: 36%;
+    }
+    footer > div > div:first-of-type a:last-of-type{
+        background: url('../images/unlimited.png') left center;
+        background-repeat: no-repeat; padding-left: 26%; margin-left: 10.5%;
+    }
+    footer > div div:last-of-type{
+        width: 100%; margin: 40px 0;
+    }
+    footer > div div:last-of-type h3{
+        color: #eee; font-size: 14px; margin-bottom: 10px; text-align: center;
+    }
+    footer > div div:last-of-type ul{
+        margin: 0 auto; text-align: center;
+    }
+    footer > div div:last-of-type ul li{
+        display: inline-block; width: 8%; margin: 0 2%; line-height: 33px; background-position: center; background-size: contain; 
+        background-repeat: no-repeat; text-indent: -9999px; cursor: pointer;
+    }
+    footer > div div:last-of-type ul li:first-of-type{
+        background-image: url('../images/facebook.png');
+    }
+    footer > div div:last-of-type ul li:nth-of-type(2){
+        background-image: url('../images/instagram.png');
+    }
+    footer > div div:last-of-type ul li:nth-of-type(3){
+        background-image: url('../images/youtube.png');
+    }
+    footer > div div:last-of-type ul li:last-of-type{
+        background-image: url('../images/twitter.png');
+    }
+    footer > div > ul:last-of-type{
+        width: 100%;
+    }
+    footer > div > ul:last-of-type li,
+    footer > div > ul:last-of-type li a{
+        display: inline-block; font-size: 10px; color: #999; text-align: center;
+    }
+    footer > div > ul:last-of-type li:not(:last-of-type){
+        width: 49%;
+    }
+    footer > div > ul:last-of-type li:last-of-type{
+        display: block; margin: 10px 0;
+    }
+    /* ! footer Area fin */
+
+    .helpFotContainer h2{
+        text-transform: uppercase; font-weight: 500; font-size: 20px; line-height: 26px; color: #333;
+        background: none; text-align: left; margin-bottom: 30px;
+    }
+    .helpFotContainer > div label{
+        display: block; font-weight: 300px; font-size: 10px; line-height: 15px; color: #333; margin-bottom: 5px;
+    }
+    .helpFotContainer > div label small{
+        display: block; font-size: 10px; line-height: 15px;
+    }
+    .helpFotContainer > div > input{
+        display: inline-block; width: 100%; margin-bottom: 15px; line-height: 15px;
+    }
+    .helpFotContainer > div select{
+        display: inline-block; width: 100%; padding: 5px; margin-bottom: 10px;
+    }
+    .helpFotContainer > div textarea{
+        margin-bottom: 10px; resize: none; width: 100%; height: 200px;
+    }
+    .helpFotContainer > div > input:last-of-type{
+        display: block; text-transform: uppercase; background: #ff2930; margin-top: 10px;
+        font-weight: 500; font-size: 10px; color: #eee; text-align: center; border: none;
+        padding: 5px; max-width: 80px; line-height: 15px; box-sizing: border-box;
+    }
+    /* ? help subpage detail */
+
+    .internFotContainer > section div h4{
+        font-weight: 700; font-size: 14px; line-height: 20px; color: #000; margin-bottom: 15px;
+    }
+    .internFotContainer > section div ul{
+        padding-left: 6%;
+    }
+    .internFotContainer > section div ul li{
+        list-style-type: square; margin-bottom: 5px;
+    }
+    .licenseFotContainer > section ul li:last-of-type{
+        margin-bottom: 15px;
+    }
+    .licenseFotContainer > section ol li{
+        margin-bottom: 15px; display: block; font-size: 10px; line-height: 15px; padding-left: 6%;
+    }
+    /*! detail footer Area*/
+}
+/* *mobile */
+
+@media screen and (min-width:768px) and (max-width:1279px){
+    [class*='Cha'] > figure img,
+    [class*='Com'] > figure img,
+    [class*='Mov'] > figure img,
+    [class*='News'] > figure img,
+    [class*='More'] > figure img{
+        width: 100%;
+    }
+    [class$='FotContainer']{
+        padding-top: 57px;
+    }
+    [class$='FotContainer'] > h2{
+        background: url('../images/footer/ABOUTMAIN.png') center / cover no-repeat; text-align: center;
+        font-weight: 700; font-size: 35px; color: #eee; line-height: 260px; letter-spacing: 1px;
+    }
+    /* ? mainBanner Area in */
+    
+    [class$='FotContainer'] > section h3{
+        font-weight: 700; font-size: 30px; line-height: 36px; color: #000; font-style: italic; margin-bottom: 15px;
+    }
+    [class$='FotContainer'] > section p,
+    [class$='FotContainer'] > section ul li{
+        font-weight: 500; font-size: 14px; line-height: 20px; color: #333; margin-bottom: 15px;
+    }
+    [class$='FotContainer'] > section ul li{
+        list-style-type: none;
+    }
+    [class$='FotContainer'] > section ul li strong,
+    [class$='FotContainer'] > section ol li strong{
+        display: block; font-weight: 700; font-size: 18px; line-height: 24px; color: #000; margin-bottom: 15px; text-transform: uppercase;
+    }
+    [class$='FotContainer'] > section ul li:last-of-type{
+        margin-bottom: 30px;
+    }
+    /* ! FotContainer Area */
+
+    [id$='Panel'].active{
+        display: block;
+    }
+    [id$='Panel']{
+        display: none; max-width: 410px; margin: 0 auto; position: relative; padding: 73px 3.38%;
+        box-sizing: border-box; background-color: #fff;
+    }
+    [id$='Panel'] h2{
+        max-width: 137px; margin: 0 auto 40px;
+    }
+    [id$='Panel'] h2 img{
+        width: 100%; 
+    }
+    [id$='Panel'] input{
+        width: 100%; margin-bottom: 15px; box-sizing: border-box; padding: 0 3%;
+        line-height: 37px; font-size: 14px; color: #999; font-weight: 400;
+    }
+    [id$='Panel'] .material-icons.btn_close{
+        position: absolute; right: 13px; top: 13px; background-color: #fff; border: none;
+    }
+    .sideContainer > *:not(a):hover{
+        background-color: #ed1d24;
+    }
+    #loginPanel{
+        position: fixed; z-index: 1100; left: 24%; top: 22%;
+    }
+    #joinPanel{
+        position: fixed; z-index: 1100; left: 24%; top: 10%;
+    }
+    #loginPanel a{
+        display: block;
+    }
+    #loginPanel input:last-of-type{
+        color: #eee; font-size: 16px; font-weight: 600; text-transform: uppercase; margin-bottom: 55px; cursor: pointer;
+        background: #ed1d24; border: none;
+    }
+    #loginPanel a,
+    #joinPanel a{
+        display: block; background: #000; text-align: center;
+        padding: 23px 0; box-sizing: border-box; color: #eee; font-size: 16px;
+        font-weight: 600; text-transform: uppercase;
+    }
+    #joinPanel form > input:last-of-type{
+        margin-bottom: 30px;
+    }
+    #joinPanel div{
+        max-width: 300px; margin: 0 auto; padding-bottom: 30px;
+    }
+    #joinPanel div label{
+        display: block; font-size: 14px; color: #999; font-weight: 400; margin-bottom: 10px;
+    }
+    #joinPanel .inputSelect .month,
+    #joinPanel .inputSelect .day,
+    #joinPanel .inputSelect .year{
+        font-size: 14px; color: #999; font-weight: 400; border-color: #000;
+    }
+    #joinPanel .inputSelect:not(:first-of-type){
+        margin-left: 6px;
+    }
+    #joinPanel .inputSelect .month{
+        max-width: 100px; width: 100%; padding: 7px 3%;
+    }
+    #joinPanel .inputSelect .day,
+    #joinPanel .inputSelect .year{
+        max-width: 80px; width: 100%; padding: 7px 3%;
+    }
+    #joinPanel ul{
+        max-width: 300px; margin: 0 auto;
+    }
+    #joinPanel ul::after{
+        display: block; content: ''; clear: both;
+    }
+    #joinPanel ul li > input{
+        width: 66px; float: left;
+    }
+    #joinPanel #firstCheckbox,
+    #joinPanel #secondCheckbox{
+        height: 23px; display: none;
+    }
+    #joinPanel #firstCheckbox[type='checkbox']:checked + label[for='firstCheckbox']{
+        background: url('../images/on_check.png') no-repeat left 10px, url('../images/checkbox.png') no-repeat left center;
+    }
+    #joinPanel #secondCheckbox[type='checkbox']:checked + label[for='secondCheckbox']{
+        background: url('../images/on_check.png') no-repeat left 3px, url('../images/checkbox.png') no-repeat left center;
+    }
+    #joinPanel ul li{
+        list-style-type: none; font-weight: 400; font-size: 14px; color: #333;
+    }
+    #joinPanel ul li > label{
+        display: block; margin-bottom: 15px; padding-left: 45px; margin-left: 20px;
+        background: url('../images/checkbox.png') no-repeat left center;
+    } 
+    #joinPanel ul li:nth-of-type(3){
+        margin-bottom: 15px;
+    }
+    #joinPanel ul li:nth-of-type(4){
+        margin-bottom: 40px;
+    }
+    /* ! joinPanel Area fin*/
+    
+    header > div nav ul > li div ul,
+    footer > div{
+        max-width: 700px; margin: 0 auto;
+    }
+    header{
+        position: fixed; top: 0; width: 100%; z-index: 1000; background-color: #000;
+    }
+    header > div{
+        position: relative; box-sizing: border-box;
+    }
+    header > div > *:not(h1){
+        color: #eee;
+    }
+    header > div > h1{
+        max-width: 128px; width: 30%; padding: 4px 0 0 4px;
+    }
+    header > div > h1 a{
+        display: block;
+    }
+    header > div > h1 a img{
+        width: 100%;
+    }
+    header > div nav{
+        width: 100%; display: none; padding: 50px 0 30px 0;
+    }
+    header > div nav .material-icons.btn_back{
+        position: absolute; top: 5%; left: 5%; color: #fff; background-color: transparent;
+        border: none; font-size: 40px; cursor: pointer;
+    }
+    header > div nav ul{
+        display: flex; flex-flow: row wrap;
+    }
+    header > div nav ul > li{
+        width: 100%; line-height: 45px; text-align: center; cursor: pointer;
+    }
+    header > div nav ul > li span{
+        display: block; width: 100%;
+    }
+    header > div nav ul > li > div ul li{
+        line-height: 0;
+    }
+    header > div nav ul > li.characters div ul li,
+    header > div nav ul > li.movies div ul li{
+        width: 20%;
+    }
+    header > div nav ul > li.comics div ul li{
+        width: 25%;
+    }
+    header > div nav ul > li.news div ul li:not(:first-child){
+        margin-left: 3%;
+    }
+    header > div nav ul > li.news div ul li{
+        width: 22%; background-color: #000;
+    }
+    header > div nav ul > li.news div ul li figure{
+        background: #000; width: 100%;
+    }
+    header > div nav ul > li.news div ul li figcaption{
+        padding: 34px 8% 30px; text-align: left; line-height: 20px;
+    }
+    header > div nav ul > li.news div ul li figcaption dt{
+        padding-bottom: 30px; font-size: 18px; color: #999;
+    }
+    header > div nav ul > li.news div ul li figcaption dd{
+        font-size: 14px; color: #eee;
+    }
+    header > div nav ul > li.more div h2{
+        display: block;
+    }
+    header > div nav ul > li.more div ul li{
+        width: 50%;
+    }
+    header > div nav ul > li span{
+        font-size: 18px; text-transform: uppercase;
+        font-weight: 600; letter-spacing: 2px;
+    }
+    header > div nav ul > li span:hover{
+        background-color: #ed1d24;
+    }
+    header > div nav ul > li div{
+        display: none; position: absolute; left: 0; top: 55px;
+        width: 100%; background-color: #000;
+    }
+    header > div nav ul > li div h2{
+        display: block; text-align: center; line-height: 36px; margin: 70px 0;
+        font-size: 30px; font-weight: 600; cursor: default; text-transform: uppercase;
+    }
+    header > div nav ul > li div ul li{
+        padding: 0; display: block; position: relative;
+    }
+    header > div nav ul > li div ul li a{
+        display: block;
+    }
+    header > div nav ul > li div ul li a img{
+        width: 100%;
+    }
+    header > div nav ul > li div ul li span{
+        display: none; position: absolute; font-size: 15px; font-weight: 900;
+        top: 150px; left: 0; color: #eee; text-align: center; width: 100%;
+    }
+    header > div nav ul > li div ul li figcaption:not(.news figcaption){
+        display: none; position: absolute; font-size: 40px; font-weight: 900;
+        top: 180px; left: 0; color: #eee; text-align: center; width: 100%; text-transform: uppercase;
+    }
+    header > div nav ul > li:hover{
+        border-color: transparent;
+    }
+    header > div nav ul > li ul li:hover img{
+        filter: brightness(60%);
+    }
+    header > div nav ul > li ul li:hover span,
+    header > div nav ul > li ul li:hover figcaption:not(.news figcaption){
+        display: block;
+    }
+    header > div nav ul > li div.active{
+        display: block;
+    }
+    header > div > div.sideContainer{
+        position: absolute; right: 0; top: 0; width: 28%;
+        text-align: right;
+    }
+    header > div > div.sideContainer .mui{
+        font-size: 40px; background-color: transparent; color: #eee; border: none; cursor: pointer;
+        line-height: 55px;
+    }
+    header > div > div.sideContainer > *{
+        line-height: 55px; display: inline-block; vertical-align: middle;
+    }
+    header > div > div a.material-icons.btn_search{
+        color: #eee;
+    }
+    header > div > div > input{
+        background-color: transparent; border: none; color: #eee; font-size: 14px; margin-bottom: 5px;
+        font-weight: 600; text-transform: uppercase; cursor: pointer;
+    }
+    /*! header fin */
+
+    .searchContainer{
+        background: url('../images/footer/ABOUTMAIN.png') center top / cover no-repeat; height: 100%;
+        display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;
+    }
+    .searchContainer input[type='search']{
+        border: 1px solid black; line-height: 70px; padding: 0 25px 0 70px; font-size: 18px; color: black; width: 70%;
+        background: url('../images/search.png') no-repeat 25px center #fff;
+    }
+    /* ! search page */
+
+    .videoSection iframe{
+        width: 100%;
+        height: 40vw;
+    }
+    /* ! videoSection */
+
+    footer{
+        width: 100%; background-color: #000;
+    }
+    footer > div{
+        padding-top: 6.4vw;
+    }
+    footer > div >*:not(ul:last-of-type){
+        float: left;
+    }
+    footer > div > ul:last-of-type{
+        clear: left;
+    }
+    footer > div > ul:not(:last-of-type){
+        text-transform: uppercase;
+    }
+    footer > div > ul{
+       width: 17%;
+    }
+    footer > div h2{
+        margin-left: 3.2%;
+    }
+    footer > div h2,
+    footer > div ul,
+    footer > div > div:first-of-type{
+        margin: 0 4% 0 1.2%;
+    }
+    footer > div ul li{
+        list-style-type: none;
+    }
+    footer > div > ul li a{
+        display: block; color: #eee; font-size: 12px; font-weight: 700;;
+    }
+    footer > div ul:not(:last-of-type) li a{
+        display: block;
+    }
+    footer > div > h2{
+        width: 7%;
+    }
+    footer > div > h2 img{
+        width: 100%;
+    }
+    footer > div > ul:first-of-type li:not(:last-child),
+    footer > div > ul:nth-of-type(2) li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    footer > div > div:first-of-type{
+        width: 38%;
+    }
+    footer > div > div:first-of-type a{
+        font-size: 12px; display: block; color: #999;
+    }
+    footer > div > div:first-of-type a strong{
+        display: block; margin-bottom: 7px; color: #eee;
+    }
+    footer > div > div:first-of-type a:not(:last-of-type){
+        margin-bottom: 10px; background: url('../images/insider.png') left center; 
+        background-repeat: no-repeat; padding-left: 30%;
+    }
+    footer > div > div:first-of-type a:last-of-type{
+        background: url('../images/unlimited.png') left center;
+        background-repeat: no-repeat; padding-left: 24%; margin-left: 6.5%;
+    }
+    footer > div div:last-of-type{
+        width: 100%; margin-top: 5vw;
+    }
+    footer > div div:last-of-type h3{
+        color: #eee; font-size: 14px; margin-bottom: 15px; text-align: center;
+    }
+    footer > div div:last-of-type ul{
+        margin: 0 auto; text-align: center;
+    }
+    footer > div div:last-of-type ul li{
+        display: inline-block; width: 4%; margin: 0 2%; line-height: 33px; background-position: center; background-size: contain; 
+        background-repeat: no-repeat; text-indent: -9999px; cursor: pointer;
+    }
+    footer > div div:last-of-type ul li:first-of-type{
+        background-image: url('../images/facebook.png');
+    }
+    footer > div div:last-of-type ul li:nth-of-type(2){
+        background-image: url('../images/instagram.png');
+    }
+    footer > div div:last-of-type ul li:nth-of-type(3){
+        background-image: url('../images/youtube.png');
+    }
+    footer > div div:last-of-type ul li:last-of-type{
+        background-image: url('../images/twitter.png');
+    }
+    footer > div > ul:last-of-type{
+        max-width: 480px; width: 63%; margin: 0 auto; padding: 30px 0;
+    }
+    footer > div > ul:last-of-type li,
+    footer > div > ul:last-of-type li a{
+        display: inline-block; font-size: 10px; color: #999; text-align: center;
+    }
+    footer > div > ul:last-of-type li{
+        width: 32%;
+    }
+    /* ! footer Area fin */
+
+    .helpFotContainer h2{
+        text-transform: uppercase; font-weight: 500; font-size: 25px; line-height: 30px; color: #333;
+        background: none; text-align: left; margin-bottom: 40px; padding-top: 60px;
+    }
+    .helpFotContainer > div label{
+        display: block; font-weight: 300px; font-size: 14px; line-height: 20px; color: #333; margin-bottom: 10px;
+    }
+    .helpFotContainer > div label small{
+        display: block; font-size: 10px; line-height: 16px; margin-top: 5px;
+    }
+    .helpFotContainer > div > input{
+        display: inline-block; max-width: 700px; width: 100%; margin-bottom: 15px; line-height: 30px; box-sizing: border-box;
+    }
+    .helpFotContainer > div select{
+        display: inline-block; max-width: 700px; width: 100%; padding: 12px; margin-bottom: 20px;
+    }
+    .helpFotContainer > div textarea{
+        margin-bottom: 20px; resize: none; width: 100%; height: 400px;
+    }
+    .helpFotContainer > div > input:last-of-type{
+        display: block; text-transform: uppercase; background: #ff2930; margin-top: 20px;
+        font-weight: 500; font-size: 14px; color: #eee; text-align: center; border: none;
+        padding: 10px; max-width: 100px; line-height: 20px; box-sizing: border-box;
+    }
+    /* ? help subpage detail */
+
+    .adverFotContainer > section p span{
+        display: block; margin-bottom: 120px;
+    }
+    .internFotContainer > section div h4{
+        font-weight: 700; font-size: 20px; line-height: 36px; color: #000; margin-bottom: 30px;
+    }
+    .internFotContainer > section div ul{
+        padding-left: 2.4%;
+    }
+    .internFotContainer > section div ul li{
+        list-style-type: square; margin-bottom: 5px;
+    }
+    .licenseFotContainer > section ul li:last-of-type{
+        margin-bottom: 30px;
+    }
+    .licenseFotContainer > section ol li{
+        margin-bottom: 15px; display: block; font-size: 14px; line-height: 20px;
+    }
+    
+    /*! detail footer Area*/
+}
+/* *tablet */
 
 @media screen and (min-width:1280px){
-    
-    /* header */
-
-    /* footer */
-
-    /* popup */
-    [id$='panel']{
-        
+    [class*='Cha'] > figure img,
+    [class*='Com'] > figure img,
+    [class*='Mov'] > figure img,
+    [class*='News'] > figure img,
+    [class*='More'] > figure img{
+        width: 100%;
     }
+    [class$='FotContainer']{
+        padding-top: 98px;
+    }
+    [class$='FotContainer'] > h2{
+        background: url('../images/footer/ABOUTMAIN.png') center / cover no-repeat; text-align: center;
+        font-weight: 700; font-size: 50px; color: #eee; line-height: 670px;
+    }
+    /* ? mainBanner Area in */
+    
+    [class$='FotContainer'] > section h3{
+        font-weight: 700; font-size: 40px; line-height: 46px; color: #000; font-style: italic; margin-bottom: 30px;
+    }
+    [class$='FotContainer'] > section p,
+    [class$='FotContainer'] > section ul li{
+        font-weight: 500; font-size: 16px; line-height: 22px; color: #333; margin-bottom: 60px;
+    }
+    [class$='FotContainer'] > section ul li{
+        list-style-type: none;
+    }
+    [class$='FotContainer'] > section ul li strong,
+    [class$='FotContainer'] > section ol li strong{
+        display: block; font-weight: 700; font-size: 22px; line-height: 26px; color: #000; margin-bottom: 30px; text-transform: uppercase;
+    }
+    [class$='FotContainer'] > section ul li:last-of-type{
+        margin-bottom: 120px;
+    }
+    /* ! FotContainer Area */
+
+    [id$='Panel'].active{
+        display: block;
+    }
+    [id$='Panel']{
+        display: none; max-width: 410px; margin: 0 auto; position: relative; padding: 73px 3.38%;
+        box-sizing: border-box; background-color: white;
+    }
+    [id$='Panel'] h2{
+        max-width: 137px; margin: 0 auto 40px;
+    }
+    [id$='Panel'] h2 img{
+        width: 100%; 
+    }
+    [id$='Panel'] input{
+        width: 100%; margin-bottom: 15px; box-sizing: border-box; padding: 0 3%;
+        line-height: 37px; font-size: 14px; color: #999; font-weight: 400;
+    }
+    [id$='Panel'] .material-icons.btn_close{
+        position: absolute; right: 13px; top: 13px; background-color: #fff; border: none;
+    }
+    .sideContainer > *:not(a):hover{
+        background-color: #ed1d24;
+    }
+    #loginPanel{
+        position: fixed; z-index: 1100; left: 39.325%; top: 17.85%;
+    }
+    #joinPanel{
+        position: fixed; z-index: 1100; left: 39.325%; top: 10.2%;
+    }
+    #loginPanel a{
+        display: block;
+    }
+    #loginPanel input:last-of-type{
+        color: #eee; font-size: 16px; font-weight: 600; text-transform: uppercase; background: #ed1d24; border: none;
+        margin-bottom: 55px; cursor: pointer;
+    }
+    #loginPanel a,
+    #joinPanel a{
+        display: block; background: #000; text-align: center;
+        padding: 23px 0; box-sizing: border-box;color: #eee; font-size: 16px;
+        font-weight: 600; text-transform: uppercase;
+    }
+    #joinPanel form > input:last-of-type{
+        margin-bottom: 30px;
+    }
+    #joinPanel div{
+        max-width: 300px; margin: 0 auto; padding-bottom: 30px;
+    }
+    #joinPanel div label{
+        display: block; font-size: 14px; color: #999; font-weight: 400; margin-bottom: 10px;
+    }
+    #joinPanel .inputSelect .month,
+    #joinPanel .inputSelect .day,
+    #joinPanel .inputSelect .year{
+        font-size: 14px; color: #999; font-weight: 400; border-color: #000;
+    }
+    #joinPanel .inputSelect:not(:first-of-type){
+        margin-left: 6px;
+    }
+    #joinPanel .inputSelect .month{
+        max-width: 98px; width: 100%; padding: 7px 3%;
+    }
+    #joinPanel .inputSelect .day,
+    #joinPanel .inputSelect .year{
+        max-width: 80px; width: 100%; padding: 7px 3%;
+    }
+    #joinPanel ul{
+        max-width: 300px; margin: 0 auto;
+    }
+    #joinPanel ul::after{
+        display: block; content: ''; clear: both;
+    }
+    #joinPanel ul li > input{
+        width: 66px; float: left;
+    }
+    #joinPanel #firstCheckbox,
+    #joinPanel #secondCheckbox{
+        height: 23px; display: none;
+    }
+    #joinPanel #firstCheckbox[type='checkbox']:checked + label[for='firstCheckbox']{
+        background: url('../images/on_check.png') no-repeat left 10px, url('../images/checkbox.png') no-repeat left center;
+    }
+    #joinPanel #secondCheckbox[type='checkbox']:checked + label[for='secondCheckbox']{
+        background: url('../images/on_check.png') no-repeat left 10px, url('../images/checkbox.png') no-repeat left center;
+    }
+    #joinPanel ul li{
+        list-style-type: none; font-weight: 400; font-size: 14px; color: #333;
+    }
+    #joinPanel ul li > label{
+        display: block; margin-bottom: 15px; padding-left: 45px; margin-left: 20px;
+        background: url('../images/checkbox.png') no-repeat left center;
+    } 
+    #joinPanel ul li:nth-of-type(3){
+        margin-bottom: 15px;
+    }
+    #joinPanel ul li:nth-of-type(4){
+        margin-bottom: 40px;
+    }
+    /* ! joinPanel Area fin*/
+    
+    header{
+        position: fixed; top: 0; width: 100%; z-index: 1000; background-color: #000;
+    }
+    header > div,
+    header > div nav ul > li div ul,
+    footer > div{
+        max-width: 1370px; margin: 0 auto;
+    }
+    header > div:after{
+        content: ''; display: block; clear: both;
+    }
+    header > div{
+        padding: 22px 2% 22px;
+    }
+    header > div > *{
+        float: left;
+    }
+    header > div > *:not(h1){
+        color: #eee;
+    }
+    header > div > h1{
+        max-width: 128px; width: 10%;
+    }
+    header > div nav{
+        width: 52%; margin-left: 12%;
+        text-align: right; padding: 20px 0;
+    }
+    header > div nav .material-icons.btn_back{
+        display: none;
+    }
+    header > div nav ul{
+        display: flex; flex-flow: row nowrap; justify-content: center; align-content: stretch;
+    }
+    header > div nav ul > li{
+        padding: 0 3%; line-height: 18px;
+        cursor: pointer;
+    }
+    header > div nav ul > li > div ul li{
+        line-height: 0;
+    }
+    header > div nav ul > li.characters div ul li,
+    header > div nav ul > li.movies div ul li{
+        width: 20%;
+    }
+    header > div nav ul > li.comics div ul li{
+        width: 25%;
+    }
+    header > div nav ul > li.news div ul li:not(:first-child){
+        margin-left: 3%;
+    }
+    header > div nav ul > li.news div ul li{
+        width: 22%; background-color: #000;
+    }
+    header > div nav ul > li.news div ul li figure{
+        background: #000; width: 100%;
+    }
+    header > div nav ul > li.news div ul li figcaption{
+        padding: 34px 8% 120px; text-align: left; line-height: 20px;
+    }
+    header > div nav ul > li.news div ul li figcaption dt{
+        padding-bottom: 60px; font-size: 18px; color: #999;
+    }
+    header > div nav ul > li.news div ul li figcaption dd{
+        font-size: 14px; color: #eee;
+    }
+    header > div nav ul > li.more div h2{
+        display: none;
+    }
+    header > div nav ul > li.more div ul li{
+        width: 50%;
+    }
+    header > div nav ul > li span{
+        font-size: 18px; text-transform: uppercase;
+        font-weight: 600; letter-spacing: 2px;
+    }
+    header > div nav ul > li span:active,
+    header > div nav ul > li span:hover{
+        background-color: #ed1d24;
+    }
+    header > div nav ul > li div{
+        display: none; position: absolute; left: 0; top: 94px;
+        width: 100%; background-color: rgba(0,0,0,0.8);
+    }
+    header > div nav ul > li div h2{
+        display: block; text-align: center; line-height: 146px;
+        font-size: 35px; font-weight: 600; cursor: default; text-transform: uppercase;
+    }
+    header > div nav ul > li div ul li{
+        padding: 0; display: block; position: relative;
+    }
+    header > div nav ul > li div ul li a{
+        display: block;
+    }
+    header > div nav ul > li div ul li a img{
+        width: 100%;
+    }
+    header > div nav ul > li div ul li span{
+        display: none; position: absolute; font-size: 30px; font-weight: 900;
+        top: 270px; left: 0; color: #eee; text-align: center; width: 100%;
+    }
+    header > div nav ul > li div ul li figcaption:not(.news figcaption){
+        display: none; position: absolute; font-size: 60px; font-weight: 900;
+        top: 320px; left: 0; color: #eee; text-align: center; width: 100%;
+    }
+    header > div nav ul > li:hover{
+        border-color: transparent;
+    }
+    header > div nav ul > li ul li:hover img{
+        filter: brightness(60%);
+    }
+    header > div nav ul > li ul li:hover span,
+    header > div nav ul > li ul li:hover figcaption:not(.news figcaption){
+        display: block;
+    }
+    header > div nav ul > li div.active{
+        display: block;
+    }
+    header > div > div{
+        width: 14%; margin-left: 12%; cursor: pointer;
+        line-height: 56px; float: right;
+    }
+    header > div > div .material-icons.mui{
+        display: none;
+    }
+    header > div > div a.material-icons.btn_search{
+        vertical-align: middle; margin-right: 10%; color: #eee;
+    }
+    header > div > div > input{
+        background-color: transparent; border: none; color: #eee; font-size: 14px;
+        line-height: 20px; font-weight: 600; text-transform: uppercase; cursor: pointer;
+    }
+    /* ! header fin */
+
+    .searchContainer{
+        background: url('../images/footer/ABOUTMAIN.png') center top / cover no-repeat; height: 100%;
+        display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;
+    }
+    .searchContainer input[type='search']{
+        border: 1px solid black; line-height: 70px; padding: 0 25px 0 70px; font-size: 18px; color: black; max-width: 840px; width: 45%;
+        background: url('../images/search.png') no-repeat 25px center #fff;
+    }
+    /* ! search page */
+
+    .videoSection iframe{
+        width: 100%;
+        height: 40vw;
+    }
+    /* ! videoSection */
+
+    footer{
+        max-width: 1920px; width: 100%; background-color:  #000;
+    }
+    footer > div{
+        padding-top: 100px;
+    }
+    footer > div >*:not(ul:last-of-type){
+        float: left;
+    }
+    footer > div > ul:last-of-type{
+        clear: left;
+    }
+    footer > div > ul:not(:last-of-type){
+        text-transform: uppercase;
+    }
+    footer > div > ul{
+       width: 9%;
+    }
+    footer > div h2,
+    footer > div ul,
+    footer > div > div:first-of-type{
+        margin-right: 9%;
+    }
+    footer > div ul li{
+        list-style-type: none;
+    }
+    footer > div ul li a{
+        display: block; color: #eee; font-size: 15px; font-weight: 700;
+    }
+    footer > div > h2{
+        width: 6.9%;
+    }
+    footer > div > h2 img{
+        width: 100%;
+    }
+    footer > div > ul:first-of-type li:not(:last-child),
+    footer > div > ul:nth-of-type(2) li:not(:last-child){
+        margin-bottom: 25px;
+    }
+    footer > div > div:first-of-type{
+        width: 28%;
+    }
+    footer > div > div:first-of-type a{
+        display: block; color: #999;
+    }
+    footer > div > div:first-of-type a strong{
+        display: block; margin-bottom: 7px; color: #eee;
+    }
+    footer > div > div:first-of-type a:not(:last-of-type){
+        margin-bottom: 70px; background: url('../images/insider.png') left center; 
+        background-repeat: no-repeat; padding-left: 22.8%;
+    }
+    footer > div > div:first-of-type a:last-of-type{
+        background: url('../images/unlimited.png') left center;
+        background-repeat: no-repeat; padding-left: 16.3%; margin-left: 6.5%;
+    }
+    footer > div div:last-of-type h3{
+        color: #eee; font-size: 16px; margin-bottom: 30px; 
+    }
+    footer > div div:last-of-type ul:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    footer > div div:last-of-type ul{
+        margin: 0 auto;
+    }
+    footer > div div:last-of-type ul li{
+        float: left; width: 50%; line-height: 33px; background-position: center; background-size: contain; 
+        background-repeat: no-repeat; text-indent: -9999px; margin-bottom: 20px; cursor: pointer;
+    }
+    footer > div div:last-of-type ul li:first-of-type{
+        background-image: url('../images/facebook.png');
+    }
+    footer > div div:last-of-type ul li:nth-of-type(2){
+        background-image: url('../images/instagram.png');
+    }
+    footer > div div:last-of-type ul li:nth-of-type(3){
+        background-image: url('../images/youtube.png');
+    }
+    footer > div div:last-of-type ul li:last-of-type{
+        background-image: url('../images/twitter.png');
+    }
+    footer > div > ul:last-of-type{
+        max-width: 480px; width: 38%; margin: 0 auto; padding: 91px 0 30px 0;
+    }
+    footer > div > ul:last-of-type li,
+    footer > div > ul:last-of-type li a{
+        display: inline-block; font-size: 14px; color: #999;
+    }
+    footer > div > ul:last-of-type li:not(:last-of-type){
+        margin-right: 7.7%;
+    }
+    /* ! footer Area fin */
+
+    .helpFotContainer h2{
+        text-transform: uppercase; font-weight: 500; font-size: 30px; line-height: 36px; color: #333;
+        background: none; text-align: left; margin-bottom: 40px; padding-top: 120px;
+    }
+    .helpFotContainer > div label{
+        display: block; font-weight: 300px; font-size: 14px; line-height: 20px; color: #333; margin-bottom: 10px;
+    }
+    .helpFotContainer > div label small{
+        display: block; font-size: 10px; line-height: 16px; margin-top: 5px;
+    }
+    .helpFotContainer > div > input{
+        display: inline-block; max-width: 1370px; width: 100%; margin-bottom: 40px; line-height: 40px;
+    }
+    .helpFotContainer > div select{
+        display: inline-block; max-width: 1370px; width: 100%; padding: 12px; margin-bottom: 40px;
+    }
+    .helpFotContainer > div textarea{
+        margin-bottom: 40px; resize: none; width: 100%; height: 400px;
+    }
+    .helpFotContainer > div > input:last-of-type{
+        display: block; text-transform: uppercase; background: #ff2930; margin-top: 40px;
+        font-weight: 500; font-size: 14px; color: #eee; text-align: center; border: none;
+        padding: 12px 1.2%; max-width: 100px; line-height: 20px; box-sizing: border-box;
+    }
+    /* ? help subpage detail */
+
+    .adverFotContainer > section p span{
+        display: block; margin-bottom: 120px;
+    }
+    .internFotContainer > section div h4{
+        font-weight: 700; font-size: 20px; line-height: 36px; color: #000; margin-bottom: 30px;
+    }
+    .internFotContainer > section div ul{
+        padding-left: 1.4%;
+    }
+    .internFotContainer > section div ul li{
+        list-style-type: square; margin-bottom: 5px;
+    }
+    .licenseFotContainer > section ul li:last-of-type{
+        margin-bottom: 60px;
+    }
+    .licenseFotContainer > section ol li{
+        margin-bottom: 30px; display: block;
+    }
+    
+    /*! detail footer Area*/
 }
 /* *desktop */
