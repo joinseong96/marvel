@@ -1035,7 +1035,7 @@ a{
         max-width: 128px; width: 10%;
     }
     header > div nav{
-        width: 52%; margin-left: 12%;
+        width: 52%; margin-left: 14%;
         text-align: right; padding: 20px 0;
     }
     header > div nav .material-icons.btn_back{
@@ -1129,7 +1129,7 @@ a{
         display: block;
     }
     header > div > div{
-        width: 14%; margin-left: 12%; cursor: pointer;
+        width: 12%; margin-left: 12%; cursor: pointer;
         line-height: 56px; float: right;
     }
     header > div > div .material-icons.mui{
