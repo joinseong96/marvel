@@ -8799,6 +8799,9 @@
     .spiderManMovContainer > section:nth-of-type(5) ul li{
         float: left; display: block;
     }
+    .spiderManMovContainer > section:nth-of-type(5) ul li img{
+        width: 100%;
+    }
     .spiderManMovContainer > section:nth-of-type(5) ul li:not(:first-of-type){
         margin-left: 0.5%;
     }
@@ -8818,6 +8821,9 @@
     }
     .spiderManMovContainer > section:nth-of-type(6) ul li{
         float: left; display: block;
+    }
+    .spiderManMovContainer > section:nth-of-type(6) ul li img{
+        width: 100%;
     }
     .spiderManMovContainer > section:nth-of-type(6) ul li:not(:first-of-type){
         margin-left: 0.5%;
