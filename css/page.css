@@ -2939,7 +2939,6 @@
 
 @media screen and (min-width:768px) and (max-width: 1279px){
     .sliderContainer,
-    .mainContainer > section:nth-of-type(2),
     .mainContainer > section:nth-of-type(3) ul,
     .hawkEyeChaContainer > section:nth-of-type(2),
     .eterNalsChaContainer > section:first-of-type,
@@ -3740,7 +3739,7 @@
         width: 100%;
     }
     .eterNalsChaContainer > section:first-of-type ul li span{
-        position: absolute; display: none; font-weight: 600; font-size: 22px; color: #eee;
+        position: absolute; display: none; font-weight: 600; font-size: 18px; color: #eee;
         top: 120px; left: 0; text-align: center; width: 100%;
     }
     .eterNalsChaContainer > section:first-of-type ul li:hover img{
@@ -4885,7 +4884,7 @@
         width: 100%;
     }
     .eterNalsMovContainer > section:nth-of-type(5) ul li span{
-        position: absolute; display: none; font-weight: 600; font-size: 22px; color: #eee;
+        position: absolute; display: none; font-weight: 600; font-size: 18px; color: #eee;
         top: 120px; left: 0; text-align: center; width: 100%;
     }
     .eterNalsMovContainer > section:nth-of-type(5) ul li:hover img{
