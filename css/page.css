@@ -2556,6 +2556,9 @@
     .avengersNewsList article > div:nth-of-type(2) ul li a:hover{
         color: #ff2930;
     }
+    .moreNewsList > article figcaption{
+        color: #000; font-size: 10px;
+    }
     .galaxyNewsList > article > h3,
     .starFoxNewsList > article > h3,
     .gamesNewsList > article > h3,
