@@ -7616,7 +7616,7 @@
         display: block; content: ''; clear: both;
     }
     .spiderManComContainer section:first-of-type figure img{
-        float: left;
+        float: left; width: 22%;
     }
     .spiderManComContainer section:first-of-type figcaption{
         max-width: 450px; width: 36%; margin-left: 7%; float: left;
