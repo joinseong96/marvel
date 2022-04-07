@@ -9768,7 +9768,7 @@
         background: url('../images/on_check.png') no-repeat left 10px, url('../images/checkbox.png') no-repeat left center;
     }
     .join #joinSecondCheckbox[type='checkbox']:checked + label[for='joinSecondCheckbox']{
-        background: url('../images/on_check.png') no-repeat left 10px, url('../images/checkbox.png') no-repeat left center;
+        background: url('../images/on_check.png') no-repeat left 3px, url('../images/checkbox.png') no-repeat left center;
     }
     .join ul li{
         list-style-type: none; font-weight: 400; font-size: 14px; color: #333;
