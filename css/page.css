@@ -3041,13 +3041,16 @@
     [class$='latestNews'] ul li figure > figcaption{
         padding: 0 8% 0 5.8%;
     }
+    [class$='latestNews'] ul li figure > figcaption dl{
+        display: flex; flex-flow: row wrap; align-content: space-evenly; height: 100%;
+    }
     [class$='latestNews'] ul li figure > figcaption dl dt{
         color: #000; font-size: 12px; line-height: 16px; font-weight: 800;
     }
     [class$='latestNews'] ul li figure > figcaption dl dd{
         color: #333; font-size: 10px; font-weight: 700;
     }
-    [class$='latestNews'] ul li figure > figcaption dl dd:last-of-type{
+    [class$='latestNews'] ul li figure > figcaption dl dd:nth-of-type(3){
         color: #999; font-size: 10px; font-weight: 500;
     }
     [class$='latestNews'] ul li figure figcaption dl dd:first-of-type{
