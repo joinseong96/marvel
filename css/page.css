@@ -2994,7 +2994,7 @@
     .cultureMoreContainer > section:nth-of-type(2),
     .cultureMoreContainer > section:nth-of-type(3),
     .cultureMoreContainer > section:nth-of-type(4),
-    .booksMoreContainer > section,
+    .booksMoreContainer > section:not(:first-of-type),
     [class$='RelateMov'] > section:nth-of-type(2),
     [class$='RelateMov'] > section:nth-of-type(3) figure,
     [class$='RelateMov'] > section:first-of-type,
@@ -5519,47 +5519,47 @@
 
     .cultureMoreContainer > section:nth-of-type(2),
     .cultureMoreContainer > section:nth-of-type(3),
-    .booksMoreContainer > section{
+    .booksMoreContainer > section:not(:first-of-type){
         margin-bottom: 120px;
     }
     .cultureMoreContainer > section:nth-of-type(2) h2,
     .cultureMoreContainer > section:nth-of-type(3) h2,
-    .booksMoreContainer > section h2{
+    .booksMoreContainer > section:not(:first-of-type) h2{
         font-weight: 600; font-size: 30px; color: #000; margin-bottom: 30px;
     }
     .cultureMoreContainer > section:nth-of-type(2) ul li,
     .cultureMoreContainer > section:nth-of-type(3) ul li,
-    .booksMoreContainer > section ul li{
+    .booksMoreContainer > section:not(:first-of-type) ul li{
         list-style-type: none;
     }
     .cultureMoreContainer > section:nth-of-type(2) ul li figure::after,
     .cultureMoreContainer > section:nth-of-type(3) ul li figure::after,
-    .booksMoreContainer > section ul li figure::after{
+    .booksMoreContainer > section:not(:first-of-type) ul li figure::after{
         display: block; content: ''; clear: both;
     }
     .cultureMoreContainer > section:nth-of-type(2) ul li figure img,
     .cultureMoreContainer > section:nth-of-type(3) ul li figure img,
-    .booksMoreContainer > section ul li figure img{
+    .booksMoreContainer > section:not(:first-of-type) ul li figure img{
         float: left; margin-bottom: 30px; width: 50%;
     }
     .cultureMoreContainer > section:nth-of-type(2) ul li figcaption,
     .cultureMoreContainer > section:nth-of-type(3) ul li figcaption,
-    .booksMoreContainer > section ul li figcaption{
+    .booksMoreContainer > section:not(:first-of-type) ul li figcaption{
         display: inline-block; width: 50%; padding: 0px 5% 0; box-sizing: border-box;
     }
     .cultureMoreContainer > section:nth-of-type(2) ul li figcaption dl,
     .cultureMoreContainer > section:nth-of-type(3) ul li figcaption dl,
-    .booksMoreContainer > section ul li figcaption dl{
+    .booksMoreContainer > section:not(:first-of-type) ul li figcaption dl{
         display: flex; flex-flow: row wrap;
     }
     .cultureMoreContainer > section:nth-of-type(2) ul li figcaption dl dt,
     .cultureMoreContainer > section:nth-of-type(3) ul li figcaption dl dt,
-    .booksMoreContainer > section ul li figcaption dl dt{
+    .booksMoreContainer > section:not(:first-of-type) ul li figcaption dl dt{
         font-weight: 800; font-size: 18px; line-height: 36px; color:#000;
     }
     .cultureMoreContainer > section:nth-of-type(2) ul li figcaption dl dd,
     .cultureMoreContainer > section:nth-of-type(3) ul li figcaption dl dd,
-    .booksMoreContainer > section ul li figcaption dl dd{
+    .booksMoreContainer > section:not(:first-of-type) ul li figcaption dl dd{
        font-weight: 700; font-size: 12px; color: #333; margin-bottom: 30px; order: -1;
     }
     /* ? adventure Area fin */
