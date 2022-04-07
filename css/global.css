@@ -994,7 +994,7 @@ a{
         background: url('../images/on_check.png') no-repeat left 10px, url('../images/checkbox.png') no-repeat left center;
     }
     #joinPanel #secondCheckbox[type='checkbox']:checked + label[for='secondCheckbox']{
-        background: url('../images/on_check.png') no-repeat left 10px, url('../images/checkbox.png') no-repeat left center;
+        background: url('../images/on_check.png') no-repeat left 3px, url('../images/checkbox.png') no-repeat left center;
     }
     #joinPanel ul li{
         list-style-type: none; font-weight: 400; font-size: 14px; color: #333;
