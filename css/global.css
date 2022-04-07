@@ -1112,8 +1112,8 @@ a{
         top: 270px; left: 0; color: #eee; text-align: center; width: 100%;
     }
     header > div nav ul > li div ul li figcaption:not(.news figcaption){
-        display: none; position: absolute; font-size: 60px; font-weight: 900;
-        top: 320px; left: 0; color: #eee; text-align: center; width: 100%;
+        display: none; position: absolute; font-size: 60px; font-weight: 900; text-shadow: 1px 1px 1px black;
+        top: 320px; left: 0; color: #eee; text-align: center; width: 100%; text-transform: uppercase;
     }
     header > div nav ul > li:hover{
         border-color: transparent;
