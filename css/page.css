@@ -399,6 +399,8 @@
     .video iframe{
         display: none;
     }
+    /* ? iframes Area fin */
+
     .mainContainer section:first-of-type{
         display: none;
     }
@@ -3389,6 +3391,11 @@
     .video,
     .video iframe{
         height: 100%; width: 100%;
+    }
+    /* ? iframes Area fin */
+
+    .mainContainer section:first-of-type h2{
+        text-indent: -9999px;
     }
     .mainContainer ul.latestSlider li{
         padding: 90px 9.5vw; background-position: right center; background-size: cover; background-repeat: no-repeat; height: 466px;
@@ -6585,6 +6592,10 @@
     .video,
     .video iframe{
         height: 100%; width: 100%;
+    }
+
+    .mainContainer section:first-of-type h2{
+        text-indent: -9999px;
     }
     .mainContainer ul.latestSlider li{
         padding: 90px 9.5vw; background-position: right center; background-size: cover; background-repeat: no-repeat; height: 466px;
