@@ -1110,7 +1110,7 @@
     [class$='ComContainer'] section:first-of-type > div a{
         display: inline-block; text-transform: uppercase; background: #ff2930;
         font-weight: 800; font-size: 10px; line-height: 15px; color: #eee; text-align: center;
-        padding: 5px; max-width: 80px; box-sizing: border-box; margin: 0 19%;
+        padding: 5px; max-width: 80px; box-sizing: border-box; margin: 0 10%;
     }
     /* ? fisrts section Area fin */
 
