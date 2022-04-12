@@ -1069,13 +1069,10 @@
     /* ! spiderMan characters fin */
     
     [class$='ComContainer'] section:first-of-type{
-        background-color: #111; padding: 100px 0 60px 0;
-    }
-    [class$='ComContainer'] section:first-of-type::after{
-        display: block; content: ''; clear: both;
+        background-color: #111; padding: 60px 0 60px 0;
     }
     [class$='ComContainer'] section:first-of-type figure img{
-        float: left; width: 46%; margin: 0 10% 25px 0;
+        width: 100%; margin: 0 10% 25px 0;
     }
     [class$='ComContainer'] section:first-of-type figcaption > *{
         color: #eee; margin-bottom: 10px;
@@ -1088,7 +1085,7 @@
         letter-spacing: 1px; text-transform: uppercase;
     }
     [class$='ComContainer'] section:first-of-type figcaption h2{
-        font-weight: 800; font-size: 14px;
+        font-weight: 800; font-size: 20px;
     }
     [class$='ComContainer'] section:first-of-type figcaption ul li{
         list-style-type: none; font-weight: 400; font-size: 12px; margin-bottom: 15px;
