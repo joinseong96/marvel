@@ -3026,7 +3026,7 @@
         display: flex; flex-flow: row nowrap; margin-top: 30px;
     }
     [class$='latestNews'] ul li figure > *{
-        max-width: 50%;
+        max-width: 48%;
     }
     [class$='latestNews'] ul li:first-of-type figure,
     [class$='latestNews'] ul li:nth-of-type(2) figure{
