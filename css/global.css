@@ -1129,7 +1129,7 @@ a{
         display: block;
     }
     header > div > div{
-        width: 12%; margin-left: 12%; cursor: pointer;
+        width: 14%; margin-left: 10%; cursor: pointer;
         line-height: 56px; float: right;
     }
     header > div > div .material-icons.mui{
