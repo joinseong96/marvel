@@ -1075,7 +1075,7 @@
         display: block; content: ''; clear: both;
     }
     [class$='ComContainer'] section:first-of-type figure img{
-        float: left; width: 46%; margin: 0 5% 10px 0;
+        float: left; width: 46%; margin: 0 10% 25px 0;
     }
     [class$='ComContainer'] section:first-of-type figcaption > *{
         color: #eee; margin-bottom: 10px;
