@@ -6508,7 +6508,7 @@
     }
     [class$='RelateMov'] > section:last-of-type ul li{
         float: left; max-width: 310px; width: 23.875%; display: block;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     [class$='RelateMov'] > section:last-of-type ul li a{
         display: block; line-height: 0;
