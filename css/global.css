@@ -623,10 +623,10 @@ a{
         width: 25%;
     }
     header > div nav ul > li.news div ul li:not(:first-child){
-        margin-left: 3%;
+        margin-left: 1%;
     }
     header > div nav ul > li.news div ul li{
-        width: 22%; background-color: #000;
+        width: 24.2%; background-color: #000;
     }
     header > div nav ul > li.news div ul li figure{
         background: #000; width: 100%;
