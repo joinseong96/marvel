@@ -14,6 +14,7 @@ $(document).ready(function(){
     activeToggle(popPanel,popBtn);
     toggleUI(muiBtn,gnbNav);
 });
+
 function init(){
     gnbBtn = $('header nav ul li span');
     gnbPanel = $('header nav ul li div');

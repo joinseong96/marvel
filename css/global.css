@@ -1059,7 +1059,7 @@ a{
         width: 25%;
     }
     header > div nav ul > li.news div ul li:not(:first-child){
-        margin-left: 3%;
+        margin-left: 1%;
     }
     header > div nav ul > li.news div ul li{
         width: 22%; background-color: #000;
@@ -1129,7 +1129,7 @@ a{
         display: block;
     }
     header > div > div{
-        width: 12%; margin-left: 12%; cursor: pointer;
+        width: 14%; margin-left: 10%; cursor: pointer;
         line-height: 56px; float: right;
     }
     header > div > div .material-icons.mui{

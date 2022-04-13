@@ -399,6 +399,8 @@
     .video iframe{
         display: none;
     }
+    /* ? iframes Area fin */
+
     .mainContainer section:first-of-type{
         display: none;
     }
@@ -1069,13 +1071,10 @@
     /* ! spiderMan characters fin */
     
     [class$='ComContainer'] section:first-of-type{
-        background-color: #111; padding: 100px 0 60px 0;
-    }
-    [class$='ComContainer'] section:first-of-type::after{
-        display: block; content: ''; clear: both;
+        background-color: #111; padding: 60px 0 60px 0;
     }
     [class$='ComContainer'] section:first-of-type figure img{
-        float: left; width: 46%; margin: 0 5% 10px 0;
+        width: 100%; margin: 0 10% 25px 0;
     }
     [class$='ComContainer'] section:first-of-type figcaption > *{
         color: #eee; margin-bottom: 10px;
@@ -1088,7 +1087,7 @@
         letter-spacing: 1px; text-transform: uppercase;
     }
     [class$='ComContainer'] section:first-of-type figcaption h2{
-        font-weight: 800; font-size: 14px;
+        font-weight: 800; font-size: 20px;
     }
     [class$='ComContainer'] section:first-of-type figcaption ul li{
         list-style-type: none; font-weight: 400; font-size: 12px; margin-bottom: 15px;
@@ -1110,7 +1109,7 @@
     [class$='ComContainer'] section:first-of-type > div a{
         display: inline-block; text-transform: uppercase; background: #ff2930;
         font-weight: 800; font-size: 10px; line-height: 15px; color: #eee; text-align: center;
-        padding: 5px; max-width: 80px; box-sizing: border-box; margin: 0 19%;
+        padding: 5px; max-width: 80px; box-sizing: border-box; margin: 0 10%;
     }
     /* ? fisrts section Area fin */
 
@@ -3029,7 +3028,7 @@
         display: flex; flex-flow: row nowrap; margin-top: 30px;
     }
     [class$='latestNews'] ul li figure > *{
-        max-width: 50%;
+        max-width: 48%;
     }
     [class$='latestNews'] ul li:first-of-type figure,
     [class$='latestNews'] ul li:nth-of-type(2) figure{
@@ -3392,6 +3391,11 @@
     .video,
     .video iframe{
         height: 100%; width: 100%;
+    }
+    /* ? iframes Area fin */
+
+    .mainContainer section:first-of-type h2{
+        text-indent: -9999px;
     }
     .mainContainer ul.latestSlider li{
         padding: 90px 9.5vw; background-position: right center; background-size: cover; background-repeat: no-repeat; height: 466px;
@@ -6588,6 +6592,10 @@
     .video,
     .video iframe{
         height: 100%; width: 100%;
+    }
+
+    .mainContainer section:first-of-type h2{
+        text-indent: -9999px;
     }
     .mainContainer ul.latestSlider li{
         padding: 90px 9.5vw; background-position: right center; background-size: cover; background-repeat: no-repeat; height: 466px;
