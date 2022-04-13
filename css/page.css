@@ -6696,7 +6696,7 @@
     /* ? subBanner Area fin */
     
     .mainContainer > section:nth-of-type(3){
-        margin-bottom: 120px;
+        margin-bottom: 120px; line-height: 0;
     }
     .mainContainer > section:nth-of-type(3) h2{
         max-width: 1370px; margin: 0 auto; font-size: 35px; font-weight: 600;
@@ -6709,7 +6709,10 @@
         content: ''; display: block; clear: both;
     }
     .mainContainer > section:nth-of-type(3) ul li{
-        float: left; width: 24%; max-width: 330px;
+        float: left; width: 25%; max-width: 337px;
+    }
+    .mainContainer > section:nth-of-type(3) ul li a{
+        display: block;
     }
     .mainContainer > section:nth-of-type(3) ul li:nth-child(2),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(3),
@@ -6717,13 +6720,13 @@
     .mainContainer > section:nth-of-type(3) ul li:nth-child(6),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(7),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(8){
-        margin-left: 1.3%;
+        margin-left: 0.5%;
     }
     .mainContainer > section:nth-of-type(3) ul li:nth-child(1),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(2),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(3),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(4){
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .mainContainer > section:nth-of-type(3) ul li img{
         width: 100%; transition: transform 0.25s ease-in-out;
@@ -8027,7 +8030,7 @@
     }
     .avengersMovContainer > section:nth-of-type(4) ul li{
         float: left; max-width: 310px; width: 23.875%; display: block;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .avengersMovContainer > section:nth-of-type(4) ul li a{
         display: block; line-height: 0;
@@ -8038,11 +8041,11 @@
     /* ? RelatedMovies Areafin */
 
     .avengersMovContainer > section:nth-of-type(5){
-        margin-bottom: 120px;
+        margin-bottom: 120px; line-height: 0;
     }
     .avengersMovContainer > section:nth-of-type(5) h2{
         max-width: 1370px; margin: 0 auto; font-size: 35px; font-weight: 600;
-        background-color: #fff; margin-bottom: 30px;
+        background: #fff; margin-bottom: 30px;
     }
     .avengersMovContainer > section:nth-of-type(5) div{
         background-color: #000;
@@ -8051,7 +8054,10 @@
         content: ''; display: block; clear: both;
     }
     .avengersMovContainer > section:nth-of-type(5) ul li{
-        float: left; width: 24%; max-width: 330px; list-style: none;
+        float: left; width: 25%; max-width: 337px;
+    }
+    .avengersMovContainer > section:nth-of-type(5) ul li a{
+        display: block;
     }
     .avengersMovContainer > section:nth-of-type(5) ul li:nth-child(2),
     .avengersMovContainer > section:nth-of-type(5) ul li:nth-child(3),
@@ -8059,13 +8065,13 @@
     .avengersMovContainer > section:nth-of-type(5) ul li:nth-child(6),
     .avengersMovContainer > section:nth-of-type(5) ul li:nth-child(7),
     .avengersMovContainer > section:nth-of-type(5) ul li:nth-child(8){
-        margin-left: 1.3%;
+        margin-left: 0.5%;
     }
     .avengersMovContainer > section:nth-of-type(5) ul li:nth-child(1),
     .avengersMovContainer > section:nth-of-type(5) ul li:nth-child(2),
     .avengersMovContainer > section:nth-of-type(5) ul li:nth-child(3),
     .avengersMovContainer > section:nth-of-type(5) ul li:nth-child(4){
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .avengersMovContainer > section:nth-of-type(5) ul li img{
         width: 100%; transition: transform 0.25s ease-in-out;
