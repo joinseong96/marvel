@@ -234,7 +234,7 @@ a{
         background-color: #ed1d24;
     } */
     header > div nav ul > li div{
-        display: none; position: absolute; left: 0; top: 8vw;
+        display: none; position: absolute; left: 0; top: 31px;
         width: 100%; background-color: #000;
     }
     header > div nav ul > li div h2{
@@ -245,7 +245,7 @@ a{
         padding: 0; display: block; position: relative;
     }
     header > div nav ul > li div ul li a{
-        display: block;
+        display: block; 
     }
     header > div nav ul > li div ul li a img{
         width: 100%;
@@ -253,9 +253,9 @@ a{
     header > div nav ul > li div ul li span{
         display: none;
     }
-    header > div nav ul > li div ul li figcaption:not(.news figcaption){
-        display: block; position: absolute; font-size: 18px; font-weight: 900; text-shadow: 1px 1px 1px black;
-        top: 50%; left: 0; color: #eee; text-align: center; width: 100%; text-transform: uppercase;
+    header > div nav ul > .more figcaption{
+        display: block; font-size: 18px; font-weight: 900; text-shadow: 1px 1px 1px black;
+        position: absolute;  top: 50%; left: 0; color: #eee; text-align: center; width: 100%; text-transform: uppercase;
     }
     header > div nav ul > li:hover{
         border-color: transparent;
@@ -1112,8 +1112,8 @@ a{
         top: 270px; left: 0; color: #eee; text-align: center; width: 100%;
     }
     header > div nav ul > li div ul li figcaption:not(.news figcaption){
-        display: none; position: absolute; font-size: 60px; font-weight: 900; text-shadow: 1px 1px 1px black;
-        top: 320px; left: 0; color: #eee; text-align: center; width: 100%; text-transform: uppercase;
+        display: none;  font-size: 60px; font-weight: 900; text-shadow: 1px 1px 1px black;
+        position: absolute; top: 320px; left: 0; color: #eee; text-align: center; width: 100%; text-transform: uppercase;
     }
     header > div nav ul > li:hover{
         border-color: transparent;
