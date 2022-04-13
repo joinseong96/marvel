@@ -6595,7 +6595,7 @@
     }
 
     .mainContainer section:first-of-type h2{
-        text-indent: -9999px;
+        display: none;
     }
     .mainContainer ul.latestSlider li{
         padding: 90px 9.5vw; background-position: right center; background-size: cover; background-repeat: no-repeat; height: 466px;
