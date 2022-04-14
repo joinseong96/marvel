@@ -3044,7 +3044,7 @@
         display: flex; flex-flow: row wrap; align-content: space-evenly; height: 100%;
     }
     [class$='latestNews'] ul li figure > figcaption dl dt{
-        color: #000; font-size: 12px; line-height: 16px; font-weight: 800;
+        color: #000; font-size: 10px; line-height: 16px; font-weight: 800;
     }
     [class$='latestNews'] ul li figure > figcaption dl dd{
         color: #333; font-size: 10px; font-weight: 700;
@@ -3395,7 +3395,7 @@
     /* ? iframes Area fin */
 
     .mainContainer section:first-of-type h2{
-        text-indent: -9999px;
+        display: none;
     }
     .mainContainer ul.latestSlider li{
         padding: 90px 9.5vw; background-position: right center; background-size: cover; background-repeat: no-repeat; height: 466px;
@@ -3525,7 +3525,7 @@
     /* ? subBanner Area fin */
     
     .mainContainer > section:nth-of-type(3){
-        margin-bottom: 120px;
+        margin-bottom: 120px; line-height: 0;
     }
     .mainContainer > section:nth-of-type(3) h2{
         max-width: 700px; margin: 0 auto; font-size: 30px; font-weight: 600;
@@ -3540,19 +3540,22 @@
     .mainContainer > section:nth-of-type(3) ul li{
         float: left; width: 24%; max-width: 330px;
     }
+    .mainContainer > section:nth-of-type(3) ul li a{
+        display: block;
+    }
     .mainContainer > section:nth-of-type(3) ul li:nth-child(2),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(3),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(4),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(6),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(7),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(8){
-        margin-left: 1.3%;
+        margin-left: 0.5%;
     }
     .mainContainer > section:nth-of-type(3) ul li:nth-child(1),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(2),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(3),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(4){
-        margin-bottom: 5px;
+        margin-bottom: 3px;
     }
     .mainContainer > section:nth-of-type(3) ul li img{
         width: 100%; transition: transform 0.25s ease-in-out;
@@ -3770,7 +3773,7 @@
     .eterNalsChaContainer > section:first-of-type ul li:nth-of-type(3),
     .eterNalsChaContainer > section:first-of-type ul li:nth-of-type(4),
     .eterNalsChaContainer > section:first-of-type ul li:nth-of-type(5){
-        margin-bottom: 30px;
+        margin-bottom: 5px;
     }
     /* ? characters Area fin */
 
@@ -4353,7 +4356,7 @@
         position: relative; margin-bottom: 120px;
     }
     .avengersMovContainer > figure:nth-of-type(2) figcaption{
-        position: absolute; top: 10%; right: 5%; background-color: #000; max-width: 400px; width: 35%;
+        position: absolute; top: 15%; right: 5%; background-color: #000; max-width: 400px; width: 35%;
         font-weight: 500; font-size: 12px; color: #eee; padding: 15px; line-height: 18px; box-sizing: border-box;
     }
     .avengersMovContainer > figure:nth-of-type(2) figcaption a{
@@ -4728,6 +4731,9 @@
         float: left; max-width: 310px; width: 24%; display: block;
         margin-bottom: 10px;
     }
+    .blackWidowMovContainer > section:nth-of-type(6) ul li a{
+        display: block;
+    }
     .blackWidowMovContainer > section:nth-of-type(6) ul li:nth-of-type(2),
     .blackWidowMovContainer > section:nth-of-type(6) ul li:nth-of-type(3),
     .blackWidowMovContainer > section:nth-of-type(6) ul li:nth-of-type(4),
@@ -4915,7 +4921,7 @@
     .eterNalsMovContainer > section:nth-of-type(5) ul li:nth-of-type(3),
     .eterNalsMovContainer > section:nth-of-type(5) ul li:nth-of-type(4),
     .eterNalsMovContainer > section:nth-of-type(5) ul li:nth-of-type(5){
-        margin-bottom: 30px;
+        margin-bottom: 5px;
     }
     /* ? characters Area fin */
 
@@ -5224,6 +5230,9 @@
     .spiderManMovContainer > section:nth-of-type(5) ul li,
     .spiderManMovContainer > section:nth-of-type(6) ul li{
         float: left; display: block; width: 25%;
+    }
+    .spiderManMovContainer > section:nth-of-type(6) ul li a{
+        display: block;
     }
     .spiderManMovContainer > section:nth-of-type(5) ul li img,
     .spiderManMovContainer > section:nth-of-type(6) ul li img{
@@ -5535,6 +5544,11 @@
     .cultureMoreContainer > section:nth-of-type(3) ul li,
     .booksMoreContainer > section:not(:first-of-type) ul li{
         list-style-type: none;
+    }
+    .cultureMoreContainer > section:nth-of-type(2) ul li a,
+    .cultureMoreContainer > section:nth-of-type(3) ul li a,
+    .booksMoreContainer > section:not(:first-of-type) ul li a{
+        display: block;
     }
     .cultureMoreContainer > section:nth-of-type(2) ul li figure::after,
     .cultureMoreContainer > section:nth-of-type(3) ul li figure::after,
@@ -6494,7 +6508,7 @@
     }
     [class$='RelateMov'] > section:last-of-type ul li{
         float: left; max-width: 310px; width: 23.875%; display: block;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     [class$='RelateMov'] > section:last-of-type ul li a{
         display: block; line-height: 0;
@@ -6595,7 +6609,7 @@
     }
 
     .mainContainer section:first-of-type h2{
-        text-indent: -9999px;
+        display: none;
     }
     .mainContainer ul.latestSlider li{
         padding: 90px 9.5vw; background-position: right center; background-size: cover; background-repeat: no-repeat; height: 466px;
@@ -6696,7 +6710,7 @@
     /* ? subBanner Area fin */
     
     .mainContainer > section:nth-of-type(3){
-        margin-bottom: 120px;
+        margin-bottom: 120px; line-height: 0;
     }
     .mainContainer > section:nth-of-type(3) h2{
         max-width: 1370px; margin: 0 auto; font-size: 35px; font-weight: 600;
@@ -6709,7 +6723,10 @@
         content: ''; display: block; clear: both;
     }
     .mainContainer > section:nth-of-type(3) ul li{
-        float: left; width: 24%; max-width: 330px;
+        float: left; width: 25%; max-width: 311px;
+    }
+    .mainContainer > section:nth-of-type(3) ul li a{
+        display: block;
     }
     .mainContainer > section:nth-of-type(3) ul li:nth-child(2),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(3),
@@ -6717,13 +6734,13 @@
     .mainContainer > section:nth-of-type(3) ul li:nth-child(6),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(7),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(8){
-        margin-left: 1.3%;
+        margin-left: 0.5%;
     }
     .mainContainer > section:nth-of-type(3) ul li:nth-child(1),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(2),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(3),
     .mainContainer > section:nth-of-type(3) ul li:nth-child(4){
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .mainContainer > section:nth-of-type(3) ul li img{
         width: 100%; transition: transform 0.25s ease-in-out;
@@ -6938,7 +6955,7 @@
     .eterNalsChaContainer > section:first-of-type ul li:nth-of-type(3),
     .eterNalsChaContainer > section:first-of-type ul li:nth-of-type(4),
     .eterNalsChaContainer > section:first-of-type ul li:nth-of-type(5){
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
     /* ? characters Area fin */
 
@@ -8027,7 +8044,7 @@
     }
     .avengersMovContainer > section:nth-of-type(4) ul li{
         float: left; max-width: 310px; width: 23.875%; display: block;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .avengersMovContainer > section:nth-of-type(4) ul li a{
         display: block; line-height: 0;
@@ -8038,11 +8055,11 @@
     /* ? RelatedMovies Areafin */
 
     .avengersMovContainer > section:nth-of-type(5){
-        margin-bottom: 120px;
+        margin-bottom: 120px; line-height: 0;
     }
     .avengersMovContainer > section:nth-of-type(5) h2{
         max-width: 1370px; margin: 0 auto; font-size: 35px; font-weight: 600;
-        background-color: #fff; margin-bottom: 30px;
+        background: #fff; margin-bottom: 30px;
     }
     .avengersMovContainer > section:nth-of-type(5) div{
         background-color: #000;
@@ -8051,7 +8068,10 @@
         content: ''; display: block; clear: both;
     }
     .avengersMovContainer > section:nth-of-type(5) ul li{
-        float: left; width: 24%; max-width: 330px; list-style: none;
+        float: left; width: 25%; max-width: 311px;
+    }
+    .avengersMovContainer > section:nth-of-type(5) ul li a{
+        display: block;
     }
     .avengersMovContainer > section:nth-of-type(5) ul li:nth-child(2),
     .avengersMovContainer > section:nth-of-type(5) ul li:nth-child(3),
@@ -8059,13 +8079,13 @@
     .avengersMovContainer > section:nth-of-type(5) ul li:nth-child(6),
     .avengersMovContainer > section:nth-of-type(5) ul li:nth-child(7),
     .avengersMovContainer > section:nth-of-type(5) ul li:nth-child(8){
-        margin-left: 1.3%;
+        margin-left: 0.5%;
     }
     .avengersMovContainer > section:nth-of-type(5) ul li:nth-child(1),
     .avengersMovContainer > section:nth-of-type(5) ul li:nth-child(2),
     .avengersMovContainer > section:nth-of-type(5) ul li:nth-child(3),
     .avengersMovContainer > section:nth-of-type(5) ul li:nth-child(4){
-        margin-bottom: 10px;
+        margin-bottom: 3px;
     }
     .avengersMovContainer > section:nth-of-type(5) ul li img{
         width: 100%; transition: transform 0.25s ease-in-out;
@@ -8301,14 +8321,17 @@
         width: 100%;
     }
     .blackWidowMovContainer > section:nth-of-type(6) ul li{
-        float: left; max-width: 310px; width: 25%; display: block;
-        margin-bottom: 30px;
+        float: left; max-width: 310px; width: 23.875%; display: block;
+        margin-bottom: 20px;
+    }
+    .blackWidowMovContainer > section:nth-of-type(6) ul li a{
+        display: block;
     }
     .blackWidowMovContainer > section:nth-of-type(6) ul li:nth-of-type(2),
     .blackWidowMovContainer > section:nth-of-type(6) ul li:nth-of-type(3),
     .blackWidowMovContainer > section:nth-of-type(6) ul li:nth-of-type(4),
     .blackWidowMovContainer > section:nth-of-type(6) ul li:nth-of-type(6){
-        margin-left: 2.2%;
+        margin-left: 1.5%;
     }
     /* ? RelatedMovies Areafin */
 
@@ -8499,7 +8522,7 @@
     .eterNalsMovContainer > section:nth-of-type(5) ul li:nth-of-type(3),
     .eterNalsMovContainer > section:nth-of-type(5) ul li:nth-of-type(4),
     .eterNalsMovContainer > section:nth-of-type(5) ul li:nth-of-type(5){
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
     /* ? characters Area fin */
 
@@ -8835,6 +8858,9 @@
     .spiderManMovContainer > section:nth-of-type(6) ul li{
         float: left; display: block; width: 24.6%;
     }
+    .spiderManMovContainer > section:nth-of-type(6) ul li a{
+        display: block;
+    }
     .spiderManMovContainer > section:nth-of-type(6) ul li img{
         width: 100%;
     }
@@ -8881,7 +8907,7 @@
         float: left; width: 61.4%;
     }
     .moviesNewsContainer article figcaption{
-        display: inline-block; max-width: 474px; padding-left: 1.04%; margin-bottom: 120px;
+        display: inline-block; max-width: 474px; padding-left: 1.04%; margin-bottom: 30px;
     }
     .moviesNewsContainer article figcaption p{
         font-weight: 300; font-size: 18px; line-height: 24px; color: #000;
@@ -8956,7 +8982,7 @@
         display: block; content: ''; clear: both;
     }
     .comicsNewsContainer article figure:first-of-type img{
-        float: left; width: 61.4%; max-width: 841px; margin-bottom: 120px;
+        float: left; width: 61.4%; max-width: 841px; margin-bottom: 60px;
     }
     .comicsNewsContainer article figure:first-of-type figcaption{
         display: inline-block; max-width: 480px; width: 37%; padding-left: 1.04%;
@@ -9052,7 +9078,7 @@
         display: block; content: ''; clear: both;
     }
     .tyShowsNewsContainer article figure img{
-        float: left; width: 61.4%; margin-bottom: 120px;
+        float: left; width: 61.4%; margin-bottom: 60px;
     }
     .tyShowsNewsContainer article figcaption{
         display: inline-block; max-width: 474px; padding-left: 1.04%;
@@ -9125,7 +9151,7 @@
         display: block; content: ''; clear: both;
     }
     .gamesNewsContainer article figure img{
-        float: left; width: 61.4%; margin-bottom: 120px;
+        float: left; width: 61.4%; margin-bottom: 60px;
     }
     .gamesNewsContainer article figcaption{
         display: inline-block; max-width: 474px; padding-left: 1.04%;
@@ -9184,7 +9210,11 @@
     }
     .cultureMoreContainer > section:nth-of-type(2) ul li,
     .cultureMoreContainer > section:nth-of-type(3) ul li{
-        list-style-type: none;
+        list-style: none;
+    }
+    .cultureMoreContainer > section:nth-of-type(2) ul li a,
+    .cultureMoreContainer > section:nth-of-type(3) ul li a{
+        display: block;
     }
     .cultureMoreContainer > section:nth-of-type(2) ul li figure::after,
     .cultureMoreContainer > section:nth-of-type(3) ul li figure::after{
@@ -9358,6 +9388,9 @@
     }
     .booksMoreContainer > section:not(:first-of-type) ul > li{
         list-style-type: none;
+    }
+    .booksMoreContainer > section:not(:first-of-type) ul > li a{
+        display: block;
     }
     .booksMoreContainer > section:not(:first-of-type) ul > li figure::after{
         display: block; content: ''; clear: both;
