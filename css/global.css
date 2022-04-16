@@ -49,13 +49,13 @@ a{
     }
     [id$='Panel']{
         display: none; position: relative; padding: 25px 4%;
-        box-sizing: border-box; background-color: #fff;
+        box-sizing: border-box; background-color: #fff; width: 100%;
     }
     [id$='Panel'] h2{
         max-width: 60px; margin: 0 auto 15px;
     }
     [id$='Panel'] h2 img{
-        width: 100%; 
+        width: 100%;
     }
     [id$='Panel'] input{
         width: 100%; margin-bottom: 15px; box-sizing: border-box; padding: 5px;
